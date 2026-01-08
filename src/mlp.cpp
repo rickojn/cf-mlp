@@ -9,6 +9,7 @@
 #include <immintrin.h>
 #include <stdint.h>
 
+#include "../custard-flow/include/CustardFlow.h"
 
 
 #define SIZE_CLASSES 10
@@ -23,7 +24,6 @@
 
 
 
-#define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 
 typedef struct {
@@ -451,20 +451,20 @@ void old_simd_matmul(const float *A, const float *B, float *C, size_t M, size_t 
 }
 
 
-void simd_matmul(const float *A, const float *B, float *C, size_t M, size_t N, size_t K)
-{
-    const size_t tile_m = 8;
-    const size_t tile_n = 8;
-    size_t offset_C = 0;
-    for (size_t idx_m = 0; idx_m < M; idx_m += tile_m)
-    {
-        for (size_t idx_n = 0; idx_n < N; idx_n += tile_n)
-        {
-            offset_C= idx_m + idx_n * M;
-            simd_kernel(&A[idx_m], &B[idx_n], C, M, N, K, tile_m, tile_n, offset_C);
-        }
-    }
-}
+// void simd_matmul(const float *A, const float *B, float *C, size_t M, size_t N, size_t K)
+// {
+//     const size_t tile_m = 8;
+//     const size_t tile_n = 8;
+//     size_t offset_C = 0;
+//     for (size_t idx_m = 0; idx_m < M; idx_m += tile_m)
+//     {
+//         for (size_t idx_n = 0; idx_n < N; idx_n += tile_n)
+//         {
+//             offset_C= idx_m + idx_n * M;
+//             simd_kernel(&A[idx_m], &B[idx_n], C, M, N, K, tile_m, tile_n, offset_C);
+//         }
+//     }
+// }
 
 
 void simd_matmul_b(const float *A, const float *B, float *C, size_t M, size_t N, size_t K)
@@ -1228,6 +1228,10 @@ void free_model(Model * model){
 
 
 int main() {
+    // test cf integration
+    int a = 5;
+    int b = 10;
+    printf("minimum of %d and %d: %d\n", a, b, min(a, b));
     // read input data
     InputData data_training, data_test, data_mini_batch = {0};
 
