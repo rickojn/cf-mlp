@@ -16,7 +16,7 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 10
+#define NUMBER_EPOCHS 100
 #define PRINT_EVERY 1
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
@@ -451,20 +451,6 @@ void old_simd_matmul(const float *A, const float *B, float *C, size_t M, size_t 
 }
 
 
-// void simd_matmul(const float *A, const float *B, float *C, size_t M, size_t N, size_t K)
-// {
-//     const size_t tile_m = 8;
-//     const size_t tile_n = 8;
-//     size_t offset_C = 0;
-//     for (size_t idx_m = 0; idx_m < M; idx_m += tile_m)
-//     {
-//         for (size_t idx_n = 0; idx_n < N; idx_n += tile_n)
-//         {
-//             offset_C= idx_m + idx_n * M;
-//             simd_kernel(&A[idx_m], &B[idx_n], C, M, N, K, tile_m, tile_n, offset_C);
-//         }
-//     }
-// }
 
 
 void simd_matmul_b(const float *A, const float *B, float *C, size_t M, size_t N, size_t K)
@@ -1235,11 +1221,11 @@ int main() {
     // read input data
     InputData data_training, data_test, data_mini_batch = {0};
 
-    const char * deep_path = getenv("DEEP_PATH");
-    const char * models_path = concatStrings(deep_path, "models/");
+    const char * data_path = getenv("DATA_PATH");
+    const char * models_path = getenv("MODELS_PATH");
 
-    const char * training_images_path = concatStrings(deep_path, "data/train-images.idx3-ubyte");
-    const char *training_labels_path = concatStrings(deep_path, "data/train-labels.idx1-ubyte");
+    const char * training_images_path = concatStrings(data_path, "train-images.idx3-ubyte");
+    const char *training_labels_path = concatStrings(data_path, "train-labels.idx1-ubyte");
     read_mnist_images(training_images_path, &data_training);
     read_mnist_labels(training_labels_path, &data_training.labels, &data_training.nImages);
     printf("Number of training images: %d\n", data_training.nImages);
@@ -1247,8 +1233,8 @@ int main() {
     free((char *)training_images_path);
     free((char *)training_labels_path);
 
-    const char *test_images_path = concatStrings(deep_path, "data/t10k-images.idx3-ubyte");
-    const char *test_labels_path = concatStrings(deep_path, "data/t10k-labels.idx1-ubyte");
+    const char *test_images_path = concatStrings(data_path, "t10k-images.idx3-ubyte");
+    const char *test_labels_path = concatStrings(data_path, "t10k-labels.idx1-ubyte");
     read_mnist_images(test_images_path, &data_test);
     read_mnist_labels(test_labels_path, &data_test.labels, &data_test.nImages);
     printf("Number of test images: %d\n", data_test.nImages);
