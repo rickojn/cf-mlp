@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "cppdbg",
+      "request": "launch",
+      "name": "Debug MLP Executable",
+      "program": "${workspaceFolder}/build/${input:mlpExecutable}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "preLaunchTask": "build-mlp"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "mlpExecutable",
+      "type": "pickString",
+      "description": "Select the executable to debug",
+      "options": [
+        "mlp"
+      ]
+    }
+  ]
+}

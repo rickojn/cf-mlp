@@ -9,6 +9,7 @@
 #include <immintrin.h>
 #include <stdint.h>
 #include <string>
+#include <vector>
 
 #include "../custard-flow/include/CustardFlow.h"
 
@@ -42,11 +43,11 @@ typedef struct Layer{
     float (*generate_number)(size_t, size_t);
 } Layer;
 
-typedef struct {
-    Layer **layers;
-    size_t size_layers;
-    size_t size_parameters;
-} Model;
+struct Model {
+    std::vector<Layer> layers = {};
+    size_t size_layers = 0;
+    size_t size_parameters = 0;
+};
 
 typedef struct {
     float *activations;
@@ -554,7 +555,7 @@ void softmax_forward(Layer *layer, size_t size_batch)
 void model_forward(Model *model, Activations *activations, InputData *data)
 {
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
-        Layer *layer = model->layers[idx_layer];
+        Layer *layer = &model->layers[idx_layer];
         // matmul_forward(layer, layer->activations_input, layer->activations_output, data->nImages);
         // matmul_forward_tiling(layer, layer->activations_input, layer->activations_output, data->nImages);
         // matmul_forward_outer_product(layer, data->nImages);
@@ -767,7 +768,7 @@ void update_layer(Layer *layer, float learning_rate)
 void model_backward(Model *model, Activations *activations, InputData *data)
 {
     for (int idx_layer = model->size_layers - 1; idx_layer >= 0; idx_layer--) {
-        Layer *layer = model->layers[idx_layer];
+        Layer *layer = &model->layers[idx_layer];
         layer->activation_backward(layer, data->labels, data->nImages);
         matmul_backward(layer, data->nImages);
         // matmul_backward_separate(layer, data->nImages);
@@ -854,7 +855,7 @@ void save_model(Model * model, const char *dir_path){
 
 
     // Save all parameters of the model to the file
-    fwrite(model->layers[0]->weights, sizeof(float), model->size_parameters, file);
+    fwrite(model->layers[0].weights, sizeof(float), model->size_parameters, file);
 
     fclose(file);
 }
@@ -866,7 +867,7 @@ void load_model_from_file(Model * model, const char *filename){
         return;
     }
     // Load all parameters of the model from the file
-    file_read(model->layers[0]->weights, sizeof(float), model->size_parameters, file);
+    file_read(model->layers[0].weights, sizeof(float), model->size_parameters, file);
     fclose(file);
 }
 
@@ -998,8 +999,7 @@ void add_layer(Model *model, size_t size_inputs, size_t size_neurons, void(*acti
     layer->activation_backward = activation_backward;
     layer->generate_number = generate_number;
     
-    model->layers = (Layer **)realloc(model->layers, (model->size_layers + 1) * sizeof(Layer *));
-    model->layers[model->size_layers] = layer;
+    model->layers.push_back(*layer);
     model->size_layers++;
     model->size_parameters += size_inputs * size_neurons + size_neurons;
 }
@@ -1010,7 +1010,7 @@ void allocate_parameters_memory(Model *model)
     float *parameters = (float *)calloc(model->size_parameters, sizeof(float));
     size_t offset = 0;
     for (size_t i = 0; i < model->size_layers; i++) {
-        Layer *layer = model->layers[i];
+        Layer *layer = &model->layers[i];
         layer->weights = parameters + offset;
         offset += layer->size_inputs * layer->size_neurons;
         layer->biases = parameters + offset;
@@ -1021,7 +1021,7 @@ void allocate_parameters_memory(Model *model)
 void initialize_model(Model *model)
 {
     for (size_t i = 0; i < model->size_layers; i++) {
-        Layer *layer = model->layers[i];
+        Layer *layer = &model->layers[i];
         initialize_layer(layer, layer->generate_number);
     }
 }
@@ -1068,7 +1068,7 @@ void free_layer(Layer *layer)
 void print_probs(Model *model, Activations *activations, InputData *data)
 {
     printf("Probabilities:\n");
-    float *probs = model->layers[model->size_layers - 1]->activations_output;
+    float *probs = model->layers[model->size_layers - 1].activations_output;
     float prob_sum = 0.0f;
     for (size_t idx_image = 0; idx_image < 2; idx_image++) {
         size_t start_sample = idx_image * SIZE_CLASSES;
@@ -1086,7 +1086,7 @@ void print_probs(Model *model, Activations *activations, InputData *data)
 float get_loss(Model *model, Activations *activations, InputData *data)
 {
     float loss = 0.0f;
-    float *probs = model->layers[model->size_layers - 1]->activations_output;
+    float *probs = model->layers[model->size_layers - 1].activations_output;
     for (size_t idx_image = 0; idx_image < data->nImages; idx_image++) {
         unsigned char label = data->labels[idx_image];
         size_t start_sample = idx_image * SIZE_CLASSES;
@@ -1111,7 +1111,7 @@ int arg_max(float *probs, size_t size)
 float get_accuracy(Model *model, Activations *activations, InputData *data)
 {
     int correct = 0;
-    float *probs = model->layers[model->size_layers - 1]->activations_output;
+    float *probs = model->layers[model->size_layers - 1].activations_output;
     for (size_t idx_image = 0; idx_image < data->nImages; idx_image++) {
         unsigned char label = data->labels[idx_image];
         size_t offset_probs_dist = idx_image * SIZE_CLASSES;
@@ -1128,7 +1128,7 @@ void initialise_activations(Activations * activations, Model *model, InputData *
 {
     activations->size_activations = 0;
     for (size_t i = 0; i < model->size_layers; i++) {
-        activations->size_activations += model->layers[i]->size_neurons;
+        activations->size_activations += model->layers[i].size_neurons;
     }
     activations->size_activations += data->rows * data->cols;
     activations->size_activations *= data->nImages;
@@ -1142,9 +1142,9 @@ void initialise_activations(Activations * activations, Model *model, InputData *
     float *outputs = activations->activations + data->rows * data->cols;
 
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
-        Layer *layer = model->layers[idx_layer];
-        layer->activations_input = idx_layer == 0 ? inputs : model->layers[idx_layer - 1]->activations_output;
-        layer->activations_output = idx_layer == 0? outputs : outputs + model->layers[idx_layer -1]->size_neurons * data->nImages;
+        Layer *layer = &model->layers[idx_layer];
+        layer->activations_input = idx_layer == 0 ? inputs : model->layers[idx_layer - 1].activations_output;
+        layer->activations_output = idx_layer == 0? outputs : outputs + model->layers[idx_layer -1].size_neurons * data->nImages;
     }
 }
 
@@ -1157,21 +1157,21 @@ void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
 {
     for (size_t i = 0; i < model->size_layers; i++) {
         // size of gradients for parameters
-        gradients->size_grads += model->layers[i]->size_inputs * model->layers[i]->size_neurons;
-        gradients->size_grads += model->layers[i]->size_neurons;
+        gradients->size_grads += model->layers[i].size_inputs * model->layers[i].size_neurons;
+        gradients->size_grads += model->layers[i].size_neurons;
         // size of gradients for activations
-        gradients->size_grads += model->layers[i]->size_neurons * data->nImages;
+        gradients->size_grads += model->layers[i].size_neurons * data->nImages;
     }
     gradients->grads = (float *)calloc(gradients->size_grads, sizeof(float));
     
     // connect gradients to layers
 
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
-        Layer *layer = model->layers[idx_layer];
-        layer->gradients_input = idx_layer == 0 ? NULL : model->layers[idx_layer - 1]->gradients_output;
+        Layer *layer = &model->layers[idx_layer];
+        layer->gradients_input = idx_layer == 0 ? NULL : model->layers[idx_layer - 1].gradients_output;
 
         layer->gradients_biases = idx_layer == 0 ? gradients->grads 
-        : model->layers[idx_layer -1]->gradients_output + model->layers[idx_layer -1]->size_neurons * data->nImages;
+        : model->layers[idx_layer -1].gradients_output + model->layers[idx_layer -1].size_neurons * data->nImages;
 
         layer->gradients_weights =  layer->gradients_biases + layer->size_neurons;
 
@@ -1205,20 +1205,13 @@ void initialise_mini_batch(InputData * training_data, InputData * mini_batch_dat
 }
 
 void free_model(Model * model){
-    free(model->layers[0]->weights);
-    for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++)
-    {
-        free(model->layers[idx_layer]);
-    }
-    free(model->layers);
+    printf("free the weights ....\n");
+    free(&model->layers[0].weights);
+    printf("weights freed\n");
 }
 
 
 int main() {
-    // test cf integration
-    int a = 5;
-    int b = 10;
-    printf("minimum of %d and %d: %d\n", a, b, min(a, b));
     // read input data
     InputData data_training, data_test, data_mini_batch = {0};
 
@@ -1240,7 +1233,9 @@ int main() {
 
 
     // create model
-    Model model = {0};
+    Model model;
+
+    printf("model layers = %zu\n", model.layers.size());
     
     // add layers to model
     add_layer(&model, data_test.cols * data_test.rows, SIZE_HIDDEN, relu_forward, relu_backward, generate_kaiming_number);
@@ -1249,7 +1244,7 @@ int main() {
 
     printf("Model created with %zu layers\n", model.size_layers);
     for (size_t i = 0; i < model.size_layers; i++) {
-        Layer *layer = model.layers[i];
+        Layer *layer = &model.layers[i];
         printf("Layer %zu: %zu inputs, %zu neurons\n", i, layer->size_inputs, layer->size_neurons);
     }
     printf("Number of parameters: %zu\n", model.size_parameters);
