@@ -63,23 +63,6 @@ typedef struct {
 
 
 
-// Function to concatenate two strings and return the new string
-char *concatStrings(const char *str1, const char *str2) {
-    // Allocate memory for the new string
-    char *newStr = (char *)malloc(strlen(str1) + strlen(str2) + 1);  // +1 for null terminator
-    if (newStr == NULL) {
-        printf("Memory allocation failed\n");
-        return NULL;  // Return NULL if memory allocation fails
-    }
-
-    // Copy the first string
-    strcpy(newStr, str1);
-
-    // Append the second string
-    strcat(newStr, str2);
-
-    return newStr;  // Return the concatenated string
-}
 
 void col_to_row_major(const float *src_matrix, float *dest_matrix, size_t num_rows, size_t num_cols){
     for (size_t r = 0; r < num_rows; r++){
