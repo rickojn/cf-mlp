@@ -1206,7 +1206,7 @@ void initialise_mini_batch(InputData * training_data, InputData * mini_batch_dat
 
 void free_model(Model * model){
     printf("free the weights ....\n");
-    free(&model->layers[0].weights);
+    free(model->layers[0].weights);
     printf("weights freed\n");
 }
 
