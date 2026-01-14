@@ -45,6 +45,7 @@ typedef struct Layer{
 
 struct Model {
     std::vector<Layer> layers = {};
+    std::vector<float> parameters = {};
     size_t size_layers = 0;
     size_t size_parameters = 0;
 };
@@ -1007,7 +1008,8 @@ void add_layer(Model *model, size_t size_inputs, size_t size_neurons, void(*acti
 
 void allocate_parameters_memory(Model *model)
 {
-    float *parameters = (float *)calloc(model->size_parameters, sizeof(float));
+    model->parameters.reserve(model->size_parameters);
+    float *parameters = model->parameters.data();
     size_t offset = 0;
     for (size_t i = 0; i < model->size_layers; i++) {
         Layer *layer = &model->layers[i];
@@ -1204,11 +1206,6 @@ void initialise_mini_batch(InputData * training_data, InputData * mini_batch_dat
     }
 }
 
-void free_model(Model * model){
-    printf("free the weights ....\n");
-    free(model->layers[0].weights);
-    printf("weights freed\n");
-}
 
 
 int main() {
@@ -1317,8 +1314,6 @@ int main() {
     free_gradients(&gradients);
     // free activations
     free_activations(&activations);
-    // free model parameters;
-    free_model(&model);
     // free input data
     free(data_training.images);
     free(data_training.labels);
