@@ -56,7 +56,7 @@ struct Activations {
 };
 
 struct Gradients {
-    float *grads;
+    std::vector<float> grads;
     size_t size_grads;
 };
 
@@ -1148,7 +1148,8 @@ void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
         // size of gradients for activations
         gradients->size_grads += model->layers[i].size_neurons * data->nImages;
     }
-    gradients->grads = (float *)calloc(gradients->size_grads, sizeof(float));
+    gradients->grads.reserve(gradients->size_grads);
+    float *grads = gradients->grads.data();
     
     // connect gradients to layers
 
@@ -1156,19 +1157,15 @@ void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
         Layer *layer = &model->layers[idx_layer];
         layer->gradients_input = idx_layer == 0 ? NULL : model->layers[idx_layer - 1].gradients_output;
 
-        layer->gradients_biases = idx_layer == 0 ? gradients->grads 
-        : model->layers[idx_layer -1].gradients_output + model->layers[idx_layer -1].size_neurons * data->nImages;
+        layer->gradients_biases = idx_layer == 0 ? gradients->grads.data()
+                                                  : model->layers[idx_layer - 1].gradients_output + model->layers[idx_layer - 1].size_neurons * data->nImages;
 
-        layer->gradients_weights =  layer->gradients_biases + layer->size_neurons;
+        layer->gradients_weights = layer->gradients_biases + layer->size_neurons;
 
         layer->gradients_output = layer->gradients_weights + layer->size_inputs * layer->size_neurons;
     }
 }
 
-void free_gradients(Gradients * gradients)
-{
-    free(gradients->grads);
-}
 
 void allocate_mini_batch_memory(InputData * mini_batch_data)
 {
@@ -1255,7 +1252,7 @@ int main() {
     // initialise activations and gradients for training
     // with mini batches
 
-    Gradients gradients = {0};
+    Gradients gradients;
     data_mini_batch.nImages = SIZE_MINI_BATCH;
     data_mini_batch.rows = data_training.rows;
     data_mini_batch.cols = data_training.cols;
@@ -1280,7 +1277,7 @@ int main() {
             printf("Training loss: %f\n", get_loss(&model, &activations, &data_mini_batch));
             printf("Training accuracy: %f\n", get_accuracy(&model, &activations, &data_mini_batch));
         }
-        memset(gradients.grads, 0, gradients.size_grads * sizeof(float));
+        memset(gradients.grads.data(), 0, gradients.size_grads * sizeof(float));
     }
 
  
@@ -1297,7 +1294,6 @@ int main() {
 
 
     free_mini_batch_memory(&data_mini_batch);
-    free_gradients(&gradients);
  
     // free input data
     free(data_training.images);
