@@ -50,15 +50,15 @@ struct Model {
     size_t size_parameters = 0;
 };
 
-typedef struct {
-    float *activations;
+struct Activations {
+    std::vector<float> activations;
     size_t size_activations;
-} Activations;
+};
 
-typedef struct {
+struct Gradients {
     float *grads;
     size_t size_grads;
-} Gradients;
+};
 
 
 
@@ -1107,24 +1107,28 @@ float get_accuracy(Model *model, Activations *activations, InputData *data)
     }
     return (float)correct / data->nImages;
 }
-
-
-void initialise_activations(Activations * activations, Model *model, InputData *data)
+void calculate_size(Activations *activations, Model *model, InputData *data)
 {
     activations->size_activations = 0;
-    for (size_t i = 0; i < model->size_layers; i++) {
+    for (size_t i = 0; i < model->size_layers; i++)
+    {
         activations->size_activations += model->layers[i].size_neurons;
     }
     activations->size_activations += data->rows * data->cols;
     activations->size_activations *= data->nImages;
-    activations->activations = (float *)calloc(activations->size_activations, sizeof(float));
+}
+
+
+void initialise_activations(Activations *activations, Model *model, InputData *data)
+{
+    activations->activations.reserve(activations->size_activations);
 
     for (size_t idx_pixel = 0; idx_pixel < data->nImages * data->rows * data->cols; idx_pixel++) {
         activations->activations[idx_pixel] = (float)data->images[idx_pixel] / 255.0f;
     }
 
-    float *inputs = activations->activations;
-    float *outputs = activations->activations + data->rows * data->cols;
+    float *inputs = activations->activations.data();
+    float *outputs = activations->activations.data() + data->rows * data->cols;
 
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
@@ -1133,10 +1137,7 @@ void initialise_activations(Activations * activations, Model *model, InputData *
     }
 }
 
-void free_activations(Activations * activations)
-{
-    free(activations->activations);
-}
+
 
 void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
 {
@@ -1241,12 +1242,13 @@ int main() {
     }
 
     // test loss before training
-    Activations activations = {0};
+    Activations activations;
+    calculate_size(&activations, &model, &data_test);
     initialise_activations(&activations, &model, &data_test);
     model_forward(&model, &activations, &data_test);
     printf("Test loss before training: %f\n", get_loss(&model, &activations, &data_test));
     printf("Test accuracy before training: %f\n", get_accuracy(&model, &activations, &data_test));
-    free_activations(&activations);
+
 
     // exit(0);
 
@@ -1268,6 +1270,7 @@ int main() {
     for (size_t epoch = 0; epoch < NUMBER_EPOCHS; epoch++) {
         printf("\nepoch: %zu\n", epoch);
         initialise_mini_batch(&data_training, &data_mini_batch);
+        calculate_size(&activations, &model, &data_mini_batch);
         initialise_activations(&activations, &model, &data_mini_batch);
         model_forward(&model, &activations, &data_mini_batch);
         // print_probs(&model, &activations, &data_mini_batch);
@@ -1280,7 +1283,7 @@ int main() {
         memset(gradients.grads, 0, gradients.size_grads * sizeof(float));
     }
 
-    free_activations(&activations);
+ 
 
     // save model
     save_model(&model, models_path.c_str());
@@ -1295,8 +1298,7 @@ int main() {
 
     free_mini_batch_memory(&data_mini_batch);
     free_gradients(&gradients);
-    // free activations
-    free_activations(&activations);
+ 
     // free input data
     free(data_training.images);
     free(data_training.labels);
