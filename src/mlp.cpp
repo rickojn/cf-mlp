@@ -1053,11 +1053,6 @@ void print_layer(Layer *layer)
     printf("\n");
 }
 
-void free_layer(Layer *layer)
-{
-    free(layer->weights);
-    free(layer->biases);
-}
 
 
 void print_probs(Model *model, Activations *activations, InputData *data)
