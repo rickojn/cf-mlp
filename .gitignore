@@ -43,3 +43,5 @@
 # CMake generated files
 build/
 models/
+local.sh
+build-debug/

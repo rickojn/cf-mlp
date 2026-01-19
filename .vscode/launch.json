@@ -5,11 +5,10 @@
       "type": "cppdbg",
       "request": "launch",
       "name": "Debug MLP Executable",
-      "program": "${workspaceFolder}/build/${input:mlpExecutable}",
+      "program": "${workspaceFolder}/build-debug/${input:mlpExecutable}",
       "args": [],
       "cwd": "${workspaceFolder}",
-      "stopAtEntry": false,
-      "preLaunchTask": "build-mlp"
+      "stopAtEntry": false
     }
   ],
   "inputs": [

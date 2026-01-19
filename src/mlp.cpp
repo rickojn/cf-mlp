@@ -777,8 +777,13 @@ void read_mnist_images(const char *filename, InputData *data) {
         exit(1);
     }
 
-    int temp;
-    file_read(&temp, sizeof(int), 1, file);
+    int mnist_magic_number;
+    file_read(&mnist_magic_number, sizeof(int), 1, file);
+    if (__builtin_bswap32(mnist_magic_number) != 2051) {
+        printf("Invalid MNIST image file magic number: %d\n", __builtin_bswap32(mnist_magic_number));
+        fclose(file);
+        exit(1);
+    }
     file_read(&data->nImages, sizeof(int), 1, file);
     data->nImages = __builtin_bswap32(data->nImages);
 
