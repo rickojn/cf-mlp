@@ -28,10 +28,10 @@
 
 
 
-typedef struct {
-    unsigned char *images, *labels;
+struct InputData {
+    std::vector<unsigned char> images, labels;
     int nImages, rows, cols;
-} InputData;
+};
 
 
 typedef struct Layer{
@@ -749,12 +749,12 @@ void update_layer(Layer *layer, float learning_rate)
 }
 
 
-void model_backward(Model *model, Activations *activations, InputData *data)
+void model_backward(Model *model, Activations *activations, InputData *input_data)
 {
     for (int idx_layer = model->size_layers - 1; idx_layer >= 0; idx_layer--) {
         Layer *layer = &model->layers[idx_layer];
-        layer->activation_backward(layer, data->labels, data->nImages);
-        matmul_backward(layer, data->nImages);
+        layer->activation_backward(layer, input_data->labels.data(), input_data->nImages);
+        matmul_backward(layer, input_data->nImages);
         // matmul_backward_separate(layer, data->nImages);
         // simd_matmul_backward(layer, data->nImages);
         printf("Layer %d weight grad [0][0] = %f\n", idx_layer, layer->gradients_weights[0]);
@@ -770,7 +770,7 @@ void file_read(void *ptr, size_t size, size_t count, FILE *file) {
     }
 }
 
-void read_mnist_images(const char *filename, InputData *data) {
+void read_mnist_images(const char *filename, InputData *input_data) {
     FILE *file = fopen(filename, "rb");
     if (!file) {
         printf("Could not open file %s\n", filename);
@@ -784,35 +784,40 @@ void read_mnist_images(const char *filename, InputData *data) {
         fclose(file);
         exit(1);
     }
-    file_read(&data->nImages, sizeof(int), 1, file);
-    data->nImages = __builtin_bswap32(data->nImages);
+    file_read(&input_data->nImages, sizeof(int), 1, file);
+    input_data->nImages = __builtin_bswap32(input_data->nImages);
 
-    file_read(&data->rows, sizeof(int), 1, file);
-    file_read(&data->cols, sizeof(int), 1, file);
-    data->rows = __builtin_bswap32(data->rows);
-    data->cols = __builtin_bswap32(data->cols);
-    printf("rows: %d, cols: %d\n", data->rows, data->cols);
+    file_read(&input_data->rows, sizeof(int), 1, file);
+    file_read(&input_data->cols, sizeof(int), 1, file);
+    input_data->rows = __builtin_bswap32(input_data->rows);
+    input_data->cols = __builtin_bswap32(input_data->cols);
+    printf("rows: %d, cols: %d\n", input_data->rows, input_data->cols);
 
-    data->images = (unsigned char *)malloc(data->nImages * data->rows * data->cols);
-    
-    file_read(data->images, sizeof(unsigned char), data->nImages * data->rows * data->cols, file);
+    input_data->images.reserve(input_data->nImages * input_data->rows * input_data->cols);
+
+    file_read(input_data->images.data(), sizeof(unsigned char), input_data->nImages * input_data->rows * input_data->cols, file);
     fclose(file);
 
 }
 
 
-void read_mnist_labels(const char *filename, unsigned char **labels, int *nLabels) {
+void read_mnist_labels(const char *filename, std::vector<unsigned char> *labels, int *nLabels) {
     FILE *file = fopen(filename, "rb");
     if (!file) exit(1);
 
-    int temp;
+    int mnist_magic_number;
 
-    file_read(&temp, sizeof(int), 1, file);
+    file_read(&mnist_magic_number, sizeof(int), 1, file);
+    if (__builtin_bswap32(mnist_magic_number) != 2049) {
+        printf("Invalid MNIST label file magic number: %d\n", __builtin_bswap32(mnist_magic_number));
+        fclose(file);
+        exit(1);
+    }
     file_read(nLabels, sizeof(int), 1, file);
     *nLabels = __builtin_bswap32(*nLabels);
 
-    *labels = (unsigned char *)malloc((*nLabels) * sizeof(unsigned char));
-    file_read(*labels, sizeof(unsigned char), *nLabels, file);
+    labels->resize(*nLabels);
+    file_read(labels->data(), sizeof(unsigned char), *nLabels, file);
     fclose(file);
 }
 
@@ -1124,21 +1129,21 @@ void calculate_size(Activations *activations, Model *model, InputData *data)
 }
 
 
-void initialise_activations(Activations *activations, Model *model, InputData *data)
+void initialise_activations(Activations *activations, Model *model, InputData *input_data)
 {
     activations->activations.reserve(activations->size_activations);
 
-    for (size_t idx_pixel = 0; idx_pixel < data->nImages * data->rows * data->cols; idx_pixel++) {
-        activations->activations[idx_pixel] = (float)data->images[idx_pixel] / 255.0f;
+    for (size_t idx_pixel = 0; idx_pixel < input_data->nImages * input_data->rows * input_data->cols; idx_pixel++) {
+        activations->activations[idx_pixel] = (float)input_data->images[idx_pixel] / 255.0f;
     }
 
     float *inputs = activations->activations.data();
-    float *outputs = activations->activations.data() + data->rows * data->cols;
+    float *outputs = activations->activations.data() + input_data->rows * input_data->cols;
 
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
         layer->activations_input = idx_layer == 0 ? inputs : model->layers[idx_layer - 1].activations_output;
-        layer->activations_output = idx_layer == 0? outputs : outputs + model->layers[idx_layer -1].size_neurons * data->nImages;
+        layer->activations_output = idx_layer == 0? outputs : outputs + model->layers[idx_layer -1].size_neurons * input_data->nImages;
     }
 }
 
@@ -1174,15 +1179,10 @@ void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
 
 void allocate_mini_batch_memory(InputData * mini_batch_data)
 {
-    mini_batch_data->images = (unsigned char *)calloc(mini_batch_data->nImages * mini_batch_data->rows * mini_batch_data->cols, sizeof(unsigned char));
-    mini_batch_data->labels = (unsigned char *)calloc(mini_batch_data->nImages, sizeof(unsigned char));
+    mini_batch_data->images.reserve(mini_batch_data->nImages * mini_batch_data->rows * mini_batch_data->cols);
+    mini_batch_data->labels.reserve(mini_batch_data->nImages);
 }
 
-void free_mini_batch_memory(InputData * mini_batch_data)
-{
-    free(mini_batch_data->images);
-    free(mini_batch_data->labels);
-}
 
 void initialise_mini_batch(InputData * training_data, InputData * mini_batch_data){
     for (size_t idx_mini_batch_image = 0; idx_mini_batch_image < mini_batch_data->nImages; idx_mini_batch_image++) {
@@ -1196,7 +1196,7 @@ void initialise_mini_batch(InputData * training_data, InputData * mini_batch_dat
 
 int main() {
     // read input data
-    InputData data_training, data_test, data_mini_batch = {0};
+    InputData data_training, data_test, data_mini_batch;
 
     std::string data_path_str = std::getenv("DATA_PATH");
     std::string models_path = std::getenv("MODELS_PATH");
@@ -1295,16 +1295,7 @@ int main() {
     model_forward(&model, &activations, &data_test);
     printf("Test loss after training: %f\n", get_loss(&model, &activations, &data_test));
     printf("Test accuracy after training: %f\n", get_accuracy(&model, &activations, &data_test));
-
-
-
-    free_mini_batch_memory(&data_mini_batch);
  
-    // free input data
-    free(data_training.images);
-    free(data_training.labels);
-    free(data_test.images);
-    free(data_test.labels);
-
+    
     return 0;
 }
