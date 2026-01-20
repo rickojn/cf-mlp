@@ -10,10 +10,10 @@ Number of parameters: 6370
 Batch size: 16
 Error opening directory /home/rickojn/coding/cf-mlp/models/No model found, training from scratch
 relu forward ...
-Time spent in relu_forward: 0.000161 seconds
+Time spent in relu_forward: 0.000147 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000579 seconds
+Time spent in softmax_forward: 0.000680 seconds
 Test loss before training: 2.322339
 Test accuracy before training: 0.099200
 
@@ -22,7 +22,7 @@ training loop:
 
 epoch: 0
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -32,9 +32,9 @@ matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.009273
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000000 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000072 seconds
+Time spent in matmul_backward: 0.000058 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -43,7 +43,7 @@ Training accuracy: 0.125000
 
 epoch: 1
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -55,7 +55,7 @@ Layer 1 weight grad [0][0] = 0.004433
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000059 seconds
+Time spent in matmul_backward: 0.000058 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -64,7 +64,7 @@ Training accuracy: 0.312500
 
 epoch: 2
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -76,7 +76,7 @@ Layer 1 weight grad [0][0] = 0.008667
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000058 seconds
+Time spent in matmul_backward: 0.000061 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -85,7 +85,7 @@ Training accuracy: 0.125000
 
 epoch: 3
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -97,7 +97,7 @@ Layer 1 weight grad [0][0] = 0.005851
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000058 seconds
+Time spent in matmul_backward: 0.000065 seconds
 Layer 0 weight grad [0][0] = 0.002156
 
 
@@ -106,7 +106,7 @@ Training accuracy: 0.187500
 
 epoch: 4
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -127,7 +127,7 @@ Training accuracy: 0.062500
 
 epoch: 5
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -139,7 +139,7 @@ Layer 1 weight grad [0][0] = 0.006031
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000058 seconds
+Time spent in matmul_backward: 0.000061 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -148,19 +148,19 @@ Training accuracy: 0.125000
 
 epoch: 6
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004429
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000097 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -176,12 +176,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000016 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004435
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000082 seconds
+Time spent in matmul_backward: 0.000065 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -190,19 +190,19 @@ Training accuracy: 0.000000
 
 epoch: 8
 relu forward ...
-Time spent in relu_forward: 0.000003 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000003 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000002 seconds
+Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000004 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.009270
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000000 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000080 seconds
+Time spent in matmul_backward: 0.000067 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -211,14 +211,14 @@ Training accuracy: 0.125000
 
 epoch: 9
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = -0.044344
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
@@ -232,10 +232,10 @@ Training accuracy: 0.125000
 
 epoch: 10
 relu forward ...
-Time spent in relu_forward: 0.000005 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000003 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -244,7 +244,7 @@ Layer 1 weight grad [0][0] = 0.004442
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000087 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -253,19 +253,19 @@ Training accuracy: 0.062500
 
 epoch: 11
 relu forward ...
-Time spent in relu_forward: 0.000003 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000006 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000004 seconds
+Time spent in matmul_backward: 0.000006 seconds
 Layer 1 weight grad [0][0] = 0.004450
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000080 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -274,19 +274,19 @@ Training accuracy: 0.000000
 
 epoch: 12
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004619
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000106 seconds
+Time spent in matmul_backward: 0.000113 seconds
 Layer 0 weight grad [0][0] = 0.000785
 
 
@@ -295,19 +295,19 @@ Training accuracy: 0.062500
 
 epoch: 13
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000003 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000004 seconds
+Time spent in softmax_forward: 0.000005 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000002 seconds
+Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.008985
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000078 seconds
+Time spent in matmul_backward: 0.000121 seconds
 Layer 0 weight grad [0][0] = -0.013179
 
 
@@ -316,19 +316,19 @@ Training accuracy: 0.250000
 
 epoch: 14
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000004 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000005 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000002 seconds
+Time spent in loss_softmax_backward: 0.000003 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.005656
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000094 seconds
+Time spent in matmul_backward: 0.000089 seconds
 Layer 0 weight grad [0][0] = 0.000275
 
 
@@ -344,12 +344,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.004434
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -358,19 +358,19 @@ Training accuracy: 0.125000
 
 epoch: 16
 relu forward ...
-Time spent in relu_forward: 0.000003 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000001 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004428
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000004 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000084 seconds
+Time spent in matmul_backward: 0.000066 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -391,7 +391,7 @@ Layer 1 weight grad [0][0] = -0.044348
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000077 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -403,7 +403,7 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -412,7 +412,7 @@ Layer 1 weight grad [0][0] = -0.044341
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000059 seconds
+Time spent in matmul_backward: 0.000066 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -433,7 +433,7 @@ Layer 1 weight grad [0][0] = 0.004440
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000075 seconds
+Time spent in matmul_backward: 0.000716 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -445,16 +445,16 @@ relu forward ...
 Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000002 seconds
+Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004440
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000091 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -463,7 +463,7 @@ Training accuracy: 0.125000
 
 epoch: 21
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -475,7 +475,7 @@ Layer 1 weight grad [0][0] = 0.009271
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -496,7 +496,7 @@ Layer 1 weight grad [0][0] = -0.041336
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000076 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -505,19 +505,19 @@ Training accuracy: 0.062500
 
 epoch: 23
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000005 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000002 seconds
+Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000004 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.007186
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000080 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -526,19 +526,19 @@ Training accuracy: 0.062500
 
 epoch: 24
 relu forward ...
-Time spent in relu_forward: 0.000019 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000007 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004445
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000117 seconds
+Time spent in matmul_backward: 0.000067 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -546,6 +546,69 @@ Training loss: 2.258586
 Training accuracy: 0.125000
 
 epoch: 25
+relu forward ...
+Time spent in relu_forward: 0.000003 seconds
+remainder_m = 0, remainder_n = 2
+softmax forward ...
+Time spent in softmax_forward: 0.000003 seconds
+loss softmax backward ...
+Time spent in loss_softmax_backward: 0.000002 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000004 seconds
+Layer 1 weight grad [0][0] = 0.004446
+relu backward ...
+Time spent in relu_backward: 0.000001 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000119 seconds
+Layer 0 weight grad [0][0] = 0.000000
+
+
+Training loss: 2.280102
+Training accuracy: 0.000000
+
+epoch: 26
+relu forward ...
+Time spent in relu_forward: 0.000004 seconds
+remainder_m = 0, remainder_n = 2
+softmax forward ...
+Time spent in softmax_forward: 0.000004 seconds
+loss softmax backward ...
+Time spent in loss_softmax_backward: 0.000001 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000004 seconds
+Layer 1 weight grad [0][0] = 0.007910
+relu backward ...
+Time spent in relu_backward: 0.000001 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000129 seconds
+Layer 0 weight grad [0][0] = 0.002408
+
+
+Training loss: 2.331263
+Training accuracy: 0.062500
+
+epoch: 27
+relu forward ...
+Time spent in relu_forward: 0.000003 seconds
+remainder_m = 0, remainder_n = 2
+softmax forward ...
+Time spent in softmax_forward: 0.000002 seconds
+loss softmax backward ...
+Time spent in loss_softmax_backward: 0.000001 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000002 seconds
+Layer 1 weight grad [0][0] = 0.005189
+relu backward ...
+Time spent in relu_backward: 0.000001 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000092 seconds
+Layer 0 weight grad [0][0] = 0.000000
+
+
+Training loss: 2.249856
+Training accuracy: 0.187500
+
+epoch: 28
 relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
@@ -555,74 +618,11 @@ loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
-Layer 1 weight grad [0][0] = 0.004446
-relu backward ...
-Time spent in relu_backward: 0.000001 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000085 seconds
-Layer 0 weight grad [0][0] = 0.000000
-
-
-Training loss: 2.280102
-Training accuracy: 0.000000
-
-epoch: 26
-relu forward ...
-Time spent in relu_forward: 0.000002 seconds
-remainder_m = 0, remainder_n = 2
-softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
-loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
-Layer 1 weight grad [0][0] = 0.007910
-relu backward ...
-Time spent in relu_backward: 0.000001 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
-Layer 0 weight grad [0][0] = 0.002408
-
-
-Training loss: 2.331263
-Training accuracy: 0.062500
-
-epoch: 27
-relu forward ...
-Time spent in relu_forward: 0.000002 seconds
-remainder_m = 0, remainder_n = 2
-softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
-loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
-Layer 1 weight grad [0][0] = 0.005189
-relu backward ...
-Time spent in relu_backward: 0.000001 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
-Layer 0 weight grad [0][0] = 0.000000
-
-
-Training loss: 2.249856
-Training accuracy: 0.187500
-
-epoch: 28
-relu forward ...
-Time spent in relu_forward: 0.000002 seconds
-remainder_m = 0, remainder_n = 2
-softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
-loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004447
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -638,12 +638,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.004447
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -655,7 +655,7 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -673,7 +673,7 @@ Training accuracy: 0.125000
 
 epoch: 31
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -706,7 +706,7 @@ Layer 1 weight grad [0][0] = 0.004448
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000066 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -715,7 +715,7 @@ Training accuracy: 0.125000
 
 epoch: 33
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -736,7 +736,7 @@ Training accuracy: 0.062500
 
 epoch: 34
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -748,7 +748,7 @@ Layer 1 weight grad [0][0] = 0.004433
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000085 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -769,7 +769,7 @@ Layer 1 weight grad [0][0] = 0.007107
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000085 seconds
+Time spent in matmul_backward: 0.000064 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -790,7 +790,7 @@ Layer 1 weight grad [0][0] = 0.004423
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000077 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -799,19 +799,19 @@ Training accuracy: 0.062500
 
 epoch: 37
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000005 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000004 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.005489
 relu backward ...
-Time spent in relu_backward: 0.000002 seconds
+Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000075 seconds
+Time spent in matmul_backward: 0.000067 seconds
 Layer 0 weight grad [0][0] = -0.001274
 
 
@@ -820,19 +820,19 @@ Training accuracy: 0.250000
 
 epoch: 38
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000003 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000006 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000002 seconds
+Time spent in loss_softmax_backward: 0.000003 seconds
 matmul backward ...
 Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004436
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000085 seconds
+Time spent in matmul_backward: 0.000094 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -841,19 +841,19 @@ Training accuracy: 0.000000
 
 epoch: 39
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.006965
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000068 seconds
+Time spent in matmul_backward: 0.000108 seconds
 Layer 0 weight grad [0][0] = -0.008564
 
 
@@ -865,16 +865,16 @@ relu forward ...
 Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004425
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000090 seconds
+Time spent in matmul_backward: 0.000080 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -883,10 +883,10 @@ Training accuracy: 0.062500
 
 epoch: 41
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000005 seconds
+Time spent in softmax_forward: 0.000006 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -895,7 +895,7 @@ Layer 1 weight grad [0][0] = 0.004422
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000074 seconds
+Time spent in matmul_backward: 0.000093 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -907,7 +907,7 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000001 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -925,19 +925,19 @@ Training accuracy: 0.125000
 
 epoch: 43
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000003 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000004 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004430
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000076 seconds
+Time spent in matmul_backward: 0.000086 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -946,19 +946,19 @@ Training accuracy: 0.000000
 
 epoch: 44
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004435
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000067 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -979,7 +979,7 @@ Layer 1 weight grad [0][0] = 0.004434
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000111 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -988,19 +988,19 @@ Training accuracy: 0.125000
 
 epoch: 46
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000003 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000006 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.009657
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000090 seconds
 Layer 0 weight grad [0][0] = -0.007763
 
 
@@ -1009,19 +1009,19 @@ Training accuracy: 0.250000
 
 epoch: 47
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000004 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000002 seconds
+Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.004431
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000087 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1030,10 +1030,10 @@ Training accuracy: 0.000000
 
 epoch: 48
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -1042,7 +1042,7 @@ Layer 1 weight grad [0][0] = 0.004428
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000068 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1051,7 +1051,7 @@ Training accuracy: 0.062500
 
 epoch: 49
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -1063,7 +1063,7 @@ Layer 1 weight grad [0][0] = 0.004425
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000064 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1082,9 +1082,9 @@ matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004415
 relu backward ...
-Time spent in relu_backward: 0.000000 seconds
+Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000068 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1093,7 +1093,7 @@ Training accuracy: 0.000000
 
 epoch: 51
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000001 seconds
@@ -1105,7 +1105,7 @@ Layer 1 weight grad [0][0] = 0.004413
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000065 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1114,7 +1114,7 @@ Training accuracy: 0.000000
 
 epoch: 52
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -1126,7 +1126,7 @@ Layer 1 weight grad [0][0] = 0.006265
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000118 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1135,19 +1135,19 @@ Training accuracy: 0.125000
 
 epoch: 53
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000005 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = -0.025580
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000125 seconds
 Layer 0 weight grad [0][0] = 0.007049
 
 
@@ -1156,19 +1156,19 @@ Training accuracy: 0.000000
 
 epoch: 54
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000004 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000004 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004412
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000090 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1180,16 +1180,16 @@ relu forward ...
 Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000006 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.004402
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000003 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000107 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1210,7 +1210,7 @@ Layer 1 weight grad [0][0] = 0.004399
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000077 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1219,10 +1219,10 @@ Training accuracy: 0.000000
 
 epoch: 57
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000003 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -1231,7 +1231,7 @@ Layer 1 weight grad [0][0] = 0.004398
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000109 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1240,19 +1240,19 @@ Training accuracy: 0.187500
 
 epoch: 58
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000025 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000005 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004398
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000067 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1268,7 +1268,7 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.008681
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
@@ -1289,12 +1289,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.008883
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000092 seconds
 Layer 0 weight grad [0][0] = -0.020880
 
 
@@ -1310,12 +1310,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.004396
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1327,7 +1327,7 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -1336,7 +1336,7 @@ Layer 1 weight grad [0][0] = 0.004410
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000095 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1373,12 +1373,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = -0.044364
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1387,19 +1387,19 @@ Training accuracy: 0.062500
 
 epoch: 65
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.004429
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1415,12 +1415,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000006 seconds
 Layer 1 weight grad [0][0] = 0.004427
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1429,19 +1429,19 @@ Training accuracy: 0.062500
 
 epoch: 67
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004574
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000073 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1449,27 +1449,6 @@ Training loss: 2.271899
 Training accuracy: 0.125000
 
 epoch: 68
-relu forward ...
-Time spent in relu_forward: 0.000001 seconds
-remainder_m = 0, remainder_n = 2
-softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
-loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
-Layer 1 weight grad [0][0] = 0.004427
-relu backward ...
-Time spent in relu_backward: 0.000000 seconds
-matmul backward ...
-Time spent in matmul_backward: 0.000077 seconds
-Layer 0 weight grad [0][0] = 0.000000
-
-
-Training loss: 2.376352
-Training accuracy: 0.000000
-
-epoch: 69
 relu forward ...
 Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
@@ -1479,11 +1458,32 @@ loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
+Layer 1 weight grad [0][0] = 0.004427
+relu backward ...
+Time spent in relu_backward: 0.000001 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000085 seconds
+Layer 0 weight grad [0][0] = 0.000000
+
+
+Training loss: 2.376352
+Training accuracy: 0.000000
+
+epoch: 69
+relu forward ...
+Time spent in relu_forward: 0.000001 seconds
+remainder_m = 0, remainder_n = 2
+softmax forward ...
+Time spent in softmax_forward: 0.000006 seconds
+loss softmax backward ...
+Time spent in loss_softmax_backward: 0.000001 seconds
+matmul backward ...
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004426
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000083 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1492,7 +1492,7 @@ Training accuracy: 0.000000
 
 epoch: 70
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -1502,9 +1502,9 @@ matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004421
 relu backward ...
-Time spent in relu_backward: 0.000000 seconds
+Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000110 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1513,19 +1513,19 @@ Training accuracy: 0.000000
 
 epoch: 71
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000005 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004414
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000090 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1539,14 +1539,14 @@ remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.009195
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000065 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1565,9 +1565,9 @@ matmul backward ...
 Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = -0.044366
 relu backward ...
-Time spent in relu_backward: 0.000000 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000087 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1576,19 +1576,19 @@ Training accuracy: 0.312500
 
 epoch: 74
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004431
 relu backward ...
-Time spent in relu_backward: 0.000000 seconds
+Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000094 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1597,7 +1597,7 @@ Training accuracy: 0.125000
 
 epoch: 75
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -1630,7 +1630,7 @@ Layer 1 weight grad [0][0] = 0.004428
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000092 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1639,7 +1639,7 @@ Training accuracy: 0.062500
 
 epoch: 77
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -1651,7 +1651,7 @@ Layer 1 weight grad [0][0] = 0.008123
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000065 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1672,7 +1672,7 @@ Layer 1 weight grad [0][0] = 0.004419
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000083 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1693,7 +1693,7 @@ Layer 1 weight grad [0][0] = 0.004419
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000081 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1702,19 +1702,19 @@ Training accuracy: 0.062500
 
 epoch: 80
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.004411
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1726,7 +1726,7 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -1735,7 +1735,7 @@ Layer 1 weight grad [0][0] = 0.006459
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1756,7 +1756,7 @@ Layer 1 weight grad [0][0] = 0.010266
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000066 seconds
 Layer 0 weight grad [0][0] = 0.001788
 
 
@@ -1770,14 +1770,14 @@ remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.007649
 relu backward ...
-Time spent in relu_backward: 0.000002 seconds
+Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000087 seconds
+Time spent in matmul_backward: 0.000138 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1789,16 +1789,16 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000004 seconds
 Layer 1 weight grad [0][0] = 0.004440
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000102 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1807,19 +1807,19 @@ Training accuracy: 0.062500
 
 epoch: 85
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000001 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000003 seconds
 Layer 1 weight grad [0][0] = 0.004436
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000090 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1840,7 +1840,7 @@ Layer 1 weight grad [0][0] = 0.004433
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1861,7 +1861,7 @@ Layer 1 weight grad [0][0] = 0.013133
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000062 seconds
 Layer 0 weight grad [0][0] = -0.026521
 
 
@@ -1882,7 +1882,7 @@ Layer 1 weight grad [0][0] = 0.004421
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1891,7 +1891,7 @@ Training accuracy: 0.187500
 
 epoch: 89
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -1903,7 +1903,7 @@ Layer 1 weight grad [0][0] = 0.004417
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000065 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1912,19 +1912,19 @@ Training accuracy: 0.125000
 
 epoch: 90
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
-Time spent in loss_softmax_backward: 0.000001 seconds
+Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.007547
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000066 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1933,19 +1933,19 @@ Training accuracy: 0.250000
 
 epoch: 91
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = -0.044357
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000094 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1954,10 +1954,10 @@ Training accuracy: 0.125000
 
 epoch: 92
 relu forward ...
-Time spent in relu_forward: 0.000003 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000003 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -1966,7 +1966,7 @@ Layer 1 weight grad [0][0] = 0.005583
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000063 seconds
+Time spent in matmul_backward: 0.000065 seconds
 Layer 0 weight grad [0][0] = 0.005526
 
 
@@ -1982,12 +1982,12 @@ Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000002 seconds
 Layer 1 weight grad [0][0] = 0.004423
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000066 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -1996,19 +1996,19 @@ Training accuracy: 0.125000
 
 epoch: 94
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000002 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.004423
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -2020,16 +2020,16 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000003 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = -0.040174
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000116 seconds
 Layer 0 weight grad [0][0] = -0.025520
 
 
@@ -2038,10 +2038,10 @@ Training accuracy: 0.125000
 
 epoch: 96
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000002 seconds
+Time spent in softmax_forward: 0.000004 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
@@ -2050,7 +2050,7 @@ Layer 1 weight grad [0][0] = 0.007092
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -2062,7 +2062,7 @@ relu forward ...
 Time spent in relu_forward: 0.000001 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000003 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000002 seconds
 matmul backward ...
@@ -2071,7 +2071,7 @@ Layer 1 weight grad [0][0] = 0.004430
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -2080,19 +2080,19 @@ Training accuracy: 0.000000
 
 epoch: 98
 relu forward ...
-Time spent in relu_forward: 0.000001 seconds
+Time spent in relu_forward: 0.000002 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000001 seconds
+Time spent in softmax_forward: 0.000002 seconds
 loss softmax backward ...
 Time spent in loss_softmax_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000003 seconds
+Time spent in matmul_backward: 0.000005 seconds
 Layer 1 weight grad [0][0] = 0.006323
 relu backward ...
-Time spent in relu_backward: 0.000001 seconds
+Time spent in relu_backward: 0.000002 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000083 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
@@ -2101,7 +2101,7 @@ Training accuracy: 0.125000
 
 epoch: 99
 relu forward ...
-Time spent in relu_forward: 0.000002 seconds
+Time spent in relu_forward: 0.000003 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
 Time spent in softmax_forward: 0.000002 seconds
@@ -2113,18 +2113,18 @@ Layer 1 weight grad [0][0] = 0.004412
 relu backward ...
 Time spent in relu_backward: 0.000001 seconds
 matmul backward ...
-Time spent in matmul_backward: 0.000064 seconds
+Time spent in matmul_backward: 0.000063 seconds
 Layer 0 weight grad [0][0] = 0.000000
 
 
 Training loss: 2.305476
 Training accuracy: 0.250000
 
-saving in file: /home/rickojn/coding/cf-mlp/models/model_20260120_222603_h8.mdl
+saving in file: /home/rickojn/coding/cf-mlp/models/model_20260120_224820_h8.mdl
 Error opening file /home/rickojn/coding/cf-mlp/models/relu forward ...
-Time spent in relu_forward: 0.000148 seconds
+Time spent in relu_forward: 0.000160 seconds
 remainder_m = 0, remainder_n = 2
 softmax forward ...
-Time spent in softmax_forward: 0.000560 seconds
+Time spent in softmax_forward: 0.000612 seconds
 Test loss after training: 2.323092
 Test accuracy after training: 0.098600
