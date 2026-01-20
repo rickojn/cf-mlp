@@ -92,147 +92,8 @@ void row_to_col_major(const float *src_matrix, float *dest_matrix, size_t num_ro
 
 
 
-void matmul_forward(Layer *layer, float *input, float *output, size_t size_batch)
-{
-    
-    printf("mat mul naive ....\n");
-    clock_t begin, end;
-    double time_spent;
-    begin = clock();
-
-    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++){
-            size_t offset_activation = idx_sample * layer->size_neurons + idx_neuron;
-            layer->activations_output[offset_activation] = layer->biases[idx_neuron];
-        }
-    }
-
-    for (size_t idx_image = 0; idx_image < size_batch; idx_image++) {
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++) {
-            // output[idx_image * layer->size_neurons + idx_neuron] = layer->biases[idx_neuron];
-            for (size_t idx_input = 0; idx_input < layer->size_inputs; idx_input++) {
-                output[idx_image * layer->size_neurons + idx_neuron] +=  // [idx_image][idx_neuron] row major
-                input[idx_image * layer->size_inputs + idx_input] // [idx_image][idx_input] row major
-                 * layer->weights[idx_neuron * layer->size_inputs + idx_input]; // [idx_input][idx_neuron] col major
-            }
-        }
-    }
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in matmul_forward: %f seconds\n", time_spent);
-} 
 
 
-     /*
-     
-     |a a| |a a|   |b b| b b
-     |a a| |a a|   |b b| b b
-     --    --      --      
-     a a   a a    |b b| b b
-     a a   a a    |b b| b b
-     
-     
-     |c c| c c
-     |c c| c c
-     --
-     c c  c c
-     c c  c c
-
-
-     
-      a a   a a     b b |b b|
-      a a   a a     b b |b b|
-                         - -
-     |a a| |a a|    b b |b b|
-     |a a| |a a|    b b |b b|
-
-
-       c c  c c
-       c c  c c
-       c c  |c c|
-       c c  |c c|
-
-       
-
-
-     */
-
-
-void matmul_forward_tiling(Layer *layer, float *input, float *output, size_t size_batch)
-{
-    clock_t begin, end;
-    double time_spent;
-    begin = clock();
-
-    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++) {
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++) {
-            layer->activations_output[idx_sample * layer->size_neurons + idx_neuron] = layer->biases[idx_neuron];
-        }
-     }
-
-    for (size_t idx_tile_row_start = 0; idx_tile_row_start < size_batch; idx_tile_row_start += SIZE_TILE){
-        for (size_t idx_tile_col_start = 0; idx_tile_col_start < layer->size_neurons; idx_tile_col_start += SIZE_TILE){
-            for (size_t idx_tile_inner_start = 0; idx_tile_inner_start < layer->size_inputs; idx_tile_inner_start += SIZE_TILE){
-
-                for (size_t idx_row_output = idx_tile_row_start; idx_row_output < idx_tile_row_start + SIZE_TILE && idx_row_output < size_batch; idx_row_output++){
-                    for (size_t idx_col_output = idx_tile_col_start; idx_col_output <idx_tile_col_start + SIZE_TILE && idx_col_output < layer->size_neurons; idx_col_output++){
-                        float dot_product = 0;
-                        for (size_t idx_inner = idx_tile_inner_start; idx_inner < idx_tile_inner_start + SIZE_TILE && idx_inner < layer->size_inputs; idx_inner++){
-                            dot_product += layer->activations_input[idx_row_output * layer->size_neurons + idx_inner] * 
-                            layer->weights[idx_col_output * layer->size_neurons + idx_inner];
-                        }
-                        layer->activations_output[idx_row_output * layer->size_neurons + idx_col_output] += dot_product;
-                    }
-                }
-
-            }
-        }
-    }
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in matmul_tiling_forward: %f seconds\n", time_spent);
-
-}
-
-
-void matmul_forward_outer_product(Layer * layer, size_t size_batch){
-    printf("matmul outer product\n");
-    clock_t begin, end;
-    double time_spent;
-    begin = clock();
-
-    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++){
-            size_t offset_activation = idx_sample * layer->size_neurons + idx_neuron;
-            layer->activations_output[offset_activation] = layer->biases[idx_neuron];
-        }
-    }
-
-    for (size_t start_m_tile = 0; start_m_tile < size_batch; start_m_tile += SIZE_TILE){
-        for (size_t start_n_tile = 0; start_n_tile < layer->size_neurons; start_n_tile += SIZE_TILE){
-            for (size_t start_k_tile = 0; start_k_tile < layer->size_inputs; start_k_tile += SIZE_TILE){
-
-                for (size_t idx_m = start_m_tile; idx_m < start_m_tile + SIZE_TILE && idx_m < size_batch; idx_m++){
-                    for (size_t idx_n = start_n_tile; idx_n < start_n_tile + SIZE_TILE && idx_n < layer->size_neurons; idx_n ++){
-                        float sum = 0.0f;
-                        size_t base_a = idx_m * layer->size_inputs;
-                        size_t base_b = idx_n * layer->size_inputs;
-                        for (size_t idx_k = 0; idx_k < start_k_tile + SIZE_TILE && idx_k < layer->size_inputs; idx_k++){
-                            sum += layer->activations_input[base_a + idx_k] * layer->weights[base_b + idx_k];
-                        }
-                        layer->activations_output[idx_m * layer->size_neurons + idx_n] += sum;
-                    }
-                }
-
-            }
-        }
-    }
-
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in matmul_outer_product: %f seconds\n", time_spent);
-
-}
 
 /*
 
@@ -454,40 +315,6 @@ void simd_matmul_b(const float *A, const float *B, float *C, size_t M, size_t N,
     }
 }
 
-void simd_matmul_forward(Layer * layer, size_t size_batch){
-    printf("matmul simd ....\n");
-    clock_t begin, end;
-    double time_spent;
-    begin = clock();
-
-    float *A = (float *)calloc(size_batch * layer->size_inputs, sizeof(float));
-    float *B = (float *)calloc(layer->size_inputs * layer->size_neurons, sizeof(float));
-    float *C = (float *)calloc(size_batch * layer->size_neurons, sizeof(float));
-
-    
-    memcpy(A, layer->activations_input, size_batch * layer->size_inputs * sizeof(float));
-    memcpy(B, layer->weights, layer->size_inputs * layer->size_neurons * sizeof(float));
-    
-    row_to_col_major(layer->activations_input, A, size_batch, layer->size_inputs);
-    col_to_row_major(layer->weights, B, layer->size_inputs, layer->size_neurons);
-    row_to_col_major(layer->activations_output, C, size_batch, layer->size_neurons);
-
-    simd_matmul(A, B, C, size_batch, layer->size_neurons, layer->size_inputs);
-    col_to_row_major(C, layer->activations_output, size_batch, layer->size_neurons);
-    free(A);
-    free(B);
-    free(C);
-    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++){
-            size_t offset_activation = idx_sample * layer->size_neurons + idx_neuron;
-            layer->activations_output[offset_activation] += layer->biases[idx_neuron];
-        }
-     }
-
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in matmul_simd_forward: %f seconds\n", time_spent);
-}
 
 
 void relu_forward(Layer *layer, size_t size_batch)
@@ -540,10 +367,7 @@ void model_forward(Model *model, Activations *activations, InputData *data)
 {
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
-        // matmul_forward(layer, layer->activations_input, layer->activations_output, data->nImages);
-        // matmul_forward_tiling(layer, layer->activations_input, layer->activations_output, data->nImages);
-        // matmul_forward_outer_product(layer, data->nImages);
-        simd_matmul_forward(layer, data->nImages);
+        simd_matmul(layer->activations_input, layer->weights, layer->activations_output, data->nImages, layer->size_neurons, layer->size_inputs);
         layer->activation_forward(layer, data->nImages);
     }
 }
