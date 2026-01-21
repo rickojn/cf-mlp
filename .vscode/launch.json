@@ -8,7 +8,17 @@
       "program": "${workspaceFolder}/build-debug/${input:mlpExecutable}",
       "args": [],
       "cwd": "${workspaceFolder}",
-      "stopAtEntry": false
+      "stopAtEntry": false,
+      "environment": [
+        {
+          "name": "DATA_PATH",
+          "value": "/home/rickojn/coding/mnist-data/"
+        },
+        {
+          "name": "MODELS_PATH",
+          "value": "/home/rickojn/coding/mlp-models/"
+        } 
+      ],
     }
   ],
   "inputs": [
