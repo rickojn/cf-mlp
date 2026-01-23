@@ -445,9 +445,11 @@ void model_backward(Model *model, Activations *activations, InputData *input_dat
     for (int idx_layer = model->size_layers - 1; idx_layer >= 0; idx_layer--) {
         Layer *layer = &model->layers[idx_layer];
         layer->activation_backward(layer, input_data->labels.data(), input_data->nImages);
-        matmul_backward(layer, input_data->nImages);
+        // matmul_backward(layer, input_data->nImages);
         // matmul_backward_separate(layer, data->nImages);
         // simd_matmul_backward(layer, data->nImages);
+        simd_matmul_backwards(layer->gradients_output, layer->weights, layer->activations_input, layer->gradients_weights, layer->gradients_input, 
+            input_data->nImages, layer->size_neurons, layer->size_inputs);
         printf("Layer %d weight grad [0][0] = %f\n", idx_layer, layer->gradients_weights[0]);
         update_layer(layer, LEARNING_RATE);
     }
