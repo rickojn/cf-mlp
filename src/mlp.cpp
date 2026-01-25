@@ -185,34 +185,6 @@ void simd_matmul_b(const float *A, const float *B, float *C, size_t M, size_t N,
 
 
 
-void softmax_forward(float *activations, size_t num_classes, size_t size_batch)
-{
-    printf("softmax forward ...\n");
-    clock_t begin, end;
-    double time_spent;
-    begin = clock();
-    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++) {
-        float max_logit = activations[idx_sample * num_classes];
-        for (size_t idx_neuron = 1; idx_neuron < num_classes; idx_neuron++) {
-            if (activations[idx_sample * num_classes + idx_neuron] > max_logit) {
-                max_logit = activations[idx_sample * num_classes + idx_neuron];
-            }
-        }
-
-        float sum_exp = 0.0f;
-        for (size_t idx_neuron = 0; idx_neuron < num_classes; idx_neuron++) {
-            activations[idx_sample * num_classes + idx_neuron] = expf(activations[idx_sample * num_classes + idx_neuron] - max_logit);
-            sum_exp += activations[idx_sample * num_classes + idx_neuron];
-        }
-
-        for (size_t idx_neuron = 0; idx_neuron < num_classes; idx_neuron++) {
-            activations[idx_sample * num_classes + idx_neuron] /= sum_exp;
-        }
-    }
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in softmax_forward: %f seconds\n", time_spent);
-}
 
 void model_forward(Model *model, Activations *activations, InputData *data)
 {
