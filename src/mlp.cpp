@@ -184,22 +184,6 @@ void simd_matmul_b(const float *A, const float *B, float *C, size_t M, size_t N,
 
 
 
-void relu_forward(Layer *layer, size_t size_batch)
-{
-    printf("relu forward ...\n");
-    clock_t begin, end;
-    double time_spent;
-    begin = clock();
-
-    for (size_t idx_image = 0; idx_image < size_batch; idx_image++) {
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++) {
-            layer->activations_output[idx_image * layer->size_neurons + idx_neuron] = fmaxf(0.0f, layer->activations_input[idx_image * layer->size_neurons + idx_neuron]);
-        }
-    }
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in relu_forward: %f seconds\n", time_spent);
-}
 
 void softmax_forward(float *activations, size_t num_classes, size_t size_batch)
 {
