@@ -18,7 +18,7 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 100
+#define NUMBER_EPOCHS 1000
 #define PRINT_EVERY 1
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
@@ -38,7 +38,7 @@ typedef struct Layer{
     float *weights, *biases, *activations_input, *activations_output,
     *gradients_input, *gradients_output, *gradients_weights, *gradients_biases;
     size_t size_inputs, size_neurons;
-    void (*activation_forward)(struct Layer* layer,  size_t size_batch);
+    void (*activation_forward)(float * activations, size_t num_features, size_t size_batch);
     void (*activation_backward)(struct Layer* layer, unsigned char * labels, size_t size_batch);
     float (*generate_number)(size_t, size_t);
 } Layer;
@@ -201,28 +201,28 @@ void relu_forward(Layer *layer, size_t size_batch)
     printf("Time spent in relu_forward: %f seconds\n", time_spent);
 }
 
-void softmax_forward(Layer *layer, size_t size_batch)
+void softmax_forward(float *activations, size_t num_classes, size_t size_batch)
 {
     printf("softmax forward ...\n");
     clock_t begin, end;
     double time_spent;
     begin = clock();
-    for (size_t idx_image = 0; idx_image < size_batch; idx_image++) {
-        float max_logit = layer->activations_output[idx_image * layer->size_neurons];
-        for (size_t idx_neuron = 1; idx_neuron < layer->size_neurons; idx_neuron++) {
-            if (layer->activations_output[idx_image * layer->size_neurons + idx_neuron] > max_logit) {
-                max_logit = layer->activations_output[idx_image * layer->size_neurons + idx_neuron];
+    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++) {
+        float max_logit = activations[idx_sample * num_classes];
+        for (size_t idx_neuron = 1; idx_neuron < num_classes; idx_neuron++) {
+            if (activations[idx_sample * num_classes + idx_neuron] > max_logit) {
+                max_logit = activations[idx_sample * num_classes + idx_neuron];
             }
         }
 
         float sum_exp = 0.0f;
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++) {
-            layer->activations_output[idx_image * layer->size_neurons + idx_neuron] = expf(layer->activations_output[idx_image * layer->size_neurons + idx_neuron] - max_logit);
-            sum_exp += layer->activations_output[idx_image * layer->size_neurons + idx_neuron];
+        for (size_t idx_neuron = 0; idx_neuron < num_classes; idx_neuron++) {
+            activations[idx_sample * num_classes + idx_neuron] = expf(activations[idx_sample * num_classes + idx_neuron] - max_logit);
+            sum_exp += activations[idx_sample * num_classes + idx_neuron];
         }
 
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++) {
-            layer->activations_output[idx_image * layer->size_neurons + idx_neuron] /= sum_exp;
+        for (size_t idx_neuron = 0; idx_neuron < num_classes; idx_neuron++) {
+            activations[idx_sample * num_classes + idx_neuron] /= sum_exp;
         }
     }
     end = clock();
@@ -235,7 +235,7 @@ void model_forward(Model *model, Activations *activations, InputData *data)
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
         simd_matmul(layer->activations_input, layer->weights, layer->activations_output, data->nImages, layer->size_neurons, layer->size_inputs);
-        layer->activation_forward(layer, data->nImages);
+        layer->activation_forward( layer->activations_output, layer->size_neurons, data->nImages);
     }
 }
 
@@ -675,7 +675,8 @@ void xavier_initialize_layer(Layer *layer, size_t inputs, size_t outputs)
 
 
 
-void add_layer(Model *model, size_t size_inputs, size_t size_neurons, void(*activation_forward)(Layer *layer, size_t size_batch),
+void add_layer(Model *model, size_t size_inputs, size_t size_neurons, 
+    void(*activation_forward)(float *activations, size_t num_classes, size_t size_batch),
                void(*activation_backward)(Layer *layer, unsigned char *labels, size_t size_batch),
             float (*generate_number)(size_t, size_t))
 {
@@ -913,7 +914,7 @@ int main() {
     add_layer(&model, SIZE_HIDDEN, SIZE_OUTPUT, softmax_forward, loss_softmax_backward, generate_xavier_number);
 
 
-    printf("Model created with %zu layers\n", model.size_layers);
+    printf("Model created with %zu layers\n", model.size_layers);   
     for (size_t i = 0; i < model.size_layers; i++) {
         Layer *layer = &model.layers[i];
         printf("Layer %zu: %zu inputs, %zu neurons\n", i, layer->size_inputs, layer->size_neurons);
