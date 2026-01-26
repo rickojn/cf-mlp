@@ -39,7 +39,7 @@ typedef struct Layer{
     *gradients_input, *gradients_output, *gradients_weights, *gradients_biases;
     size_t size_inputs, size_neurons;
     void (*activation_forward)(float * activations, size_t num_features, size_t size_batch);
-    void (*activation_backward)(struct Layer* layer, unsigned char * labels, size_t size_batch);
+    void (*activation_backward)(const float * inputs, float * gradients, const unsigned char * labels, size_t num_features, size_t size_batch);
     float (*generate_number)(size_t, size_t);
 } Layer;
 
@@ -196,17 +196,17 @@ void model_forward(Model *model, Activations *activations, InputData *data)
 }
 
 
-void loss_softmax_backward(Layer *layer, unsigned char *labels, size_t size_batch)
+void loss_softmax_backward(const float *activations_output, float *gradients_output, const unsigned char *labels, size_t num_neurons, size_t size_batch)
 {
     printf("loss softmax backward ...\n");
     clock_t begin, end;
     begin = clock();
     double time_spent;
     for (size_t idx_image = 0; idx_image < size_batch; idx_image++){
-        for (size_t idx_logit = 0; idx_logit < layer->size_neurons; idx_logit++){
+        for (size_t idx_logit = 0; idx_logit < num_neurons; idx_logit++){
             float label = idx_logit == labels[idx_image] ? 1.0 : 0.0;
-            size_t offset_logit = idx_image * layer->size_neurons + idx_logit;
-            layer->gradients_output[offset_logit] = layer->activations_output[offset_logit] - label;
+            size_t offset_logit = idx_image * num_neurons + idx_logit;
+            gradients_output[offset_logit] = activations_output[offset_logit] - label;
         }
     }    
     end = clock();
@@ -214,25 +214,6 @@ void loss_softmax_backward(Layer *layer, unsigned char *labels, size_t size_batc
     printf("Time spent in loss_softmax_backward: %f seconds\n", time_spent);
 }
 
-void relu_backward(Layer *layer, unsigned char *labels, size_t size_batch)
-{
-    printf("relu backward ...\n");
-    clock_t begin, end;
-    begin = clock();
-    double time_spent;
-    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
-        for (size_t idx_neuron = 0; idx_neuron < layer->size_neurons; idx_neuron++){
-            size_t offset_grad = idx_sample * layer->size_neurons + idx_neuron;
-            if (layer->activations_output[offset_grad] <= 0){
-                layer->gradients_output[offset_grad] = 0;
-            }
-            // else dAct/dPreAct  = 1 so dLoss/dPreAct = dLoss/dAct
-        }
-    }
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in relu_backward: %f seconds\n", time_spent);
-}
 
 
 
@@ -400,7 +381,7 @@ void model_backward(Model *model, Activations *activations, InputData *input_dat
 {
     for (int idx_layer = model->size_layers - 1; idx_layer >= 0; idx_layer--) {
         Layer *layer = &model->layers[idx_layer];
-        layer->activation_backward(layer, input_data->labels.data(), input_data->nImages);
+        layer->activation_backward(layer->activations_output, layer->gradients_output, input_data->labels.data(), layer->size_neurons, input_data->nImages);
         // matmul_backward(layer, input_data->nImages);
         // matmul_backward_separate(layer, data->nImages);
         // simd_matmul_backward(layer, data->nImages);
@@ -618,7 +599,7 @@ void xavier_initialize_layer(Layer *layer, size_t inputs, size_t outputs)
 
     layer->activation_forward = softmax_forward;
     layer->activation_backward = loss_softmax_backward;
-
+    
     layer->weights = (float *)malloc(inputs * outputs * sizeof(float));
     layer->biases = (float *)malloc(outputs * sizeof(float));
 
@@ -633,7 +614,7 @@ void xavier_initialize_layer(Layer *layer, size_t inputs, size_t outputs)
 
 void add_layer(Model *model, size_t size_inputs, size_t size_neurons, 
     void(*activation_forward)(float *activations, size_t num_classes, size_t size_batch),
-               void(*activation_backward)(Layer *layer, unsigned char *labels, size_t size_batch),
+               void(*activation_backward)(const float *inputs, float *gradients,  const unsigned char *labels, size_t num_features, size_t size_batch),
             float (*generate_number)(size_t, size_t))
 {
     Layer *layer = (Layer *)calloc(1, sizeof(Layer));
