@@ -18,7 +18,7 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 10000
+#define NUMBER_EPOCHS 100
 #define PRINT_EVERY 1
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
@@ -29,7 +29,8 @@
 
 
 struct InputData {
-    std::vector<unsigned char> images, labels;
+    std::vector<long> images, labels;
+    std::vector<unsigned char> images_uc, labels_uc;
     int nImages, rows, cols;
 };
 
@@ -39,7 +40,7 @@ typedef struct Layer{
     *gradients_input, *gradients_output, *gradients_weights, *gradients_biases;
     size_t size_inputs, size_neurons;
     void (*activation_forward)(float * activations, size_t num_features, size_t size_batch);
-    void (*activation_backward)(const float * inputs, float * gradients, const unsigned char * labels, size_t num_features, size_t size_batch);
+    void (*activation_backward)(const float * inputs, float * gradients, const long * labels, size_t num_features, size_t size_batch);
     float (*generate_number)(size_t, size_t);
 } Layer;
 
@@ -85,23 +86,6 @@ void model_forward(Model *model, Activations *activations, InputData *data)
 }
 
 
-void loss_softmax_backward(const float *activations_output, float *gradients_output, const unsigned char *labels, size_t num_neurons, size_t size_batch)
-{
-    printf("loss softmax backward ...\n");
-    clock_t begin, end;
-    begin = clock();
-    double time_spent;
-    for (size_t idx_image = 0; idx_image < size_batch; idx_image++){
-        for (size_t idx_logit = 0; idx_logit < num_neurons; idx_logit++){
-            float label = idx_logit == labels[idx_image] ? 1.0 : 0.0;
-            size_t offset_logit = idx_image * num_neurons + idx_logit;
-            gradients_output[offset_logit] = activations_output[offset_logit] - label;
-        }
-    }    
-    end = clock();
-    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent in loss_softmax_backward: %f seconds\n", time_spent);
-}
 
 
 
@@ -123,6 +107,7 @@ void model_backward(Model *model, Activations *activations, InputData *input_dat
 {
     for (int idx_layer = model->size_layers - 1; idx_layer >= 0; idx_layer--) {
         Layer *layer = &model->layers[idx_layer];
+
         layer->activation_backward(layer->activations_output, layer->gradients_output, input_data->labels.data(), layer->size_neurons, input_data->nImages);
         // matmul_backward(layer, input_data->nImages);
         // matmul_backward_separate(layer, data->nImages);
@@ -191,6 +176,7 @@ void read_mnist_labels(const char *filename, std::vector<unsigned char> *labels,
     labels->resize(*nLabels);
     file_read(labels->data(), sizeof(unsigned char), *nLabels, file);
     fclose(file);
+    printf("Read %d labels from %s\n", *nLabels, filename);
 }
 
 
@@ -356,7 +342,7 @@ void xavier_initialize_layer(Layer *layer, size_t inputs, size_t outputs)
 
 void add_layer(Model *model, size_t size_inputs, size_t size_neurons, 
     void(*activation_forward)(float *activations, size_t num_classes, size_t size_batch),
-               void(*activation_backward)(const float *inputs, float *gradients,  const unsigned char *labels, size_t num_features, size_t size_batch),
+               void(*activation_backward)(const float *inputs, float *gradients,  const long *labels, size_t num_features, size_t size_batch),
             float (*generate_number)(size_t, size_t))
 {
     Layer *layer = (Layer *)calloc(1, sizeof(Layer));
@@ -561,6 +547,13 @@ void initialise_mini_batch(InputData * training_data, InputData * mini_batch_dat
 }
 
 
+void populate_long_labels(const std::vector<unsigned char> &labels_uc, std::vector<long> &labels, size_t nImages) {
+
+    for (unsigned char label : labels_uc) {
+        labels.push_back((long)label);
+    }
+}
+
 
 int main() {
     // read input data
@@ -572,13 +565,15 @@ int main() {
     std::string training_images_path = data_path_str + "train-images.idx3-ubyte";
     std::string training_labels_path = data_path_str + "train-labels.idx1-ubyte";
     read_mnist_images(training_images_path.c_str(), &data_training);
-    read_mnist_labels(training_labels_path.c_str(), &data_training.labels, &data_training.nImages);
+    read_mnist_labels(training_labels_path.c_str(), &data_training.labels_uc, &data_training.nImages);
+    populate_long_labels(data_training.labels_uc, data_training.labels, data_training.nImages);
     printf("Number of training images: %d\n", data_training.nImages);
 
     std::string test_images_path = data_path_str + "t10k-images.idx3-ubyte";
     std::string test_labels_path = data_path_str + "t10k-labels.idx1-ubyte";
     read_mnist_images(test_images_path.c_str(), &data_test);
-    read_mnist_labels(test_labels_path.c_str(), &data_test.labels, &data_test.nImages);
+    read_mnist_labels(test_labels_path.c_str(), &data_test.labels_uc, &data_test.nImages);
+    populate_long_labels(data_test.labels_uc, data_test.labels, data_test.nImages);
     printf("Number of test images: %d\n", data_test.nImages);
 
 
