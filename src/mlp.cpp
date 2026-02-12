@@ -29,7 +29,8 @@
 
 
 struct InputData {
-    std::vector<unsigned char> images, labels;
+    std::vector<unsigned char> images;
+    std::vector<long> labels;
     int nImages, rows, cols;
 };
 
@@ -39,7 +40,7 @@ typedef struct Layer{
     *gradients_input, *gradients_output, *gradients_weights, *gradients_biases;
     size_t size_inputs, size_neurons;
     void (*activation_forward)(float * activations, size_t num_features, size_t size_batch);
-    void (*activation_backward)(const float * inputs, float * gradients, const unsigned char * labels, size_t num_features, size_t size_batch);
+    void (*activation_backward)(const float * inputs, float * gradients, const long * labels, size_t num_features, size_t size_batch);
     float (*generate_number)(size_t, size_t);
 } Layer;
 
@@ -173,7 +174,7 @@ void read_mnist_images(const char *filename, InputData *input_data) {
 }
 
 
-void read_mnist_labels(const char *filename, std::vector<unsigned char> *labels, int *nLabels) {
+void read_mnist_labels(const char *filename, std::vector<long> *labels, int *nLabels) {
     FILE *file = fopen(filename, "rb");
     if (!file) exit(1);
 
@@ -188,8 +189,12 @@ void read_mnist_labels(const char *filename, std::vector<unsigned char> *labels,
     file_read(nLabels, sizeof(int), 1, file);
     *nLabels = __builtin_bswap32(*nLabels);
 
+    std::vector<unsigned char> temp_labels(*nLabels);
     labels->resize(*nLabels);
-    file_read(labels->data(), sizeof(unsigned char), *nLabels, file);
+    file_read(temp_labels.data(), sizeof(unsigned char), *nLabels, file);
+    for (unsigned char label : temp_labels) {
+        labels->push_back((long)label);
+    }
     fclose(file);
 }
 
@@ -356,7 +361,7 @@ void xavier_initialize_layer(Layer *layer, size_t inputs, size_t outputs)
 
 void add_layer(Model *model, size_t size_inputs, size_t size_neurons, 
     void(*activation_forward)(float *activations, size_t num_classes, size_t size_batch),
-               void(*activation_backward)(const float *inputs, float *gradients,  const unsigned char *labels, size_t num_features, size_t size_batch),
+               void(*activation_backward)(const float *inputs, float *gradients,  const long *labels, size_t num_features, size_t size_batch),
             float (*generate_number)(size_t, size_t))
 {
     Layer *layer = (Layer *)calloc(1, sizeof(Layer));
