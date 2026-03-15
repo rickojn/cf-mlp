@@ -18,7 +18,7 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 10000
+#define NUMBER_EPOCHS 200
 #define PRINT_EVERY 1
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
@@ -130,7 +130,9 @@ void model_backward(Model *model, Activations *activations, InputData *input_dat
         // simd_matmul_backward(layer, data->nImages);
         simd_matmul_backwards(layer->gradients_output, layer->weights, layer->activations_input, layer->gradients_weights, layer->gradients_input, 
             input_data->nImages, layer->size_neurons, layer->size_inputs);
-        printf("Layer %d weight grad [0][0] = %f\n", idx_layer, layer->gradients_weights[0]);
+        if (layer->gradients_weights[0] > 2.0f || layer->gradients_weights[0] < -2.0f) {
+            printf("Large gradient detected in layer %d: %f\n", idx_layer, layer->gradients_weights[0]);
+        }
         update_layer(layer, LEARNING_RATE);
     }
 }
