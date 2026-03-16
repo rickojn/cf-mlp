@@ -19,7 +19,7 @@ epoch: 0
 Layer 1:  weight[0] = 0.172530
 Layer 1:  bias[0] = 0.000000
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.095674
+Layer 1:  output[0] = 0.095149
 Layer 1:  grad_weight[0] = -0.522067
 Layer 0:  weight[0] = -0.063398
 Layer 0:  bias[0] = 0.000000
@@ -28,73 +28,73 @@ Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.305350
+Training loss: 2.305693
 Training accuracy: 0.937500
 
 epoch: 1
 Layer 1:  weight[0] = 0.224736
 Layer 1:  bias[0] = -0.007342
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.100114
-Layer 1:  grad_weight[0] = -0.523516
+Layer 1:  output[0] = 0.100227
+Layer 1:  grad_weight[0] = -0.523524
 Layer 0:  weight[0] = -0.063398
-Layer 0:  bias[0] = 2705048468346372096.000000
+Layer 0:  bias[0] = -0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.000000
+Layer 0:  grad_weight[0] = 0.001020
 
 
-Training loss: 2.302515
+Training loss: 2.302444
 Training accuracy: 0.937500
 
 epoch: 2
-Layer 1:  weight[0] = 0.277088
-Layer 1:  bias[0] = -0.015108
+Layer 1:  weight[0] = 0.277089
+Layer 1:  bias[0] = -0.015107
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.098237
-Layer 1:  grad_weight[0] = -0.524775
-Layer 0:  weight[0] = -0.063398
-Layer 0:  bias[0] = 2705048468346372096.000000
+Layer 1:  output[0] = 0.099205
+Layer 1:  grad_weight[0] = -0.524799
+Layer 0:  weight[0] = -0.063500
+Layer 0:  bias[0] = -0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.303697
+Training loss: 2.303084
 Training accuracy: 0.937500
 
 epoch: 3
-Layer 1:  weight[0] = 0.329565
-Layer 1:  bias[0] = -0.023288
+Layer 1:  weight[0] = 0.329569
+Layer 1:  bias[0] = -0.023285
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.101417
-Layer 1:  grad_weight[0] = -0.525971
-Layer 0:  weight[0] = -0.063398
-Layer 0:  bias[0] = 2705048468346372096.000000
+Layer 1:  output[0] = 0.098820
+Layer 1:  grad_weight[0] = -0.526005
+Layer 0:  weight[0] = -0.063500
+Layer 0:  bias[0] = -0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.301706
+Training loss: 2.303327
 Training accuracy: 0.937500
 
 epoch: 4
-Layer 1:  weight[0] = 0.382163
-Layer 1:  bias[0] = -0.031863
+Layer 1:  weight[0] = 0.382169
+Layer 1:  bias[0] = -0.031856
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.100530
-Layer 1:  grad_weight[0] = -0.526915
-Layer 0:  weight[0] = -0.063398
-Layer 0:  bias[0] = 2705048468346372096.000000
+Layer 1:  output[0] = 0.100484
+Layer 1:  grad_weight[0] = -0.526948
+Layer 0:  weight[0] = -0.063500
+Layer 0:  bias[0] = -0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.302255
+Training loss: 2.302284
 Training accuracy: 0.937500
 
-saving in file: /home/rickojn/coding/cf-mlp/models/model_20260316_214333_h8.mdl
-Error opening file /home/rickojn/coding/cf-mlp/models/Test loss after training: 2.028462
-Test accuracy after training: 0.366600
+saving in file: /home/rickojn/coding/cf-mlp/models/model_20260316_214336_h8.mdl
+Error opening file /home/rickojn/coding/cf-mlp/models/Test loss after training: 2.028346
+Test accuracy after training: 0.366900

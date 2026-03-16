@@ -18,7 +18,7 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 200
+#define NUMBER_EPOCHS 5
 #define PRINT_EVERY 1
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
@@ -130,6 +130,11 @@ void model_backward(Model *model, Activations *activations, InputData *input_dat
         // simd_matmul_backward(layer, data->nImages);
         simd_matmul_backwards(layer->gradients_output, layer->weights, layer->activations_input, layer->gradients_weights, layer->gradients_input, 
             input_data->nImages, layer->size_neurons, layer->size_inputs);
+        printf("Layer %d:  weight[0] = %f\n", idx_layer, layer->weights[0]);
+        printf("Layer %d:  bias[0] = %f\n", idx_layer, layer->biases[0]);
+        printf("Layer %d:  input[0] = %f\n", idx_layer, layer->activations_input[0]);
+        printf("Layer %d:  output[0] = %f\n", idx_layer, layer->activations_output[0]);
+        printf("Layer %d:  grad_weight[0] = %f\n", idx_layer, layer->gradients_weights[0]);
         if (layer->gradients_weights[0] > 2.0f || layer->gradients_weights[0] < -2.0f) {
             printf("Large gradient detected in layer %d: %f\n", idx_layer, layer->gradients_weights[0]);
         }
@@ -588,7 +593,7 @@ int main() {
     read_mnist_labels(test_labels_path.c_str(), &data_test.labels, &data_test.nImages);
     printf("Number of test images: %d\n", data_test.nImages);
 
-
+    srand(42); // Set a fixed seed for reproducibility
 
     // create model
     Model model;
@@ -639,7 +644,7 @@ int main() {
     allocate_mini_batch_memory(&data_mini_batch);
     initialise_gradients(&gradients, &model, &data_mini_batch);
     // srand(time(NULL)); db
-    srand(42);
+    // srand(42);
     // training loop
     printf("\n");
     printf("\n");
