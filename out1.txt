@@ -20,15 +20,15 @@ Test accuracy before training: 0.041000
 training loop:
 
 epoch: 0
-After matmul Layer 0:  output[0] = -0.099827
+After matmul Layer 0:  output[0] = -0.065829
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.040579
-After activation Layer 1:  output[0] = 0.094484
-layer 1 output[0] after forward pass = 0.094484
+After matmul Layer 1:  output[0] = -0.030559
+After activation Layer 1:  output[0] = 0.094515
+layer 1 output[0] after forward pass = 0.094515
 Layer 1:  weight[0] = 0.172530
 Layer 1:  bias[0] = 0.000000
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.094484
+Layer 1:  output[0] = 0.094515
 Layer 1:  grad_weight[0] = -0.522067
 Layer 0:  weight[0] = -0.063398
 Layer 0:  bias[0] = 0.000000
@@ -37,13 +37,13 @@ Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.306132
+Training loss: 2.306111
 Training accuracy: 0.937500
 
-saving in file: /home/rickojn/coding/cf-mlp/models/model_20260317_081433_h8.mdl
+saving in file: /home/rickojn/coding/cf-mlp/models/model_20260317_221702_h8.mdl
 Error opening file /home/rickojn/coding/cf-mlp/models/After matmul Layer 0:  output[0] = 0.393656
 After activation Layer 0:  output[0] = 0.393656
 After matmul Layer 1:  output[0] = 0.188534
 After activation Layer 1:  output[0] = 0.116292
-Test loss after training: 2.155726
-Test accuracy after training: 0.049500
+Test loss after training: 2.155173
+Test accuracy after training: 0.050600

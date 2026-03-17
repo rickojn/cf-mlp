@@ -175,7 +175,7 @@ void read_mnist_images(const char *filename, InputData *input_data) {
     input_data->cols = __builtin_bswap32(input_data->cols);
     printf("rows: %d, cols: %d\n", input_data->rows, input_data->cols);
 
-    input_data->images.reserve(input_data->nImages * input_data->rows * input_data->cols);
+    input_data->images.resize(input_data->nImages * input_data->rows * input_data->cols);
 
     file_read(input_data->images.data(), sizeof(unsigned char), input_data->nImages * input_data->rows * input_data->cols, file);
     fclose(file);
@@ -388,7 +388,7 @@ void add_layer(Model *model, size_t size_inputs, size_t size_neurons,
 
 void allocate_parameters_memory(Model *model)
 {
-    model->parameters.reserve(model->size_parameters);
+    model->parameters.resize(model->size_parameters);
     float *parameters = model->parameters.data();
     size_t offset = 0;
     for (size_t i = 0; i < model->size_layers; i++) {
@@ -513,7 +513,7 @@ void calculate_size(Activations *activations, Model *model, InputData *data)
 
 void initialise_activations(Activations *activations, Model *model, InputData *input_data)
 {
-    activations->activations.reserve(activations->size_activations);
+    activations->activations.resize(activations->size_activations);
 
     for (size_t idx_pixel = 0; idx_pixel < input_data->nImages * input_data->rows * input_data->cols; idx_pixel++) {
         activations->activations[idx_pixel] = (float)input_data->images[idx_pixel] / 255.0f;
@@ -540,7 +540,7 @@ void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
         // size of gradients for activations
         gradients->size_grads += model->layers[i].size_neurons * data->nImages;
     }
-    gradients->grads.reserve(gradients->size_grads);
+    gradients->grads.resize(gradients->size_grads);
     float *grads = gradients->grads.data();
     
     // connect gradients to layers
@@ -561,8 +561,8 @@ void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
 
 void allocate_mini_batch_memory(InputData * mini_batch_data)
 {
-    mini_batch_data->images.reserve(mini_batch_data->nImages * mini_batch_data->rows * mini_batch_data->cols);
-    mini_batch_data->labels.reserve(mini_batch_data->nImages);
+    mini_batch_data->images.resize(mini_batch_data->nImages * mini_batch_data->rows * mini_batch_data->cols);
+    mini_batch_data->labels.resize(mini_batch_data->nImages);
 }
 
 
