@@ -9,6 +9,10 @@ Layer 1: 8 inputs, 10 neurons
 Number of parameters: 6370
 Batch size: 16
 Error opening directory /home/rickojn/coding/cf-mlp/models/No model found, training from scratch
+After matmul Layer 0:  output[0] = 0.393656
+After activation Layer 0:  output[0] = 0.393656
+After matmul Layer 1:  output[0] = 0.168021
+After activation Layer 1:  output[0] = 0.114100
 Test loss before training: 2.187638
 Test accuracy before training: 0.041000
 
@@ -16,22 +20,30 @@ Test accuracy before training: 0.041000
 training loop:
 
 epoch: 0
-layer 1 output[0] after forward pass = 0.089957
+After matmul Layer 0:  output[0] = -0.113419
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = -0.029149
+After activation Layer 1:  output[0] = 0.094831
+layer 1 output[0] after forward pass = 0.094831
 Layer 1:  weight[0] = 0.172530
 Layer 1:  bias[0] = 0.000000
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.089957
+Layer 1:  output[0] = 0.094831
 Layer 1:  grad_weight[0] = -0.522067
 Layer 0:  weight[0] = -0.063398
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.996078
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.009066
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.309200
+Training loss: 2.305903
 Training accuracy: 0.937500
 
-saving in file: /home/rickojn/coding/cf-mlp/models/model_20260317_080907_h8.mdl
-Error opening file /home/rickojn/coding/cf-mlp/models/Test loss after training: 2.155280
-Test accuracy after training: 0.051000
+saving in file: /home/rickojn/coding/cf-mlp/models/model_20260317_081429_h8.mdl
+Error opening file /home/rickojn/coding/cf-mlp/models/After matmul Layer 0:  output[0] = 0.393656
+After activation Layer 0:  output[0] = 0.393656
+After matmul Layer 1:  output[0] = 0.188534
+After activation Layer 1:  output[0] = 0.116292
+Test loss after training: 2.155360
+Test accuracy after training: 0.050900

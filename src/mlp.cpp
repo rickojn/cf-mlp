@@ -81,7 +81,9 @@ void model_forward(Model *model, Activations *activations, InputData *data)
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
         simd_matmul(layer->activations_input, layer->weights, layer->activations_output, data->nImages, layer->size_neurons, layer->size_inputs);
+        printf("After matmul Layer %zu:  output[0] = %f\n", idx_layer, layer->activations_output[0]);
         layer->activation_forward( layer->activations_output, layer->size_neurons, data->nImages);
+        printf("After activation Layer %zu:  output[0] = %f\n", idx_layer, layer->activations_output[0]);
     }
 }
 
