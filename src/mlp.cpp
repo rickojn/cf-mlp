@@ -18,7 +18,7 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 5
+#define NUMBER_EPOCHS 1
 #define PRINT_EVERY 1
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
@@ -655,6 +655,7 @@ int main() {
         calculate_size(&activations, &model, &data_mini_batch);
         initialise_activations(&activations, &model, &data_mini_batch);
         model_forward(&model, &activations, &data_mini_batch);
+        printf("layer 1 output[0] after forward pass = %f\n", model.layers[1].activations_output[0]);
         // print_probs(&model, &activations, &data_mini_batch);
         model_backward(&model, &activations, &data_mini_batch);
         printf("\n\n");
