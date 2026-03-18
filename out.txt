@@ -160,8 +160,8 @@ Layer 0:  weight[0] = -0.073636
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.992157
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
 Training loss: 2.304775
@@ -178,7 +178,7 @@ Layer 1:  bias[0] = -0.060075
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.099445
 Layer 1:  grad_weight[0] = -0.527334
-Layer 0:  weight[0] = 41405216772117002977280.000000
+Layer 0:  weight[0] = -41469889222803456.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -199,7 +199,7 @@ Layer 1:  bias[0] = -0.070147
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.098477
 Layer 1:  grad_weight[0] = -0.528034
-Layer 0:  weight[0] = 41405216772117002977280.000000
+Layer 0:  weight[0] = -41469889222803456.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -220,12 +220,12 @@ Layer 1:  bias[0] = -0.080553
 Layer 1:  input[0] = 0.036645
 Layer 1:  output[0] = 0.103937
 Layer 1:  grad_weight[0] = -0.527720
-Layer 0:  weight[0] = 41405216772117002977280.000000
+Layer 0:  weight[0] = -41469889222803456.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.036645
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
 Training loss: 2.300172
@@ -242,7 +242,7 @@ Layer 1:  bias[0] = -0.091251
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.100434
 Layer 1:  grad_weight[0] = -0.528343
-Layer 0:  weight[0] = 82810433544234005954560.000000
+Layer 0:  weight[0] = -82939778445606912.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -263,7 +263,7 @@ Layer 1:  bias[0] = -0.102234
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.100985
 Layer 1:  grad_weight[0] = -0.528864
-Layer 0:  weight[0] = 82810433544234005954560.000000
+Layer 0:  weight[0] = -82939778445606912.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -284,7 +284,7 @@ Layer 1:  bias[0] = -0.113501
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.102063
 Layer 1:  grad_weight[0] = -0.529159
-Layer 0:  weight[0] = 82810433544234005954560.000000
+Layer 0:  weight[0] = -82939778445606912.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -305,163 +305,163 @@ Layer 1:  bias[0] = -0.125029
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.095373
 Layer 1:  grad_weight[0] = -0.529381
-Layer 0:  weight[0] = 82810433544234005954560.000000
+Layer 0:  weight[0] = -82939778445606912.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -292946005249538842951680.000000
-Large gradient detected in layer 0: -292946005249538842951680.000000
+Layer 0:  grad_weight[0] = 293403578360397824.000000
+Large gradient detected in layer 0: 293403578360397824.000000
 
 
 Training loss: 2.305546
 Training accuracy: 0.937500
 
 epoch: 14
-After matmul Layer 0:  output[0] = 112105034069187890249728.000000
-After activation Layer 0:  output[0] = 112105034069187890249728.000000
-After matmul Layer 1:  output[0] = 88253745262652374908928.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
+After matmul Layer 0:  output[0] = -112280134563659776.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = -0.012415
+After activation Layer 1:  output[0] = 0.096015
+layer 1 output[0] after forward pass = 0.096015
 Layer 1:  weight[0] = 0.909838
 Layer 1:  bias[0] = -0.136789
-Layer 1:  input[0] = 112105034069187890249728.000000
-Layer 1:  output[0] = 1.000000
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.096015
 Layer 1:  grad_weight[0] = -0.528423
-Layer 0:  weight[0] = 112105034069187890249728.000000
+Layer 0:  weight[0] = -112280134563659776.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 1.000000
-Layer 0:  output[0] = 112105034069187890249728.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.305127
+Training accuracy: 0.937500
 
 epoch: 15
 After matmul Layer 0:  output[0] = 0.031261
 After activation Layer 0:  output[0] = 0.031261
-After matmul Layer 1:  output[0] = 0.033204
-After activation Layer 1:  output[0] = 0.103087
-layer 1 output[0] after forward pass = 0.103087
+After matmul Layer 1:  output[0] = 0.033382
+After activation Layer 1:  output[0] = 0.103105
+layer 1 output[0] after forward pass = 0.103105
 Layer 1:  weight[0] = 0.962680
 Layer 1:  bias[0] = -0.148744
 Layer 1:  input[0] = 0.031261
-Layer 1:  output[0] = 0.103087
-Layer 1:  grad_weight[0] = -0.528725
-Layer 0:  weight[0] = 112105034069187890249728.000000
+Layer 1:  output[0] = 0.103105
+Layer 1:  grad_weight[0] = -0.529017
+Layer 0:  weight[0] = -112280134563659776.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.031261
-Layer 0:  grad_weight[0] = -13092559717816751620096.000000
-Large gradient detected in layer 0: -13092559717816751620096.000000
+Layer 0:  grad_weight[0] = 13113009748574208.000000
+Large gradient detected in layer 0: 13113009748574208.000000
 
 
-Training loss: 2.300685
+Training loss: 2.300674
 Training accuracy: 1.000000
 
 epoch: 16
 After matmul Layer 0:  output[0] = 0.003852
 After activation Layer 0:  output[0] = 0.003852
-After matmul Layer 1:  output[0] = -0.060243
+After matmul Layer 1:  output[0] = -0.060241
 After activation Layer 1:  output[0] = 0.092989
 layer 1 output[0] after forward pass = 0.092989
-Layer 1:  weight[0] = 1.015553
-Layer 1:  bias[0] = -0.160921
+Layer 1:  weight[0] = 1.015582
+Layer 1:  bias[0] = -0.160892
 Layer 1:  input[0] = 0.003852
 Layer 1:  output[0] = 0.092989
-Layer 1:  grad_weight[0] = -0.528957
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  grad_weight[0] = -0.529247
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.003852
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.307129
+Training loss: 2.307128
 Training accuracy: 0.937500
 
 epoch: 17
 After matmul Layer 0:  output[0] = -0.007165
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.020726
-After activation Layer 1:  output[0] = 0.096220
-layer 1 output[0] after forward pass = 0.096220
-Layer 1:  weight[0] = 1.068449
-Layer 1:  bias[0] = -0.173301
+After matmul Layer 1:  output[0] = -0.020518
+After activation Layer 1:  output[0] = 0.096240
+layer 1 output[0] after forward pass = 0.096240
+Layer 1:  weight[0] = 1.068507
+Layer 1:  bias[0] = -0.173240
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.096220
-Layer 1:  grad_weight[0] = -0.528534
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  output[0] = 0.096240
+Layer 1:  grad_weight[0] = -0.528821
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.304994
+Training loss: 2.304981
 Training accuracy: 0.937500
 
 epoch: 18
 After matmul Layer 0:  output[0] = -0.007253
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.020890
-After activation Layer 1:  output[0] = 0.096182
-layer 1 output[0] after forward pass = 0.096182
-Layer 1:  weight[0] = 1.121302
-Layer 1:  bias[0] = -0.185848
+After matmul Layer 1:  output[0] = -0.020680
+After activation Layer 1:  output[0] = 0.096202
+layer 1 output[0] after forward pass = 0.096202
+Layer 1:  weight[0] = 1.121389
+Layer 1:  bias[0] = -0.185754
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.096182
-Layer 1:  grad_weight[0] = -0.528796
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  output[0] = 0.096202
+Layer 1:  grad_weight[0] = -0.529080
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.305018
+Training loss: 2.305005
 Training accuracy: 0.937500
 
 epoch: 19
-After matmul Layer 0:  output[0] = -0.014427
+After matmul Layer 0:  output[0] = -0.014442
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.002289
-After activation Layer 1:  output[0] = 0.099638
-layer 1 output[0] after forward pass = 0.099638
-Layer 1:  weight[0] = 1.174181
-Layer 1:  bias[0] = -0.198553
+After matmul Layer 1:  output[0] = -0.001853
+After activation Layer 1:  output[0] = 0.099682
+layer 1 output[0] after forward pass = 0.099682
+Layer 1:  weight[0] = 1.174297
+Layer 1:  bias[0] = -0.198423
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.099638
-Layer 1:  grad_weight[0] = -0.529005
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  output[0] = 0.099682
+Layer 1:  grad_weight[0] = -0.529287
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000282
 
 
-Training loss: 2.302812
+Training loss: 2.302784
 Training accuracy: 0.937500
 
 epoch: 20
-After matmul Layer 0:  output[0] = -0.062285
+After matmul Layer 0:  output[0] = -0.062329
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.111205
-After activation Layer 1:  output[0] = 0.088143
-layer 1 output[0] after forward pass = 0.088143
-Layer 1:  weight[0] = 1.227082
-Layer 1:  bias[0] = -0.211396
+After matmul Layer 1:  output[0] = -0.111178
+After activation Layer 1:  output[0] = 0.088145
+layer 1 output[0] after forward pass = 0.088145
+Layer 1:  weight[0] = 1.227226
+Layer 1:  bias[0] = -0.211227
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.088143
-Layer 1:  grad_weight[0] = -0.528390
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  output[0] = 0.088145
+Layer 1:  grad_weight[0] = -0.528669
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.310474
+Training loss: 2.310472
 Training accuracy: 0.937500
 
 epoch: 21
@@ -470,12 +470,12 @@ After activation Layer 0:  output[0] = 0.000000
 After matmul Layer 1:  output[0] = 0.008086
 After activation Layer 1:  output[0] = 0.099833
 layer 1 output[0] after forward pass = 0.099833
-Layer 1:  weight[0] = 1.279921
-Layer 1:  bias[0] = -0.224351
+Layer 1:  weight[0] = 1.280092
+Layer 1:  bias[0] = -0.224141
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.099833
-Layer 1:  grad_weight[0] = -0.526569
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  grad_weight[0] = -0.526845
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -488,101 +488,101 @@ Training accuracy: 0.937500
 epoch: 22
 After matmul Layer 0:  output[0] = 0.019856
 After activation Layer 0:  output[0] = 0.019856
-After matmul Layer 1:  output[0] = -0.063180
-After activation Layer 1:  output[0] = 0.093190
-layer 1 output[0] after forward pass = 0.093190
-Layer 1:  weight[0] = 1.332578
-Layer 1:  bias[0] = -0.237370
+After matmul Layer 1:  output[0] = -0.063156
+After activation Layer 1:  output[0] = 0.093192
+layer 1 output[0] after forward pass = 0.093192
+Layer 1:  weight[0] = 1.332777
+Layer 1:  bias[0] = -0.237118
 Layer 1:  input[0] = 0.019856
-Layer 1:  output[0] = 0.093190
-Layer 1:  grad_weight[0] = -0.526616
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  output[0] = 0.093192
+Layer 1:  grad_weight[0] = -0.526889
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.019856
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.306994
+Training loss: 2.306992
 Training accuracy: 0.937500
 
 epoch: 23
 After matmul Layer 0:  output[0] = -0.055545
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.003060
-After activation Layer 1:  output[0] = 0.097782
-layer 1 output[0] after forward pass = 0.097782
-Layer 1:  weight[0] = 1.385239
-Layer 1:  bias[0] = -0.250494
+After matmul Layer 1:  output[0] = 0.004047
+After activation Layer 1:  output[0] = 0.097879
+layer 1 output[0] after forward pass = 0.097879
+Layer 1:  weight[0] = 1.385466
+Layer 1:  bias[0] = -0.250195
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.097782
-Layer 1:  grad_weight[0] = -0.525723
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  output[0] = 0.097879
+Layer 1:  grad_weight[0] = -0.525993
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.006210
+Layer 0:  grad_weight[0] = 0.006187
 
 
-Training loss: 2.303988
+Training loss: 2.303926
 Training accuracy: 0.937500
 
 epoch: 24
-After matmul Layer 0:  output[0] = -0.132129
+After matmul Layer 0:  output[0] = -0.132228
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.025873
-After activation Layer 1:  output[0] = 0.096924
-layer 1 output[0] after forward pass = 0.096924
-Layer 1:  weight[0] = 1.437812
-Layer 1:  bias[0] = -0.263690
+After matmul Layer 1:  output[0] = -0.025586
+After activation Layer 1:  output[0] = 0.096948
+layer 1 output[0] after forward pass = 0.096948
+Layer 1:  weight[0] = 1.438065
+Layer 1:  bias[0] = -0.263342
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.096924
-Layer 1:  grad_weight[0] = -0.525686
-Layer 0:  weight[0] = 113414293531259276623872.000000
+Layer 1:  output[0] = 0.096948
+Layer 1:  grad_weight[0] = -0.525954
+Layer 0:  weight[0] = -113591439618736128.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: 2.304538
+Training loss: 2.304523
 Training accuracy: 0.937500
 
 epoch: 25
-After matmul Layer 0:  output[0] = -0.127189
+After matmul Layer 0:  output[0] = -0.127227
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.011680
+After matmul Layer 1:  output[0] = -0.011669
 After activation Layer 1:  output[0] = 0.098784
 layer 1 output[0] after forward pass = 0.098784
-Layer 1:  weight[0] = 1.490380
-Layer 1:  bias[0] = -0.276958
+Layer 1:  weight[0] = 1.490661
+Layer 1:  bias[0] = -0.276558
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.098784
-Layer 1:  grad_weight[0] = -0.524536
-Layer 0:  weight[0] = 154819505799776652230656.000000
+Layer 1:  grad_weight[0] = -0.524799
+Layer 0:  weight[0] = -155061324546572288.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -144018144511085292552192.000000
-Large gradient detected in layer 0: -144018144511085292552192.000000
+Layer 0:  grad_weight[0] = 144243092201930752.000000
+Large gradient detected in layer 0: 144243092201930752.000000
 
 
 Training loss: 2.303350
 Training accuracy: 0.937500
 
 epoch: 26
-After matmul Layer 0:  output[0] = -0.036049
+After matmul Layer 0:  output[0] = -0.036105
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.008580
+After matmul Layer 1:  output[0] = -0.008578
 After activation Layer 1:  output[0] = 0.098506
 layer 1 output[0] after forward pass = 0.098506
-Layer 1:  weight[0] = 1.542834
-Layer 1:  bias[0] = -0.290256
+Layer 1:  weight[0] = 1.543141
+Layer 1:  bias[0] = -0.289800
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.098506
-Layer 1:  grad_weight[0] = -0.523955
-Layer 0:  weight[0] = 169221314846565628641280.000000
+Layer 1:  grad_weight[0] = -0.524215
+Layer 0:  weight[0] = -169485628612804608.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -593,873 +593,873 @@ Training loss: 2.303526
 Training accuracy: 0.937500
 
 epoch: 27
-After matmul Layer 0:  output[0] = -0.161176
+After matmul Layer 0:  output[0] = -0.161307
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.112927
-After activation Layer 1:  output[0] = 0.089923
-layer 1 output[0] after forward pass = 0.089923
-Layer 1:  weight[0] = 1.595229
-Layer 1:  bias[0] = -0.303593
+After matmul Layer 1:  output[0] = -0.112879
+After activation Layer 1:  output[0] = 0.089927
+layer 1 output[0] after forward pass = 0.089927
+Layer 1:  weight[0] = 1.595562
+Layer 1:  bias[0] = -0.303080
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.089923
-Layer 1:  grad_weight[0] = -0.523517
-Layer 0:  weight[0] = 169221314846565628641280.000000
+Layer 1:  output[0] = 0.089927
+Layer 1:  grad_weight[0] = -0.523774
+Layer 0:  weight[0] = -169485628612804608.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.309224
+Training loss: 2.309221
 Training accuracy: 0.937500
 
 epoch: 28
-After matmul Layer 0:  output[0] = 70342979084195813392384.000000
-After activation Layer 0:  output[0] = 70342979084195813392384.000000
-After matmul Layer 1:  output[0] = 76978533235567601123328.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 1.647581
-Layer 1:  bias[0] = -0.316950
-Layer 1:  input[0] = 70342979084195813392384.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.521603
-Layer 0:  weight[0] = 169221314846565628641280.000000
+After matmul Layer 0:  output[0] = -70452852522221568.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.032650
+After activation Layer 1:  output[0] = 0.100082
+layer 1 output[0] after forward pass = 0.100082
+Layer 1:  weight[0] = 1.647940
+Layer 1:  bias[0] = -0.316374
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.100082
+Layer 1:  grad_weight[0] = -0.521856
+Layer 0:  weight[0] = -169485628612804608.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.415686
-Layer 0:  output[0] = 70342979084195813392384.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302534
+Training accuracy: 0.937500
 
 epoch: 29
 After matmul Layer 0:  output[0] = 0.008526
 After activation Layer 0:  output[0] = 0.008526
-After matmul Layer 1:  output[0] = 0.038780
-After activation Layer 1:  output[0] = 0.102049
-layer 1 output[0] after forward pass = 0.102049
-Layer 1:  weight[0] = 1.699741
-Layer 1:  bias[0] = -0.330281
+After matmul Layer 1:  output[0] = 0.038803
+After activation Layer 1:  output[0] = 0.102042
+layer 1 output[0] after forward pass = 0.102042
+Layer 1:  weight[0] = 1.700125
+Layer 1:  bias[0] = -0.329640
 Layer 1:  input[0] = 0.008526
-Layer 1:  output[0] = 0.102049
-Layer 1:  grad_weight[0] = -0.521288
-Layer 0:  weight[0] = 169221314846565628641280.000000
+Layer 1:  output[0] = 0.102042
+Layer 1:  grad_weight[0] = -0.521691
+Layer 0:  weight[0] = -169485628612804608.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.008526
-Layer 0:  grad_weight[0] = 0.010985
+Layer 0:  grad_weight[0] = 0.011067
 
 
-Training loss: 2.301318
+Training loss: 2.301322
 Training accuracy: 0.937500
 
 epoch: 30
-After matmul Layer 0:  output[0] = -0.053374
+After matmul Layer 0:  output[0] = -0.053542
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.128486
-After activation Layer 1:  output[0] = 0.088830
-layer 1 output[0] after forward pass = 0.088830
-Layer 1:  weight[0] = 1.751870
-Layer 1:  bias[0] = -0.343628
+After matmul Layer 1:  output[0] = -0.127400
+After activation Layer 1:  output[0] = 0.088927
+layer 1 output[0] after forward pass = 0.088927
+Layer 1:  weight[0] = 1.752294
+Layer 1:  bias[0] = -0.342904
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.088830
-Layer 1:  grad_weight[0] = -0.521037
-Layer 0:  weight[0] = 169221314846565628641280.000000
+Layer 1:  output[0] = 0.088927
+Layer 1:  grad_weight[0] = -0.521435
+Layer 0:  weight[0] = -169485628612804608.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.001365
+Layer 0:  grad_weight[0] = 0.001366
 
 
-Training loss: 2.309988
+Training loss: 2.309920
 Training accuracy: 0.937500
 
 epoch: 31
 After matmul Layer 0:  output[0] = -0.053771
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.006101
-After activation Layer 1:  output[0] = 0.098056
-layer 1 output[0] after forward pass = 0.098056
-Layer 1:  weight[0] = 1.803974
-Layer 1:  bias[0] = -0.356963
+After matmul Layer 1:  output[0] = 0.007718
+After activation Layer 1:  output[0] = 0.098216
+layer 1 output[0] after forward pass = 0.098216
+Layer 1:  weight[0] = 1.804438
+Layer 1:  bias[0] = -0.356150
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.098056
-Layer 1:  grad_weight[0] = -0.518763
-Layer 0:  weight[0] = 169221314846565628641280.000000
+Layer 1:  output[0] = 0.098216
+Layer 1:  grad_weight[0] = -0.519155
+Layer 0:  weight[0] = -169485628612804608.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.303812
+Training loss: 2.303711
 Training accuracy: 0.937500
 
 epoch: 32
-After matmul Layer 0:  output[0] = -0.254511
+After matmul Layer 0:  output[0] = -0.254902
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.225264
-After activation Layer 1:  output[0] = 0.081097
-layer 1 output[0] after forward pass = 0.081097
-Layer 1:  weight[0] = 1.855850
-Layer 1:  bias[0] = -0.370229
+After matmul Layer 1:  output[0] = -0.224442
+After activation Layer 1:  output[0] = 0.081163
+layer 1 output[0] after forward pass = 0.081163
+Layer 1:  weight[0] = 1.856353
+Layer 1:  bias[0] = -0.369324
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.081097
-Layer 1:  grad_weight[0] = -0.518428
-Layer 0:  weight[0] = 169221314846565628641280.000000
+Layer 1:  output[0] = 0.081163
+Layer 1:  grad_weight[0] = -0.518816
+Layer 0:  weight[0] = -169485628612804608.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -415688730789760194314240.000000
-Large gradient detected in layer 0: -415688730789760194314240.000000
+Layer 0:  grad_weight[0] = 416338014956945408.000000
+Large gradient detected in layer 0: 416338014956945408.000000
 
 
-Training loss: 2.315681
+Training loss: 2.315630
 Training accuracy: 0.937500
 
 epoch: 33
-After matmul Layer 0:  output[0] = -0.194921
+After matmul Layer 0:  output[0] = -0.195225
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.168790
-After activation Layer 1:  output[0] = 0.085787
-layer 1 output[0] after forward pass = 0.085787
-Layer 1:  weight[0] = 1.907693
-Layer 1:  bias[0] = -0.383467
+After matmul Layer 1:  output[0] = -0.167938
+After activation Layer 1:  output[0] = 0.085860
+layer 1 output[0] after forward pass = 0.085860
+Layer 1:  weight[0] = 1.908235
+Layer 1:  bias[0] = -0.382464
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.085787
-Layer 1:  grad_weight[0] = -0.515147
-Layer 0:  weight[0] = 210790187925541648072704.000000
+Layer 1:  output[0] = 0.085860
+Layer 1:  grad_weight[0] = -0.515529
+Layer 0:  weight[0] = -211119426672525312.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -171839833770708401389568.000000
-Large gradient detected in layer 0: -171839833770708401389568.000000
+Layer 0:  grad_weight[0] = 172108238722957312.000000
+Large gradient detected in layer 0: 172108238722957312.000000
 
 
-Training loss: 2.312167
+Training loss: 2.312114
 Training accuracy: 0.937500
 
 epoch: 34
 After matmul Layer 0:  output[0] = 0.069287
 After activation Layer 0:  output[0] = 0.069287
-After matmul Layer 1:  output[0] = 0.185131
-After activation Layer 1:  output[0] = 0.117845
-layer 1 output[0] after forward pass = 0.117845
-Layer 1:  weight[0] = 1.959208
-Layer 1:  bias[0] = -0.396597
+After matmul Layer 1:  output[0] = 0.186466
+After activation Layer 1:  output[0] = 0.118001
+layer 1 output[0] after forward pass = 0.118001
+Layer 1:  weight[0] = 1.959788
+Layer 1:  bias[0] = -0.395490
 Layer 1:  input[0] = 0.069287
-Layer 1:  output[0] = 0.117845
-Layer 1:  grad_weight[0] = -0.512559
-Layer 0:  weight[0] = 227974176706932041056256.000000
+Layer 1:  output[0] = 0.118001
+Layer 1:  grad_weight[0] = -0.512936
+Layer 0:  weight[0] = -228330253980794880.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.069287
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.292323
+Training loss: 2.292240
 Training accuracy: 1.000000
 
 epoch: 35
-After matmul Layer 0:  output[0] = 95659752720276570243072.000000
-After activation Layer 0:  output[0] = 95659752720276570243072.000000
-After matmul Layer 1:  output[0] = 120398349732595875446784.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 2.010463
-Layer 1:  bias[0] = -0.409644
-Layer 1:  input[0] = 95659752720276570243072.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.512106
-Layer 0:  weight[0] = 227974176706932041056256.000000
+After matmul Layer 0:  output[0] = -95809166911733760.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.027143
+After activation Layer 1:  output[0] = 0.101902
+layer 1 output[0] after forward pass = 0.101902
+Layer 1:  weight[0] = 2.011081
+Layer 1:  bias[0] = -0.408429
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.101902
+Layer 1:  grad_weight[0] = -0.512478
+Layer 0:  weight[0] = -228330253980794880.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.419608
-Layer 0:  output[0] = 95659752720276570243072.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  output[0] = 0.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.301408
+Training accuracy: 0.937500
 
 epoch: 36
 After matmul Layer 0:  output[0] = 0.008300
 After activation Layer 0:  output[0] = 0.008300
-After matmul Layer 1:  output[0] = 0.006128
-After activation Layer 1:  output[0] = 0.099792
-layer 1 output[0] after forward pass = 0.099792
-Layer 1:  weight[0] = 2.061674
-Layer 1:  bias[0] = -0.422665
+After matmul Layer 1:  output[0] = 0.006166
+After activation Layer 1:  output[0] = 0.099788
+layer 1 output[0] after forward pass = 0.099788
+Layer 1:  weight[0] = 2.062329
+Layer 1:  bias[0] = -0.421337
 Layer 1:  input[0] = 0.008300
-Layer 1:  output[0] = 0.099792
-Layer 1:  grad_weight[0] = -0.511626
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.099788
+Layer 1:  grad_weight[0] = -0.511993
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.008300
-Layer 0:  grad_weight[0] = 0.004200
+Layer 0:  grad_weight[0] = 0.004236
 
 
-Training loss: 2.302716
+Training loss: 2.302718
 Training accuracy: 0.937500
 
 epoch: 37
 After matmul Layer 0:  output[0] = 0.022935
 After activation Layer 0:  output[0] = 0.022935
-After matmul Layer 1:  output[0] = -0.024029
-After activation Layer 1:  output[0] = 0.098534
-layer 1 output[0] after forward pass = 0.098534
-Layer 1:  weight[0] = 2.112837
-Layer 1:  bias[0] = -0.435642
+After matmul Layer 1:  output[0] = -0.023948
+After activation Layer 1:  output[0] = 0.098542
+layer 1 output[0] after forward pass = 0.098542
+Layer 1:  weight[0] = 2.113528
+Layer 1:  bias[0] = -0.434195
 Layer 1:  input[0] = 0.022935
-Layer 1:  output[0] = 0.098534
-Layer 1:  grad_weight[0] = -0.510947
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.098542
+Layer 1:  grad_weight[0] = -0.511308
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.022935
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.303508
+Training loss: 2.303503
 Training accuracy: 0.937500
 
 epoch: 38
 After matmul Layer 0:  output[0] = -0.007210
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.004891
-After activation Layer 1:  output[0] = 0.100189
-layer 1 output[0] after forward pass = 0.100189
-Layer 1:  weight[0] = 2.163932
-Layer 1:  bias[0] = -0.448548
+After matmul Layer 1:  output[0] = 0.004905
+After activation Layer 1:  output[0] = 0.100190
+layer 1 output[0] after forward pass = 0.100190
+Layer 1:  weight[0] = 2.164659
+Layer 1:  bias[0] = -0.446977
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.100189
-Layer 1:  grad_weight[0] = -0.509613
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.100190
+Layer 1:  grad_weight[0] = -0.509968
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.302468
+Training loss: 2.302467
 Training accuracy: 0.937500
 
 epoch: 39
 After matmul Layer 0:  output[0] = -0.025251
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.098731
-After activation Layer 1:  output[0] = 0.090596
-layer 1 output[0] after forward pass = 0.090596
-Layer 1:  weight[0] = 2.214893
-Layer 1:  bias[0] = -0.461358
+After matmul Layer 1:  output[0] = -0.098598
+After activation Layer 1:  output[0] = 0.090598
+layer 1 output[0] after forward pass = 0.090598
+Layer 1:  weight[0] = 2.215656
+Layer 1:  bias[0] = -0.459656
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.090596
-Layer 1:  grad_weight[0] = -0.508910
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.090598
+Layer 1:  grad_weight[0] = -0.509260
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.059962
+Layer 0:  grad_weight[0] = 0.059410
 
 
-Training loss: 2.308758
+Training loss: 2.308757
 Training accuracy: 0.937500
 
 epoch: 40
 After matmul Layer 0:  output[0] = 0.001044
 After activation Layer 0:  output[0] = 0.001044
-After matmul Layer 1:  output[0] = -0.018453
-After activation Layer 1:  output[0] = 0.098400
-layer 1 output[0] after forward pass = 0.098400
-Layer 1:  weight[0] = 2.265784
-Layer 1:  bias[0] = -0.474077
+After matmul Layer 1:  output[0] = -0.018172
+After activation Layer 1:  output[0] = 0.098427
+layer 1 output[0] after forward pass = 0.098427
+Layer 1:  weight[0] = 2.266582
+Layer 1:  bias[0] = -0.472239
 Layer 1:  input[0] = 0.001044
-Layer 1:  output[0] = 0.098400
-Layer 1:  grad_weight[0] = -0.507064
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.098427
+Layer 1:  grad_weight[0] = -0.507407
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.001044
 Layer 0:  grad_weight[0] = 0.000044
 
 
-Training loss: 2.303594
+Training loss: 2.303576
 Training accuracy: 0.937500
 
 epoch: 41
 After matmul Layer 0:  output[0] = 0.007733
 After activation Layer 0:  output[0] = 0.007733
-After matmul Layer 1:  output[0] = -0.065880
-After activation Layer 1:  output[0] = 0.090544
-layer 1 output[0] after forward pass = 0.090544
-Layer 1:  weight[0] = 2.316490
-Layer 1:  bias[0] = -0.486657
+After matmul Layer 1:  output[0] = -0.065867
+After activation Layer 1:  output[0] = 0.090546
+layer 1 output[0] after forward pass = 0.090546
+Layer 1:  weight[0] = 2.317323
+Layer 1:  bias[0] = -0.484676
 Layer 1:  input[0] = 0.007733
-Layer 1:  output[0] = 0.090544
-Layer 1:  grad_weight[0] = -0.506227
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.090546
+Layer 1:  grad_weight[0] = -0.506564
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.007733
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.308794
+Training loss: 2.308793
 Training accuracy: 0.937500
 
 epoch: 42
 After matmul Layer 0:  output[0] = -0.006219
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.086620
-After activation Layer 1:  output[0] = 0.092640
-layer 1 output[0] after forward pass = 0.092640
-Layer 1:  weight[0] = 2.367113
-Layer 1:  bias[0] = -0.499123
+After matmul Layer 1:  output[0] = -0.086096
+After activation Layer 1:  output[0] = 0.092688
+layer 1 output[0] after forward pass = 0.092688
+Layer 1:  weight[0] = 2.367979
+Layer 1:  bias[0] = -0.496993
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.092640
-Layer 1:  grad_weight[0] = -0.505724
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.092688
+Layer 1:  grad_weight[0] = -0.506056
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000250
 
 
-Training loss: 2.307364
+Training loss: 2.307331
 Training accuracy: 0.937500
 
 epoch: 43
 After matmul Layer 0:  output[0] = -0.011049
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.007897
-After activation Layer 1:  output[0] = 0.100562
-layer 1 output[0] after forward pass = 0.100562
-Layer 1:  weight[0] = 2.417685
-Layer 1:  bias[0] = -0.511450
+After matmul Layer 1:  output[0] = 0.008189
+After activation Layer 1:  output[0] = 0.100592
+layer 1 output[0] after forward pass = 0.100592
+Layer 1:  weight[0] = 2.418585
+Layer 1:  bias[0] = -0.509165
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.100562
-Layer 1:  grad_weight[0] = -0.504282
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.100592
+Layer 1:  grad_weight[0] = -0.504607
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.302235
+Training loss: 2.302217
 Training accuracy: 0.937500
 
 epoch: 44
 After matmul Layer 0:  output[0] = -0.048761
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.020012
-After activation Layer 1:  output[0] = 0.099558
-layer 1 output[0] after forward pass = 0.099558
-Layer 1:  weight[0] = 2.468113
-Layer 1:  bias[0] = -0.523618
+After matmul Layer 1:  output[0] = 0.020049
+After activation Layer 1:  output[0] = 0.099543
+layer 1 output[0] after forward pass = 0.099543
+Layer 1:  weight[0] = 2.469045
+Layer 1:  bias[0] = -0.521172
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.099558
-Layer 1:  grad_weight[0] = -0.503651
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.099543
+Layer 1:  grad_weight[0] = -0.503970
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.004716
+Layer 0:  grad_weight[0] = 0.004764
 
 
-Training loss: 2.302862
+Training loss: 2.302872
 Training accuracy: 0.937500
 
 epoch: 45
-After matmul Layer 0:  output[0] = 241913249899207953743872.000000
-After activation Layer 0:  output[0] = 241913249899207953743872.000000
-After matmul Layer 1:  output[0] = 366016945232422159515648.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 2.518479
-Layer 1:  bias[0] = -0.535642
-Layer 1:  input[0] = 241913249899207953743872.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.503093
-Layer 0:  weight[0] = 269379388975449416663040.000000
+After matmul Layer 0:  output[0] = -242291113895919616.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.075809
+After activation Layer 1:  output[0] = 0.105783
+layer 1 output[0] after forward pass = 0.105783
+Layer 1:  weight[0] = 2.519443
+Layer 1:  bias[0] = -0.533028
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.105783
+Layer 1:  grad_weight[0] = -0.503406
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.898039
-Layer 0:  output[0] = 241913249899207953743872.000000
-Layer 0:  grad_weight[0] = 0.118070
+Layer 0:  output[0] = 0.000000
+Layer 0:  grad_weight[0] = 0.116330
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.299071
+Training accuracy: 0.937500
 
 epoch: 46
-After matmul Layer 0:  output[0] = -0.145089
+After matmul Layer 0:  output[0] = -0.145522
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.309829
-After activation Layer 1:  output[0] = 0.076031
-layer 1 output[0] after forward pass = 0.076031
-Layer 1:  weight[0] = 2.568788
-Layer 1:  bias[0] = -0.547495
+After matmul Layer 1:  output[0] = -0.309612
+After activation Layer 1:  output[0] = 0.076047
+layer 1 output[0] after forward pass = 0.076047
+Layer 1:  weight[0] = 2.569783
+Layer 1:  bias[0] = -0.544706
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.076031
-Layer 1:  grad_weight[0] = -0.502426
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.076047
+Layer 1:  grad_weight[0] = -0.502733
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.319713
+Training loss: 2.319700
 Training accuracy: 0.937500
 
 epoch: 47
-After matmul Layer 0:  output[0] = -0.124081
+After matmul Layer 0:  output[0] = -0.124526
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.311061
-After activation Layer 1:  output[0] = 0.075385
-layer 1 output[0] after forward pass = 0.075385
-Layer 1:  weight[0] = 2.619031
-Layer 1:  bias[0] = -0.559172
+After matmul Layer 1:  output[0] = -0.309323
+After activation Layer 1:  output[0] = 0.075518
+layer 1 output[0] after forward pass = 0.075518
+Layer 1:  weight[0] = 2.620057
+Layer 1:  bias[0] = -0.556202
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.075385
-Layer 1:  grad_weight[0] = -0.499316
-Layer 0:  weight[0] = 269379388975449416663040.000000
+Layer 1:  output[0] = 0.075518
+Layer 1:  grad_weight[0] = -0.499616
+Layer 0:  weight[0] = -269800138908631040.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: 2.320246
+Training loss: 2.320135
 Training accuracy: 0.937500
 
 epoch: 48
-After matmul Layer 0:  output[0] = -0.168714
+After matmul Layer 0:  output[0] = -0.169089
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.182877
-After activation Layer 1:  output[0] = 0.085082
-layer 1 output[0] after forward pass = 0.085082
-Layer 1:  weight[0] = 2.668962
-Layer 1:  bias[0] = -0.570598
+After matmul Layer 1:  output[0] = -0.182466
+After activation Layer 1:  output[0] = 0.085118
+layer 1 output[0] after forward pass = 0.085118
+Layer 1:  weight[0] = 2.670018
+Layer 1:  bias[0] = -0.567439
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.085082
-Layer 1:  grad_weight[0] = -0.496131
-Layer 0:  weight[0] = 310784619258365301751808.000000
+Layer 1:  output[0] = 0.085118
+Layer 1:  grad_weight[0] = -0.496426
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.097588
+Layer 0:  grad_weight[0] = 0.095886
 
 
-Training loss: 2.312682
+Training loss: 2.312656
 Training accuracy: 0.937500
 
 epoch: 49
 After matmul Layer 0:  output[0] = 0.007421
 After activation Layer 0:  output[0] = 0.007421
-After matmul Layer 1:  output[0] = -0.027332
-After activation Layer 1:  output[0] = 0.097507
-layer 1 output[0] after forward pass = 0.097507
-Layer 1:  weight[0] = 2.718575
-Layer 1:  bias[0] = -0.581778
+After matmul Layer 1:  output[0] = -0.027295
+After activation Layer 1:  output[0] = 0.097511
+layer 1 output[0] after forward pass = 0.097511
+Layer 1:  weight[0] = 2.719661
+Layer 1:  bias[0] = -0.578424
 Layer 1:  input[0] = 0.007421
-Layer 1:  output[0] = 0.097507
-Layer 1:  grad_weight[0] = -0.494106
-Layer 0:  weight[0] = 310784619258365301751808.000000
+Layer 1:  output[0] = 0.097511
+Layer 1:  grad_weight[0] = -0.494394
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.007421
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.304163
+Training loss: 2.304161
 Training accuracy: 0.937500
 
 epoch: 50
-After matmul Layer 0:  output[0] = -0.146897
+After matmul Layer 0:  output[0] = -0.147373
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.367227
-After activation Layer 1:  output[0] = 0.072238
-layer 1 output[0] after forward pass = 0.072238
-Layer 1:  weight[0] = 2.767986
-Layer 1:  bias[0] = -0.592750
+After matmul Layer 1:  output[0] = -0.366606
+After activation Layer 1:  output[0] = 0.072283
+layer 1 output[0] after forward pass = 0.072283
+Layer 1:  weight[0] = 2.769100
+Layer 1:  bias[0] = -0.589193
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.072238
-Layer 1:  grad_weight[0] = -0.493197
-Layer 0:  weight[0] = 310784619258365301751808.000000
+Layer 1:  output[0] = 0.072283
+Layer 1:  grad_weight[0] = -0.493479
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.000637
+Layer 0:  grad_weight[0] = 0.000641
 
 
-Training loss: 2.322911
+Training loss: 2.322872
 Training accuracy: 0.937500
 
 epoch: 51
-After matmul Layer 0:  output[0] = -0.132297
+After matmul Layer 0:  output[0] = -0.132699
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.253972
-After activation Layer 1:  output[0] = 0.079875
-layer 1 output[0] after forward pass = 0.079875
-Layer 1:  weight[0] = 2.817306
-Layer 1:  bias[0] = -0.603543
+After matmul Layer 1:  output[0] = -0.252153
+After activation Layer 1:  output[0] = 0.080022
+layer 1 output[0] after forward pass = 0.080022
+Layer 1:  weight[0] = 2.818448
+Layer 1:  bias[0] = -0.599776
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.079875
-Layer 1:  grad_weight[0] = -0.489911
-Layer 0:  weight[0] = 310784619258365301751808.000000
+Layer 1:  output[0] = 0.080022
+Layer 1:  grad_weight[0] = -0.490185
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.002308
+Layer 0:  grad_weight[0] = 0.002311
 
 
-Training loss: 2.316630
+Training loss: 2.316514
 Training accuracy: 0.937500
 
 epoch: 52
 After matmul Layer 0:  output[0] = -0.046929
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.019316
-After activation Layer 1:  output[0] = 0.098908
-layer 1 output[0] after forward pass = 0.098908
-Layer 1:  weight[0] = 2.866297
-Layer 1:  bias[0] = -0.614087
+After matmul Layer 1:  output[0] = 0.019360
+After activation Layer 1:  output[0] = 0.098888
+layer 1 output[0] after forward pass = 0.098888
+Layer 1:  weight[0] = 2.867467
+Layer 1:  bias[0] = -0.610102
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.098908
-Layer 1:  grad_weight[0] = -0.487179
-Layer 0:  weight[0] = 310784619258365301751808.000000
+Layer 1:  output[0] = 0.098888
+Layer 1:  grad_weight[0] = -0.487448
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.002060
+Layer 0:  grad_weight[0] = 0.002093
 
 
-Training loss: 2.303272
+Training loss: 2.303284
 Training accuracy: 0.937500
 
 epoch: 53
-After matmul Layer 0:  output[0] = 308347090996047294496768.000000
-After activation Layer 0:  output[0] = 308347090996047294496768.000000
-After matmul Layer 1:  output[0] = 534619573576578138898432.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 2.915015
-Layer 1:  bias[0] = -0.624406
-Layer 1:  input[0] = 308347090996047294496768.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.486648
-Layer 0:  weight[0] = 310784619258365301751808.000000
+After matmul Layer 0:  output[0] = -308828695705944064.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.164862
+After activation Layer 1:  output[0] = 0.110302
+layer 1 output[0] after forward pass = 0.110302
+Layer 1:  weight[0] = 2.916211
+Layer 1:  bias[0] = -0.620196
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.110302
+Layer 1:  grad_weight[0] = -0.486910
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.992157
-Layer 0:  output[0] = 308347090996047294496768.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.296458
+Training accuracy: 0.937500
 
 epoch: 54
-After matmul Layer 0:  output[0] = 257159033516166161104896.000000
-After activation Layer 0:  output[0] = 257159033516166161104896.000000
-After matmul Layer 1:  output[0] = 453175036763329330675712.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 2.963679
-Layer 1:  bias[0] = -0.634551
-Layer 1:  input[0] = 257159033516166161104896.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.486027
-Layer 0:  weight[0] = 310784619258365301751808.000000
+After matmul Layer 0:  output[0] = -257560684705873920.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.072336
+After activation Layer 1:  output[0] = 0.098968
+layer 1 output[0] after forward pass = 0.098968
+Layer 1:  weight[0] = 2.964902
+Layer 1:  bias[0] = -0.630108
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.098968
+Layer 1:  grad_weight[0] = -0.486346
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.827451
-Layer 0:  output[0] = 257159033516166161104896.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.303234
+Training accuracy: 0.937500
 
 epoch: 55
-After matmul Layer 0:  output[0] = 19500212587745175928832.000000
-After activation Layer 0:  output[0] = 19500212587745175928832.000000
-After matmul Layer 1:  output[0] = 34923023698856062746624.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 3.012282
-Layer 1:  bias[0] = -0.644517
-Layer 1:  input[0] = 19500212587745175928832.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.485406
-Layer 0:  weight[0] = 310784619258365301751808.000000
+After matmul Layer 0:  output[0] = -19530670141341696.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.032932
+After activation Layer 1:  output[0] = 0.102809
+layer 1 output[0] after forward pass = 0.102809
+Layer 1:  weight[0] = 3.013537
+Layer 1:  bias[0] = -0.639827
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.102809
+Layer 1:  grad_weight[0] = -0.485956
+Layer 0:  weight[0] = -311270023836467200.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.062745
-Layer 0:  output[0] = 19500212587745175928832.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  output[0] = 0.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.300854
+Training accuracy: 0.937500
 
 epoch: 56
 After matmul Layer 0:  output[0] = -0.133325
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.014991
-After activation Layer 1:  output[0] = 0.101171
-layer 1 output[0] after forward pass = 0.101171
-Layer 1:  weight[0] = 3.060823
-Layer 1:  bias[0] = -0.654291
+After matmul Layer 1:  output[0] = 0.015011
+After activation Layer 1:  output[0] = 0.101172
+layer 1 output[0] after forward pass = 0.101172
+Layer 1:  weight[0] = 3.062133
+Layer 1:  bias[0] = -0.649323
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.101171
-Layer 1:  grad_weight[0] = -0.484785
-Layer 0:  weight[0] = 352189849541281186840576.000000
+Layer 1:  output[0] = 0.101172
+Layer 1:  grad_weight[0] = -0.485326
+Layer 0:  weight[0] = -352739925944172544.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.092317
+Layer 0:  grad_weight[0] = 0.089537
 
 
-Training loss: 2.301858
+Training loss: 2.301857
 Training accuracy: 0.937500
 
 epoch: 57
-After matmul Layer 0:  output[0] = -0.132753
+After matmul Layer 0:  output[0] = -0.133291
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.246926
-After activation Layer 1:  output[0] = 0.080323
-layer 1 output[0] after forward pass = 0.080323
-Layer 1:  weight[0] = 3.109301
-Layer 1:  bias[0] = -0.663860
+After matmul Layer 1:  output[0] = -0.243122
+After activation Layer 1:  output[0] = 0.080636
+layer 1 output[0] after forward pass = 0.080636
+Layer 1:  weight[0] = 3.110665
+Layer 1:  bias[0] = -0.658604
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.080323
-Layer 1:  grad_weight[0] = -0.483995
-Layer 0:  weight[0] = 352189849541281186840576.000000
+Layer 1:  output[0] = 0.080636
+Layer 1:  grad_weight[0] = -0.484528
+Layer 0:  weight[0] = -352739925944172544.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -399323046060663020453888.000000
-Large gradient detected in layer 0: -399323046060663020453888.000000
+Layer 0:  grad_weight[0] = 399946770487967744.000000
+Large gradient detected in layer 0: 399946770487967744.000000
 
 
-Training loss: 2.316280
+Training loss: 2.316037
 Training accuracy: 0.937500
 
 epoch: 58
-After matmul Layer 0:  output[0] = 390584405458901385871360.000000
-After activation Layer 0:  output[0] = 390584405458901385871360.000000
-After matmul Layer 1:  output[0] = 733635586665119381192704.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 3.157701
-Layer 1:  bias[0] = -0.673209
-Layer 1:  input[0] = 390584405458901385871360.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.481533
-Layer 0:  weight[0] = 392122150544467786989568.000000
+After matmul Layer 0:  output[0] = -391194451772440576.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.278392
+After activation Layer 1:  output[0] = 0.119126
+layer 1 output[0] after forward pass = 0.119126
+Layer 1:  weight[0] = 3.159118
+Layer 1:  bias[0] = -0.667655
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.119126
+Layer 1:  grad_weight[0] = -0.482057
+Layer 0:  weight[0] = -392734592685047808.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.996078
-Layer 0:  output[0] = 390584405458901385871360.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.291647
+Training accuracy: 0.937500
 
 epoch: 59
-After matmul Layer 0:  output[0] = -0.126472
+After matmul Layer 0:  output[0] = -0.127251
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.542987
-After activation Layer 1:  output[0] = 0.061700
-layer 1 output[0] after forward pass = 0.061700
-Layer 1:  weight[0] = 3.205854
-Layer 1:  bias[0] = -0.682279
+After matmul Layer 1:  output[0] = -0.538960
+After activation Layer 1:  output[0] = 0.061957
+layer 1 output[0] after forward pass = 0.061957
+Layer 1:  weight[0] = 3.207324
+Layer 1:  bias[0] = -0.676417
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.061700
-Layer 1:  grad_weight[0] = -0.480937
-Layer 0:  weight[0] = 392122150544467786989568.000000
+Layer 1:  output[0] = 0.061957
+Layer 1:  grad_weight[0] = -0.481474
+Layer 0:  weight[0] = -392734592685047808.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -405869298335023678619648.000000
-Large gradient detected in layer 0: -405869298335023678619648.000000
+Layer 0:  grad_weight[0] = 406503261403611136.000000
+Large gradient detected in layer 0: 406503261403611136.000000
 
 
-Training loss: 2.332766
+Training loss: 2.332506
 Training accuracy: 0.937500
 
 epoch: 60
-After matmul Layer 0:  output[0] = -0.115235
+After matmul Layer 0:  output[0] = -0.115512
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.037123
-After activation Layer 1:  output[0] = 0.096769
-layer 1 output[0] after forward pass = 0.096769
-Layer 1:  weight[0] = 3.253948
-Layer 1:  bias[0] = -0.691128
+After matmul Layer 1:  output[0] = -0.034404
+After activation Layer 1:  output[0] = 0.097032
+layer 1 output[0] after forward pass = 0.097032
+Layer 1:  weight[0] = 3.255471
+Layer 1:  bias[0] = -0.684947
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.096769
-Layer 1:  grad_weight[0] = -0.476842
-Layer 0:  weight[0] = 432709094789488962437120.000000
+Layer 1:  output[0] = 0.097032
+Layer 1:  grad_weight[0] = -0.477371
+Layer 0:  weight[0] = -433384911953461248.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -173476405846497820672000.000000
-Large gradient detected in layer 0: -173476405846497820672000.000000
+Layer 0:  grad_weight[0] = 173747370041802752.000000
+Large gradient detected in layer 0: 173747370041802752.000000
 
 
-Training loss: 2.304638
+Training loss: 2.304469
 Training accuracy: 0.937500
 
 epoch: 61
-After matmul Layer 0:  output[0] = -0.188240
+After matmul Layer 0:  output[0] = -0.189176
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.565001
-After activation Layer 1:  output[0] = 0.060473
-layer 1 output[0] after forward pass = 0.060473
-Layer 1:  weight[0] = 3.301632
-Layer 1:  bias[0] = -0.699659
+After matmul Layer 1:  output[0] = -0.559513
+After activation Layer 1:  output[0] = 0.060818
+layer 1 output[0] after forward pass = 0.060818
+Layer 1:  weight[0] = 3.303208
+Layer 1:  bias[0] = -0.693148
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.060473
-Layer 1:  grad_weight[0] = -0.475700
-Layer 0:  weight[0] = 450056744381337999245312.000000
+Layer 1:  output[0] = 0.060818
+Layer 1:  grad_weight[0] = -0.476222
+Layer 0:  weight[0] = -450759635213746176.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: 2.334021
+Training loss: 2.333666
 Training accuracy: 0.937500
 
 epoch: 62
-After matmul Layer 0:  output[0] = -0.227964
+After matmul Layer 0:  output[0] = -0.229335
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.910333
-After activation Layer 1:  output[0] = 0.043598
-layer 1 output[0] after forward pass = 0.043598
-Layer 1:  weight[0] = 3.349202
-Layer 1:  bias[0] = -0.707968
+After matmul Layer 1:  output[0] = -0.904057
+After activation Layer 1:  output[0] = 0.043889
+layer 1 output[0] after forward pass = 0.043889
+Layer 1:  weight[0] = 3.350831
+Layer 1:  bias[0] = -0.701117
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.043598
-Layer 1:  grad_weight[0] = -0.471475
-Layer 0:  weight[0] = 491461974664253884334080.000000
+Layer 1:  output[0] = 0.043889
+Layer 1:  grad_weight[0] = -0.471990
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.013528
+Layer 0:  grad_weight[0] = 0.013551
 
 
-Training loss: 2.354470
+Training loss: 2.354055
 Training accuracy: 0.937500
 
 epoch: 63
 After matmul Layer 0:  output[0] = 0.058482
 After activation Layer 0:  output[0] = 0.058482
-After matmul Layer 1:  output[0] = 0.223710
-After activation Layer 1:  output[0] = 0.122088
-layer 1 output[0] after forward pass = 0.122088
-Layer 1:  weight[0] = 3.396350
-Layer 1:  bias[0] = -0.715973
+After matmul Layer 1:  output[0] = 0.224043
+After activation Layer 1:  output[0] = 0.122112
+layer 1 output[0] after forward pass = 0.122112
+Layer 1:  weight[0] = 3.398030
+Layer 1:  bias[0] = -0.708770
 Layer 1:  input[0] = 0.058482
-Layer 1:  output[0] = 0.122088
-Layer 1:  grad_weight[0] = -0.465753
-Layer 0:  weight[0] = 491461974664253884334080.000000
+Layer 1:  output[0] = 0.122112
+Layer 1:  grad_weight[0] = -0.466261
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.058482
-Layer 0:  grad_weight[0] = -0.001031
+Layer 0:  grad_weight[0] = -0.001003
 
 
-Training loss: 2.290112
+Training loss: 2.290100
 Training accuracy: 1.000000
 
 epoch: 64
-After matmul Layer 0:  output[0] = 449061340777298062737408.000000
-After activation Layer 0:  output[0] = 449061340777298062737408.000000
-After matmul Layer 1:  output[0] = 923012095111236813848576.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 3.442925
-Layer 1:  bias[0] = -0.723659
-Layer 1:  input[0] = 449061340777298062737408.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.465392
-Layer 0:  weight[0] = 491461974664253884334080.000000
+After matmul Layer 0:  output[0] = -449762687404998656.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.297995
+After activation Layer 1:  output[0] = 0.121467
+layer 1 output[0] after forward pass = 0.121467
+Layer 1:  weight[0] = 3.444656
+Layer 1:  bias[0] = -0.716094
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.121467
+Layer 1:  grad_weight[0] = -0.465890
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.913725
-Layer 0:  output[0] = 449061340777298062737408.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.290431
+Training accuracy: 0.937500
 
 epoch: 65
-After matmul Layer 0:  output[0] = -0.046465
+After matmul Layer 0:  output[0] = -0.046482
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.011767
-After activation Layer 1:  output[0] = 0.099025
-layer 1 output[0] after forward pass = 0.099025
-Layer 1:  weight[0] = 3.489464
-Layer 1:  bias[0] = -0.731206
+After matmul Layer 1:  output[0] = -0.011756
+After activation Layer 1:  output[0] = 0.099026
+layer 1 output[0] after forward pass = 0.099026
+Layer 1:  weight[0] = 3.491245
+Layer 1:  bias[0] = -0.723269
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.099025
-Layer 1:  grad_weight[0] = -0.465012
-Layer 0:  weight[0] = 491461974664253884334080.000000
+Layer 1:  output[0] = 0.099026
+Layer 1:  grad_weight[0] = -0.465619
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.303198
+Training loss: 2.303197
 Training accuracy: 0.937500
 
 epoch: 66
-After matmul Layer 0:  output[0] = 483752784879715107209216.000000
-After activation Layer 0:  output[0] = 483752784879715107209216.000000
-After matmul Layer 1:  output[0] = 1022893576165406015488000.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 3.535965
-Layer 1:  bias[0] = -0.738607
-Layer 1:  input[0] = 483752784879715107209216.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.464586
-Layer 0:  weight[0] = 491461974664253884334080.000000
+After matmul Layer 0:  output[0] = -484508285634871296.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.345122
+After activation Layer 1:  output[0] = 0.125308
+layer 1 output[0] after forward pass = 0.125308
+Layer 1:  weight[0] = 3.537807
+Layer 1:  bias[0] = -0.730275
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.125308
+Layer 1:  grad_weight[0] = -0.465184
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.984314
-Layer 0:  output[0] = 483752784879715107209216.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.288485
+Training accuracy: 0.937500
 
 epoch: 67
 After matmul Layer 0:  output[0] = 0.002548
 After activation Layer 0:  output[0] = 0.002548
-After matmul Layer 1:  output[0] = 0.000431
-After activation Layer 1:  output[0] = 0.099501
-layer 1 output[0] after forward pass = 0.099501
-Layer 1:  weight[0] = 3.582424
-Layer 1:  bias[0] = -0.745852
+After matmul Layer 1:  output[0] = 0.000459
+After activation Layer 1:  output[0] = 0.099496
+layer 1 output[0] after forward pass = 0.099496
+Layer 1:  weight[0] = 3.584325
+Layer 1:  bias[0] = -0.737112
 Layer 1:  input[0] = 0.002548
-Layer 1:  output[0] = 0.099501
-Layer 1:  grad_weight[0] = -0.464250
-Layer 0:  weight[0] = 491461974664253884334080.000000
+Layer 1:  output[0] = 0.099496
+Layer 1:  grad_weight[0] = -0.464838
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.002548
-Layer 0:  grad_weight[0] = -0.000670
+Layer 0:  grad_weight[0] = -0.000659
 
 
-Training loss: 2.302898
+Training loss: 2.302901
 Training accuracy: 0.937500
 
 epoch: 68
@@ -1468,12 +1468,12 @@ After activation Layer 0:  output[0] = 0.000000
 After matmul Layer 1:  output[0] = 0.000000
 After activation Layer 1:  output[0] = 0.100000
 layer 1 output[0] after forward pass = 0.100000
-Layer 1:  weight[0] = 3.628849
-Layer 1:  bias[0] = -0.752932
+Layer 1:  weight[0] = 3.630809
+Layer 1:  bias[0] = -0.743773
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.100000
-Layer 1:  grad_weight[0] = -0.463884
-Layer 0:  weight[0] = 491461974664253884334080.000000
+Layer 1:  grad_weight[0] = -0.464461
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -1486,65 +1486,65 @@ Training accuracy: 1.000000
 epoch: 69
 After matmul Layer 0:  output[0] = 0.001899
 After activation Layer 0:  output[0] = 0.001899
-After matmul Layer 1:  output[0] = 0.024375
-After activation Layer 1:  output[0] = 0.097393
-layer 1 output[0] after forward pass = 0.097393
-Layer 1:  weight[0] = 3.675237
-Layer 1:  bias[0] = -0.759836
+After matmul Layer 1:  output[0] = 0.024470
+After activation Layer 1:  output[0] = 0.097358
+layer 1 output[0] after forward pass = 0.097358
+Layer 1:  weight[0] = 3.677255
+Layer 1:  bias[0] = -0.750246
 Layer 1:  input[0] = 0.001899
-Layer 1:  output[0] = 0.097393
-Layer 1:  grad_weight[0] = -0.463593
-Layer 0:  weight[0] = 491461974664253884334080.000000
+Layer 1:  output[0] = 0.097358
+Layer 1:  grad_weight[0] = -0.464160
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.001899
-Layer 0:  grad_weight[0] = -0.004027
+Layer 0:  grad_weight[0] = -0.003982
 
 
-Training loss: 2.304236
+Training loss: 2.304259
 Training accuracy: 0.937500
 
 epoch: 70
-After matmul Layer 0:  output[0] = -0.159037
+After matmul Layer 0:  output[0] = -0.159319
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.101875
-After activation Layer 1:  output[0] = 0.091794
-layer 1 output[0] after forward pass = 0.091794
-Layer 1:  weight[0] = 3.721597
-Layer 1:  bias[0] = -0.766559
+After matmul Layer 1:  output[0] = -0.098292
+After activation Layer 1:  output[0] = 0.092126
+layer 1 output[0] after forward pass = 0.092126
+Layer 1:  weight[0] = 3.723671
+Layer 1:  bias[0] = -0.756525
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.091794
-Layer 1:  grad_weight[0] = -0.463276
-Layer 0:  weight[0] = 491461974664253884334080.000000
+Layer 1:  output[0] = 0.092126
+Layer 1:  grad_weight[0] = -0.463833
+Layer 0:  weight[0] = -492229537321451520.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -139108437290916289445888.000000
-Large gradient detected in layer 0: -139108437290916289445888.000000
+Layer 0:  grad_weight[0] = 139325715425263616.000000
+Large gradient detected in layer 0: 139325715425263616.000000
 
 
-Training loss: 2.307937
+Training loss: 2.307711
 Training accuracy: 0.937500
 
 epoch: 71
-After matmul Layer 0:  output[0] = -0.143702
+After matmul Layer 0:  output[0] = -0.144555
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.594398
-After activation Layer 1:  output[0] = 0.059779
-layer 1 output[0] after forward pass = 0.059779
-Layer 1:  weight[0] = 3.767924
-Layer 1:  bias[0] = -0.773074
+After matmul Layer 1:  output[0] = -0.590856
+After activation Layer 1:  output[0] = 0.059999
+layer 1 output[0] after forward pass = 0.059999
+Layer 1:  weight[0] = 3.770054
+Layer 1:  bias[0] = -0.762584
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.059779
-Layer 1:  grad_weight[0] = -0.462125
-Layer 0:  weight[0] = 505372801279666929270784.000000
+Layer 1:  output[0] = 0.059999
+Layer 1:  grad_weight[0] = -0.462672
+Layer 0:  weight[0] = -506162101992030208.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.003453
+Layer 0:  grad_weight[0] = 0.003459
 
 
-Training loss: 2.334743
+Training loss: 2.334513
 Training accuracy: 0.937500
 
 epoch: 72
@@ -1553,12 +1553,12 @@ After activation Layer 0:  output[0] = 0.000000
 After matmul Layer 1:  output[0] = 0.000000
 After activation Layer 1:  output[0] = 0.100000
 layer 1 output[0] after forward pass = 0.100000
-Layer 1:  weight[0] = 3.814137
-Layer 1:  bias[0] = -0.779369
+Layer 1:  weight[0] = 3.816321
+Layer 1:  bias[0] = -0.768410
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.100000
-Layer 1:  grad_weight[0] = -0.458518
-Layer 0:  weight[0] = 505372801279666929270784.000000
+Layer 1:  grad_weight[0] = -0.459057
+Layer 0:  weight[0] = -506162101992030208.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -1569,280 +1569,280 @@ Training loss: 2.302585
 Training accuracy: 1.000000
 
 epoch: 73
-After matmul Layer 0:  output[0] = 59455626064219441463296.000000
-After activation Layer 0:  output[0] = 59455626064219441463296.000000
-After matmul Layer 1:  output[0] = 138090722854322359500800.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 3.859988
-Layer 1:  bias[0] = -0.785383
-Layer 1:  input[0] = 59455626064219441463296.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.458366
-Layer 0:  weight[0] = 505372801279666929270784.000000
+After matmul Layer 0:  output[0] = -59548484608458752.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.055261
+After activation Layer 1:  output[0] = 0.104762
+layer 1 output[0] after forward pass = 0.104762
+Layer 1:  weight[0] = 3.862227
+Layer 1:  bias[0] = -0.773943
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.104762
+Layer 1:  grad_weight[0] = -0.458894
+Layer 0:  weight[0] = -506162101992030208.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.117647
-Layer 0:  output[0] = 59455626064219441463296.000000
+Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.299678
+Training accuracy: 0.937500
 
 epoch: 74
-After matmul Layer 0:  output[0] = -0.350647
+After matmul Layer 0:  output[0] = -0.352987
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -1.456346
-After activation Layer 1:  output[0] = 0.025768
-layer 1 output[0] after forward pass = 0.025768
-Layer 1:  weight[0] = 3.905825
-Layer 1:  bias[0] = -0.791226
+After matmul Layer 1:  output[0] = -1.441861
+After activation Layer 1:  output[0] = 0.026173
+layer 1 output[0] after forward pass = 0.026173
+Layer 1:  weight[0] = 3.908116
+Layer 1:  bias[0] = -0.779292
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.025768
-Layer 1:  grad_weight[0] = -0.458242
-Layer 0:  weight[0] = 505372801279666929270784.000000
+Layer 1:  output[0] = 0.026173
+Layer 1:  grad_weight[0] = -0.458775
+Layer 0:  weight[0] = -506162101992030208.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -409142442486602517184512.000000
-Large gradient detected in layer 0: -409142442486602517184512.000000
+Layer 0:  grad_weight[0] = 409781524041302016.000000
+Large gradient detected in layer 0: 409781524041302016.000000
 
 
-Training loss: 2.387338
+Training loss: 2.386364
 Training accuracy: 0.937500
 
 epoch: 75
-After matmul Layer 0:  output[0] = -0.141126
+After matmul Layer 0:  output[0] = -0.142024
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.633285
-After activation Layer 1:  output[0] = 0.057937
-layer 1 output[0] after forward pass = 0.057937
-Layer 1:  weight[0] = 3.951649
-Layer 1:  bias[0] = -0.796891
+After matmul Layer 1:  output[0] = -0.629037
+After activation Layer 1:  output[0] = 0.058194
+layer 1 output[0] after forward pass = 0.058194
+Layer 1:  weight[0] = 3.953994
+Layer 1:  bias[0] = -0.784449
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.057937
-Layer 1:  grad_weight[0] = -0.450797
-Layer 0:  weight[0] = 546287031116808373403648.000000
+Layer 1:  output[0] = 0.058194
+Layer 1:  grad_weight[0] = -0.451328
+Layer 0:  weight[0] = -547140247524212736.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.004427
+Layer 0:  grad_weight[0] = 0.004435
 
 
-Training loss: 2.336699
+Training loss: 2.336422
 Training accuracy: 0.937500
 
 epoch: 76
 After matmul Layer 0:  output[0] = -0.001983
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.046101
-After activation Layer 1:  output[0] = 0.099015
-layer 1 output[0] after forward pass = 0.099015
-Layer 1:  weight[0] = 3.996729
-Layer 1:  bias[0] = -0.802181
+After matmul Layer 1:  output[0] = 0.046173
+After activation Layer 1:  output[0] = 0.098974
+layer 1 output[0] after forward pass = 0.098974
+Layer 1:  weight[0] = 3.999126
+Layer 1:  bias[0] = -0.789218
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.099015
-Layer 1:  grad_weight[0] = -0.447303
-Layer 0:  weight[0] = 546287031116808373403648.000000
+Layer 1:  output[0] = 0.098974
+Layer 1:  grad_weight[0] = -0.447825
+Layer 0:  weight[0] = -547140247524212736.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -0.006068
+Layer 0:  grad_weight[0] = -0.006052
 
 
-Training loss: 2.303204
+Training loss: 2.303230
 Training accuracy: 0.937500
 
 epoch: 77
 After matmul Layer 0:  output[0] = -0.010858
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.021214
-After activation Layer 1:  output[0] = 0.095220
-layer 1 output[0] after forward pass = 0.095220
-Layer 1:  weight[0] = 4.041460
-Layer 1:  bias[0] = -0.807281
+After matmul Layer 1:  output[0] = -0.020250
+After activation Layer 1:  output[0] = 0.095312
+layer 1 output[0] after forward pass = 0.095312
+Layer 1:  weight[0] = 4.043909
+Layer 1:  bias[0] = -0.793784
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.095220
-Layer 1:  grad_weight[0] = -0.447455
-Layer 0:  weight[0] = 546287031116808373403648.000000
+Layer 1:  output[0] = 0.095312
+Layer 1:  grad_weight[0] = -0.447966
+Layer 0:  weight[0] = -547140247524212736.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.305647
+Training loss: 2.305586
 Training accuracy: 0.937500
 
 epoch: 78
-After matmul Layer 0:  output[0] = 62126760542808783716352.000000
-After activation Layer 0:  output[0] = 62126760542808783716352.000000
-After matmul Layer 1:  output[0] = 153217719527509042659328.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 4.086205
-Layer 1:  bias[0] = -0.812290
-Layer 1:  input[0] = 62126760542808783716352.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.447784
-Layer 0:  weight[0] = 546287031116808373403648.000000
+After matmul Layer 0:  output[0] = -62223793967333376.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 0.154595
+After activation Layer 1:  output[0] = 0.113119
+layer 1 output[0] after forward pass = 0.113119
+Layer 1:  weight[0] = 4.088706
+Layer 1:  bias[0] = -0.798246
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.113119
+Layer 1:  grad_weight[0] = -0.448285
+Layer 0:  weight[0] = -547140247524212736.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.113725
-Layer 0:  output[0] = 62126760542808783716352.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  output[0] = 0.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.294881
+Training accuracy: 0.937500
 
 epoch: 79
 After matmul Layer 0:  output[0] = -0.098888
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 0.011093
-After activation Layer 1:  output[0] = 0.099751
-layer 1 output[0] after forward pass = 0.099751
-Layer 1:  weight[0] = 4.130983
-Layer 1:  bias[0] = -0.817200
+After matmul Layer 1:  output[0] = 0.011114
+After activation Layer 1:  output[0] = 0.099739
+layer 1 output[0] after forward pass = 0.099739
+Layer 1:  weight[0] = 4.133534
+Layer 1:  bias[0] = -0.802595
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.099751
-Layer 1:  grad_weight[0] = -0.447975
-Layer 0:  weight[0] = 587692261399724258492416.000000
+Layer 1:  output[0] = 0.099739
+Layer 1:  grad_weight[0] = -0.448465
+Layer 0:  weight[0] = -588610149631918080.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.007494
+Layer 0:  grad_weight[0] = 0.006347
 
 
-Training loss: 2.302742
+Training loss: 2.302749
 Training accuracy: 0.937500
 
 epoch: 80
-After matmul Layer 0:  output[0] = -0.183572
+After matmul Layer 0:  output[0] = -0.185411
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.998500
-After activation Layer 1:  output[0] = 0.041030
-layer 1 output[0] after forward pass = 0.041030
-Layer 1:  weight[0] = 4.175781
-Layer 1:  bias[0] = -0.822022
+After matmul Layer 1:  output[0] = -0.985787
+After activation Layer 1:  output[0] = 0.041586
+layer 1 output[0] after forward pass = 0.041586
+Layer 1:  weight[0] = 4.178380
+Layer 1:  bias[0] = -0.806842
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.041030
-Layer 1:  grad_weight[0] = -0.448227
-Layer 0:  weight[0] = 587692261399724258492416.000000
+Layer 1:  output[0] = 0.041586
+Layer 1:  grad_weight[0] = -0.448707
+Layer 0:  weight[0] = -588610149631918080.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.022131
+Layer 0:  grad_weight[0] = 0.022143
 
 
-Training loss: 2.358264
+Training loss: 2.357423
 Training accuracy: 0.937500
 
 epoch: 81
-After matmul Layer 0:  output[0] = -0.118494
+After matmul Layer 0:  output[0] = -0.119692
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.625998
-After activation Layer 1:  output[0] = 0.058433
-layer 1 output[0] after forward pass = 0.058433
-Layer 1:  weight[0] = 4.220603
-Layer 1:  bias[0] = -0.826747
+After matmul Layer 1:  output[0] = -0.617656
+After activation Layer 1:  output[0] = 0.058943
+layer 1 output[0] after forward pass = 0.058943
+Layer 1:  weight[0] = 4.223251
+Layer 1:  bias[0] = -0.810980
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.058433
-Layer 1:  grad_weight[0] = -0.443114
-Layer 0:  weight[0] = 587692261399724258492416.000000
+Layer 1:  output[0] = 0.058943
+Layer 1:  grad_weight[0] = -0.443592
+Layer 0:  weight[0] = -588610149631918080.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -368228212649461073051648.000000
-Large gradient detected in layer 0: -368228212649461073051648.000000
+Layer 0:  grad_weight[0] = 368803378509119488.000000
+Large gradient detected in layer 0: 368803378509119488.000000
 
 
-Training loss: 2.336165
+Training loss: 2.335623
 Training accuracy: 0.937500
 
 epoch: 82
-After matmul Layer 0:  output[0] = -0.112541
+After matmul Layer 0:  output[0] = -0.113877
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.655206
-After activation Layer 1:  output[0] = 0.056661
-layer 1 output[0] after forward pass = 0.056661
-Layer 1:  weight[0] = 4.264915
-Layer 1:  bias[0] = -0.831232
+After matmul Layer 1:  output[0] = -0.643448
+After activation Layer 1:  output[0] = 0.057361
+layer 1 output[0] after forward pass = 0.057361
+Layer 1:  weight[0] = 4.267611
+Layer 1:  bias[0] = -0.814864
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.056661
-Layer 1:  grad_weight[0] = -0.439961
-Layer 0:  weight[0] = 624515097076189173383168.000000
+Layer 1:  output[0] = 0.057361
+Layer 1:  grad_weight[0] = -0.440434
+Layer 0:  weight[0] = -625490518406594560.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -104740477742534012960768.000000
-Large gradient detected in layer 0: -104740477742534012960768.000000
+Layer 0:  grad_weight[0] = 104904077988593664.000000
+Large gradient detected in layer 0: 104904077988593664.000000
 
 
-Training loss: 2.338091
+Training loss: 2.337323
 Training accuracy: 0.937500
 
 epoch: 83
 After matmul Layer 0:  output[0] = -0.009379
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.017062
-After activation Layer 1:  output[0] = 0.098688
-layer 1 output[0] after forward pass = 0.098688
-Layer 1:  weight[0] = 4.308911
-Layer 1:  bias[0] = -0.835578
+After matmul Layer 1:  output[0] = -0.015986
+After activation Layer 1:  output[0] = 0.098795
+layer 1 output[0] after forward pass = 0.098795
+Layer 1:  weight[0] = 4.311654
+Layer 1:  bias[0] = -0.818596
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.098688
-Layer 1:  grad_weight[0] = -0.436654
-Layer 0:  weight[0] = 634989172772760264376320.000000
+Layer 1:  output[0] = 0.098795
+Layer 1:  grad_weight[0] = -0.437123
+Layer 0:  weight[0] = -635980958847205376.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000058
 
 
-Training loss: 2.303411
+Training loss: 2.303343
 Training accuracy: 0.937500
 
 epoch: 84
-After matmul Layer 0:  output[0] = -0.060134
+After matmul Layer 0:  output[0] = -0.061201
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.598423
-After activation Layer 1:  output[0] = 0.059900
-layer 1 output[0] after forward pass = 0.059900
-Layer 1:  weight[0] = 4.352576
-Layer 1:  bias[0] = -0.839806
+After matmul Layer 1:  output[0] = -0.589555
+After activation Layer 1:  output[0] = 0.060460
+layer 1 output[0] after forward pass = 0.060460
+Layer 1:  weight[0] = 4.355366
+Layer 1:  bias[0] = -0.822196
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.059900
-Layer 1:  grad_weight[0] = -0.437049
-Layer 0:  weight[0] = 634989172772760264376320.000000
+Layer 1:  output[0] = 0.060460
+Layer 1:  grad_weight[0] = -0.437509
+Layer 0:  weight[0] = -635980958847205376.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.009702
+Layer 0:  grad_weight[0] = 0.009706
 
 
-Training loss: 2.334616
+Training loss: 2.334034
 Training accuracy: 0.937500
 
 epoch: 85
 After matmul Layer 0:  output[0] = 0.005947
 After activation Layer 0:  output[0] = 0.005947
-After matmul Layer 1:  output[0] = 0.044237
-After activation Layer 1:  output[0] = 0.104850
-layer 1 output[0] after forward pass = 0.104850
-Layer 1:  weight[0] = 4.396281
-Layer 1:  bias[0] = -0.844046
+After matmul Layer 1:  output[0] = 0.044235
+After activation Layer 1:  output[0] = 0.104852
+layer 1 output[0] after forward pass = 0.104852
+Layer 1:  weight[0] = 4.399117
+Layer 1:  bias[0] = -0.825794
 Layer 1:  input[0] = 0.005947
-Layer 1:  output[0] = 0.104850
-Layer 1:  grad_weight[0] = -0.434442
-Layer 0:  weight[0] = 634989172772760264376320.000000
+Layer 1:  output[0] = 0.104852
+Layer 1:  grad_weight[0] = -0.434894
+Layer 0:  weight[0] = -635980958847205376.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.005947
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.299625
+Training loss: 2.299624
 Training accuracy: 0.937500
 
 epoch: 86
@@ -1851,12 +1851,12 @@ After activation Layer 0:  output[0] = 0.000000
 After matmul Layer 1:  output[0] = 0.000000
 After activation Layer 1:  output[0] = 0.100000
 layer 1 output[0] after forward pass = 0.100000
-Layer 1:  weight[0] = 4.439725
-Layer 1:  bias[0] = -0.848208
+Layer 1:  weight[0] = 4.442606
+Layer 1:  bias[0] = -0.829302
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.100000
-Layer 1:  grad_weight[0] = -0.435020
-Layer 0:  weight[0] = 634989172772760264376320.000000
+Layer 1:  grad_weight[0] = -0.435463
+Layer 0:  weight[0] = -635980958847205376.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -1867,25 +1867,25 @@ Training loss: 2.302585
 Training accuracy: 1.000000
 
 epoch: 87
-After matmul Layer 0:  output[0] = -0.101501
+After matmul Layer 0:  output[0] = -0.102533
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.475364
-After activation Layer 1:  output[0] = 0.066611
-layer 1 output[0] after forward pass = 0.066611
-Layer 1:  weight[0] = 4.483227
-Layer 1:  bias[0] = -0.852406
+After matmul Layer 1:  output[0] = -0.465869
+After activation Layer 1:  output[0] = 0.067274
+layer 1 output[0] after forward pass = 0.067274
+Layer 1:  weight[0] = 4.486153
+Layer 1:  bias[0] = -0.832831
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.066611
-Layer 1:  grad_weight[0] = -0.435795
-Layer 0:  weight[0] = 634989172772760264376320.000000
+Layer 1:  output[0] = 0.067274
+Layer 1:  grad_weight[0] = -0.436228
+Layer 0:  weight[0] = -635980958847205376.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -412415586638181355749376.000000
-Large gradient detected in layer 0: -412415586638181355749376.000000
+Layer 0:  grad_weight[0] = 413059752319254528.000000
+Large gradient detected in layer 0: 413059752319254528.000000
 
 
-Training loss: 2.327979
+Training loss: 2.327360
 Training accuracy: 0.937500
 
 epoch: 88
@@ -1894,12 +1894,12 @@ After activation Layer 0:  output[0] = 0.000000
 After matmul Layer 1:  output[0] = -0.010661
 After activation Layer 1:  output[0] = 0.098192
 layer 1 output[0] after forward pass = 0.098192
-Layer 1:  weight[0] = 4.526807
-Layer 1:  bias[0] = -0.856641
+Layer 1:  weight[0] = 4.529776
+Layer 1:  bias[0] = -0.836384
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.098192
-Layer 1:  grad_weight[0] = -0.434036
-Layer 0:  weight[0] = 676230760259616015122432.000000
+Layer 1:  grad_weight[0] = -0.434462
+Layer 0:  weight[0] = -677286930643156992.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
@@ -1910,89 +1910,89 @@ Training loss: 2.303726
 Training accuracy: 0.937500
 
 epoch: 89
-After matmul Layer 0:  output[0] = -0.209679
+After matmul Layer 0:  output[0] = -0.210628
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.908357
-After activation Layer 1:  output[0] = 0.045877
-layer 1 output[0] after forward pass = 0.045877
-Layer 1:  weight[0] = 4.570210
-Layer 1:  bias[0] = -0.860821
+After matmul Layer 1:  output[0] = -0.903432
+After activation Layer 1:  output[0] = 0.046118
+layer 1 output[0] after forward pass = 0.046118
+Layer 1:  weight[0] = 4.573222
+Layer 1:  bias[0] = -0.839869
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.045877
-Layer 1:  grad_weight[0] = -0.435028
-Layer 0:  weight[0] = 676230760259616015122432.000000
+Layer 1:  output[0] = 0.046118
+Layer 1:  grad_weight[0] = -0.435444
+Layer 0:  weight[0] = -677286930643156992.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.048983
+Layer 0:  grad_weight[0] = 0.041935
 
 
-Training loss: 2.351286
+Training loss: 2.350958
 Training accuracy: 0.937500
 
 epoch: 90
 After matmul Layer 0:  output[0] = -0.058385
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.085108
-After activation Layer 1:  output[0] = 0.092290
-layer 1 output[0] after forward pass = 0.092290
-Layer 1:  weight[0] = 4.613713
-Layer 1:  bias[0] = -0.865050
+After matmul Layer 1:  output[0] = -0.085107
+After activation Layer 1:  output[0] = 0.092286
+layer 1 output[0] after forward pass = 0.092286
+Layer 1:  weight[0] = 4.616766
+Layer 1:  bias[0] = -0.843390
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.092290
-Layer 1:  grad_weight[0] = -0.431489
-Layer 0:  weight[0] = 676230760259616015122432.000000
+Layer 1:  output[0] = 0.092286
+Layer 1:  grad_weight[0] = -0.431900
+Layer 0:  weight[0] = -677286930643156992.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.019294
+Layer 0:  grad_weight[0] = 0.015723
 
 
-Training loss: 2.307600
+Training loss: 2.307603
 Training accuracy: 0.937500
 
 epoch: 91
-After matmul Layer 0:  output[0] = -0.183101
+After matmul Layer 0:  output[0] = -0.184076
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.676442
-After activation Layer 1:  output[0] = 0.056457
-layer 1 output[0] after forward pass = 0.056457
-Layer 1:  weight[0] = 4.656862
-Layer 1:  bias[0] = -0.869216
+After matmul Layer 1:  output[0] = -0.668515
+After activation Layer 1:  output[0] = 0.056930
+layer 1 output[0] after forward pass = 0.056930
+Layer 1:  weight[0] = 4.659956
+Layer 1:  bias[0] = -0.846834
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.056457
-Layer 1:  grad_weight[0] = -0.432250
-Layer 0:  weight[0] = 676230760259616015122432.000000
+Layer 1:  output[0] = 0.056930
+Layer 1:  grad_weight[0] = -0.432651
+Layer 0:  weight[0] = -677286930643156992.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -410779014562391936466944.000000
-Large gradient detected in layer 0: -410779014562391936466944.000000
+Layer 0:  grad_weight[0] = 411420655360147456.000000
+Large gradient detected in layer 0: 411420655360147456.000000
 
 
-Training loss: 2.338316
+Training loss: 2.337794
 Training accuracy: 0.937500
 
 epoch: 92
-After matmul Layer 0:  output[0] = -0.048008
+After matmul Layer 0:  output[0] = -0.048976
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.911643
-After activation Layer 1:  output[0] = 0.045624
-layer 1 output[0] after forward pass = 0.045624
-Layer 1:  weight[0] = 4.700087
-Layer 1:  bias[0] = -0.873463
+After matmul Layer 1:  output[0] = -0.903766
+After activation Layer 1:  output[0] = 0.046009
+layer 1 output[0] after forward pass = 0.046009
+Layer 1:  weight[0] = 4.703221
+Layer 1:  bias[0] = -0.850347
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.045624
-Layer 1:  grad_weight[0] = -0.429777
-Layer 0:  weight[0] = 717308632892817593597952.000000
+Layer 1:  output[0] = 0.046009
+Layer 1:  grad_weight[0] = -0.430173
+Layer 0:  weight[0] = -718429006487093248.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -415688730789760194314240.000000
-Large gradient detected in layer 0: -415688730789760194314240.000000
+Layer 0:  grad_weight[0] = 416338014956945408.000000
+Large gradient detected in layer 0: 416338014956945408.000000
 
 
-Training loss: 2.351632
+Training loss: 2.351106
 Training accuracy: 0.937500
 
 epoch: 93
@@ -2001,1204 +2001,1212 @@ After activation Layer 0:  output[0] = 0.000000
 After matmul Layer 1:  output[0] = 0.000000
 After activation Layer 1:  output[0] = 0.100000
 layer 1 output[0] after forward pass = 0.100000
-Layer 1:  weight[0] = 4.743065
-Layer 1:  bias[0] = -0.877708
+Layer 1:  weight[0] = 4.746238
+Layer 1:  bias[0] = -0.853844
 Layer 1:  input[0] = 0.000000
 Layer 1:  output[0] = 0.100000
-Layer 1:  grad_weight[0] = -0.426527
-Layer 0:  weight[0] = 758877505971793613029376.000000
+Layer 1:  grad_weight[0] = -0.426919
+Layer 0:  weight[0] = -760062838906552320.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.042000
+Layer 0:  grad_weight[0] = 0.034485
 
 
 Training loss: 2.302585
 Training accuracy: 1.000000
 
 epoch: 94
-After matmul Layer 0:  output[0] = -0.014026
+After matmul Layer 0:  output[0] = -0.014209
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.084158
-After activation Layer 1:  output[0] = 0.093744
-layer 1 output[0] after forward pass = 0.093744
-Layer 1:  weight[0] = 4.785717
-Layer 1:  bias[0] = -0.881958
+After matmul Layer 1:  output[0] = -0.079541
+After activation Layer 1:  output[0] = 0.094184
+layer 1 output[0] after forward pass = 0.094184
+Layer 1:  weight[0] = 4.788930
+Layer 1:  bias[0] = -0.857333
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.093744
-Layer 1:  grad_weight[0] = -0.427917
-Layer 0:  weight[0] = 758877505971793613029376.000000
+Layer 1:  output[0] = 0.094184
+Layer 1:  grad_weight[0] = -0.428300
+Layer 0:  weight[0] = -760062838906552320.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.000994
+Layer 0:  grad_weight[0] = 0.000993
 
 
-Training loss: 2.306623
+Training loss: 2.306330
 Training accuracy: 0.937500
 
 epoch: 95
-After matmul Layer 0:  output[0] = -0.016530
+After matmul Layer 0:  output[0] = -0.017430
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -1.100011
-After activation Layer 1:  output[0] = 0.038464
-layer 1 output[0] after forward pass = 0.038464
-Layer 1:  weight[0] = 4.828509
-Layer 1:  bias[0] = -0.886370
+After matmul Layer 1:  output[0] = -1.093353
+After activation Layer 1:  output[0] = 0.038742
+layer 1 output[0] after forward pass = 0.038742
+Layer 1:  weight[0] = 4.831760
+Layer 1:  bias[0] = -0.860973
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.038464
-Layer 1:  grad_weight[0] = -0.428729
-Layer 0:  weight[0] = 758877505971793613029376.000000
+Layer 1:  output[0] = 0.038742
+Layer 1:  grad_weight[0] = -0.429105
+Layer 0:  weight[0] = -760062838906552320.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -414052158713970775031808.000000
-Large gradient detected in layer 0: -414052158713970775031808.000000
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: 2.362301
+Training loss: 2.361851
 Training accuracy: 0.937500
 
 epoch: 96
-After matmul Layer 0:  output[0] = -0.075567
+After matmul Layer 0:  output[0] = -0.076449
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.935067
-After activation Layer 1:  output[0] = 0.044888
-layer 1 output[0] after forward pass = 0.044888
-Layer 1:  weight[0] = 4.871382
-Layer 1:  bias[0] = -0.890923
+After matmul Layer 1:  output[0] = -0.928081
+After activation Layer 1:  output[0] = 0.045226
+layer 1 output[0] after forward pass = 0.045226
+Layer 1:  weight[0] = 4.874671
+Layer 1:  bias[0] = -0.864740
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.044888
-Layer 1:  grad_weight[0] = -0.425135
-Layer 0:  weight[0] = 800282736254709498118144.000000
+Layer 1:  output[0] = 0.045226
+Layer 1:  grad_weight[0] = -0.425506
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.010285
+Layer 0:  grad_weight[0] = 0.010293
 
 
-Training loss: 2.352648
+Training loss: 2.352179
 Training accuracy: 0.937500
 
 epoch: 97
-After matmul Layer 0:  output[0] = -0.009535
+After matmul Layer 0:  output[0] = -0.010379
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.771317
-After activation Layer 1:  output[0] = 0.051428
-layer 1 output[0] after forward pass = 0.051428
-Layer 1:  weight[0] = 4.913896
-Layer 1:  bias[0] = -0.895508
+After matmul Layer 1:  output[0] = -0.763214
+After activation Layer 1:  output[0] = 0.051878
+layer 1 output[0] after forward pass = 0.051878
+Layer 1:  weight[0] = 4.917221
+Layer 1:  bias[0] = -0.868527
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.051428
-Layer 1:  grad_weight[0] = -0.422329
-Layer 0:  weight[0] = 800282736254709498118144.000000
+Layer 1:  output[0] = 0.051878
+Layer 1:  grad_weight[0] = -0.422697
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.009954
+Layer 0:  grad_weight[0] = 0.009962
 
 
-Training loss: 2.344147
+Training loss: 2.343603
 Training accuracy: 0.937500
 
 epoch: 98
-After matmul Layer 0:  output[0] = -0.002714
+After matmul Layer 0:  output[0] = -0.003022
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -0.309143
-After activation Layer 1:  output[0] = 0.078350
-layer 1 output[0] after forward pass = 0.078350
-Layer 1:  weight[0] = 4.956129
-Layer 1:  bias[0] = -0.900189
+After matmul Layer 1:  output[0] = -0.305555
+After activation Layer 1:  output[0] = 0.078647
+layer 1 output[0] after forward pass = 0.078647
+Layer 1:  weight[0] = 4.959491
+Layer 1:  bias[0] = -0.872398
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 0.078350
-Layer 1:  grad_weight[0] = -0.420738
-Layer 0:  weight[0] = 800282736254709498118144.000000
+Layer 1:  output[0] = 0.078647
+Layer 1:  grad_weight[0] = -0.421100
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = 0.001806
+Layer 0:  grad_weight[0] = 0.001807
 
 
-Training loss: 2.317834
+Training loss: 2.317598
 Training accuracy: 0.937500
 
 epoch: 99
 After matmul Layer 0:  output[0] = 0.069236
 After activation Layer 0:  output[0] = 0.069236
-After matmul Layer 1:  output[0] = 0.431261
-After activation Layer 1:  output[0] = 0.150203
-layer 1 output[0] after forward pass = 0.150203
-Layer 1:  weight[0] = 4.998202
-Layer 1:  bias[0] = -0.904993
+After matmul Layer 1:  output[0] = 0.431437
+After activation Layer 1:  output[0] = 0.150273
+layer 1 output[0] after forward pass = 0.150273
+Layer 1:  weight[0] = 5.001601
+Layer 1:  bias[0] = -0.876381
 Layer 1:  input[0] = 0.069236
-Layer 1:  output[0] = 0.150203
-Layer 1:  grad_weight[0] = -0.421079
-Layer 0:  weight[0] = 800282736254709498118144.000000
+Layer 1:  output[0] = 0.150273
+Layer 1:  grad_weight[0] = -0.421435
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.069236
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.277159
+Training loss: 2.277130
 Training accuracy: 1.000000
 
 epoch: 100
-After matmul Layer 0:  output[0] = 530383487767073450360832.000000
-After activation Layer 0:  output[0] = 530383487767073450360832.000000
-After matmul Layer 1:  output[0] = 1558939241585588786167808.000000
-After activation Layer 1:  output[0] = 0.000000
-layer 1 output[0] after forward pass = 0.000000
-Layer 1:  weight[0] = 5.040310
-Layer 1:  bias[0] = -0.910036
-Layer 1:  input[0] = 530383487767073450360832.000000
-Layer 1:  output[0] = 0.000000
-Layer 1:  grad_weight[0] = -0.423107
-Layer 0:  weight[0] = 800282736254709498118144.000000
+After matmul Layer 0:  output[0] = -531211897450528768.000000
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = 1.282084
+After activation Layer 1:  output[0] = 0.046255
+layer 1 output[0] after forward pass = 0.046255
+Layer 1:  weight[0] = 5.043744
+Layer 1:  bias[0] = -0.880590
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.046255
+Layer 1:  grad_weight[0] = -0.423456
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.662745
-Layer 0:  output[0] = 530383487767073450360832.000000
-Layer 0:  grad_weight[0] = -0.495428
+Layer 0:  output[0] = 0.000000
+Layer 0:  grad_weight[0] = -0.096293
 
 
-Training loss: inf
+Training loss: 2.350773
 Training accuracy: 0.937500
 
 epoch: 101
 After matmul Layer 0:  output[0] = 0.099462
 After activation Layer 0:  output[0] = 0.099462
-After matmul Layer 1:  output[0] = 5668756286265001771008.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 5.082621
-Layer 1:  bias[0] = -0.915372
+After matmul Layer 1:  output[0] = 0.636671
+After activation Layer 1:  output[0] = 0.179448
+layer 1 output[0] after forward pass = 0.179448
+Layer 1:  weight[0] = 5.086090
+Layer 1:  bias[0] = -0.885082
 Layer 1:  input[0] = 0.099462
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -0.425224
-Layer 0:  weight[0] = 800282736254709498118144.000000
+Layer 1:  output[0] = 0.179448
+Layer 1:  grad_weight[0] = -0.426813
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.099462
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
+Training loss: 2.266041
 Training accuracy: 1.000000
 
 epoch: 102
 After matmul Layer 0:  output[0] = -0.025890
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = 2063182165154042216448.000000
-After activation Layer 1:  output[0] = 1.000000
-layer 1 output[0] after forward pass = 1.000000
-Layer 1:  weight[0] = 5.125144
-Layer 1:  bias[0] = -0.921000
+After matmul Layer 1:  output[0] = 0.037967
+After activation Layer 1:  output[0] = 0.101711
+layer 1 output[0] after forward pass = 0.101711
+Layer 1:  weight[0] = 5.128771
+Layer 1:  bias[0] = -0.889731
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = 1.000000
-Layer 1:  grad_weight[0] = -53038347453774954496.000000
-Large gradient detected in layer 1: -53038347453774954496.000000
-Layer 0:  weight[0] = 800282736254709498118144.000000
+Layer 1:  output[0] = 0.101711
+Layer 1:  grad_weight[0] = -0.429011
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
 Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.301525
+Training accuracy: 0.937500
 
 epoch: 103
-After matmul Layer 0:  output[0] = 54910292388342661120.000000
-After activation Layer 0:  output[0] = 54910292388342661120.000000
-After matmul Layer 1:  output[0] = 292691295096328507295545874121983262720.000000
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = 5303834635426332672.000000
-Layer 1:  bias[0] = -47734510069569552384.000000
-Layer 1:  input[0] = 54910292388342661120.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -111380527893708800000.000000
-Large gradient detected in layer 1: -111380527893708800000.000000
-Layer 0:  weight[0] = 800282736254709498118144.000000
+After matmul Layer 0:  output[0] = -0.032086
+After activation Layer 0:  output[0] = 0.000000
+After matmul Layer 1:  output[0] = -0.607064
+After activation Layer 1:  output[0] = 0.061057
+layer 1 output[0] after forward pass = 0.061057
+Layer 1:  weight[0] = 5.171672
+Layer 1:  bias[0] = -0.894658
+Layer 1:  input[0] = 0.000000
+Layer 1:  output[0] = 0.061057
+Layer 1:  grad_weight[0] = -0.431509
+Layer 0:  weight[0] = -801532706654519296.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 54910292388342661120.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.000000
+Layer 0:  grad_weight[0] = 134408338648596480.000000
+Large gradient detected in layer 0: 134408338648596480.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.333421
+Training accuracy: 0.937500
 
 epoch: 104
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = 16441887974553026560.000000
-Layer 1:  bias[0] = -143203534606755168256.000000
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.116254
+After activation Layer 0:  output[0] = 0.116254
+After matmul Layer 1:  output[0] = -0.228653
+After activation Layer 1:  output[0] = 0.087539
+layer 1 output[0] after forward pass = 0.087539
+Layer 1:  weight[0] = 5.214823
+Layer 1:  bias[0] = -0.899841
+Layer 1:  input[0] = 0.116254
+Layer 1:  output[0] = 0.087539
+Layer 1:  grad_weight[0] = -0.431083
+Layer 0:  weight[0] = -814973549109313536.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.116254
+Layer 0:  grad_weight[0] = 0.014408
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.310904
+Training accuracy: 0.937500
 
 epoch: 105
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.029538
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.012430
+After activation Layer 1:  output[0] = 0.094595
+layer 1 output[0] after forward pass = 0.094595
+Layer 1:  weight[0] = 5.257931
+Layer 1:  bias[0] = -0.905228
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.094595
+Layer 1:  grad_weight[0] = -0.427988
+Layer 0:  weight[0] = -814973549109313536.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.013432
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.306058
+Training accuracy: 0.937500
 
 epoch: 106
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.008313
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = -0.002426
+After activation Layer 1:  output[0] = 0.097876
+layer 1 output[0] after forward pass = 0.097876
+Layer 1:  weight[0] = 5.300730
+Layer 1:  bias[0] = -0.910809
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.097876
+Layer 1:  grad_weight[0] = -0.430653
+Layer 0:  weight[0] = -814973549109313536.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.303927
+Training accuracy: 0.937500
 
 epoch: 107
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.018256
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = -0.852045
+After activation Layer 1:  output[0] = 0.048499
+layer 1 output[0] after forward pass = 0.048499
+Layer 1:  weight[0] = 5.343796
+Layer 1:  bias[0] = -0.916715
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.048499
+Layer 1:  grad_weight[0] = -0.433480
+Layer 0:  weight[0] = -814973549109313536.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 403224998765920256.000000
+Large gradient detected in layer 0: 403224998765920256.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.347812
+Training accuracy: 0.937500
 
 epoch: 108
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.005811
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.056308
+After activation Layer 1:  output[0] = 0.096992
+layer 1 output[0] after forward pass = 0.096992
+Layer 1:  weight[0] = 5.387144
+Layer 1:  bias[0] = -0.922938
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.096992
+Layer 1:  grad_weight[0] = -0.432267
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.010731
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.304494
+Training accuracy: 0.937500
 
 epoch: 109
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -83852562075222016.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.183319
+After activation Layer 1:  output[0] = 0.113848
+layer 1 output[0] after forward pass = 0.113848
+Layer 1:  weight[0] = 5.430370
+Layer 1:  bias[0] = -0.929382
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.113848
+Layer 1:  grad_weight[0] = -0.435443
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.098039
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.294480
+Training accuracy: 0.937500
 
 epoch: 110
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.000213
+After activation Layer 0:  output[0] = 0.000213
+After matmul Layer 1:  output[0] = -0.045304
+After activation Layer 1:  output[0] = 0.096884
+layer 1 output[0] after forward pass = 0.096884
+Layer 1:  weight[0] = 5.473915
+Layer 1:  bias[0] = -0.936162
+Layer 1:  input[0] = 0.000213
+Layer 1:  output[0] = 0.096884
+Layer 1:  grad_weight[0] = -0.438601
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.000213
+Layer 0:  grad_weight[0] = 0.000022
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.304564
+Training accuracy: 0.937500
 
 epoch: 111
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.013383
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.082901
+After activation Layer 1:  output[0] = 0.107697
+layer 1 output[0] after forward pass = 0.107697
+Layer 1:  weight[0] = 5.517775
+Layer 1:  bias[0] = -0.943285
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.107697
+Layer 1:  grad_weight[0] = -0.441527
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
+Training loss: 2.297951
 Training accuracy: 1.000000
 
 epoch: 112
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.047001
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.021293
+After activation Layer 1:  output[0] = 0.087154
+layer 1 output[0] after forward pass = 0.087154
+Layer 1:  weight[0] = 5.561927
+Layer 1:  bias[0] = -0.950760
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.087154
+Layer 1:  grad_weight[0] = -0.444800
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.025474
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.311179
+Training accuracy: 0.937500
 
 epoch: 113
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = 0.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.000000
+After activation Layer 1:  output[0] = 0.100000
+layer 1 output[0] after forward pass = 0.100000
+Layer 1:  weight[0] = 5.606407
+Layer 1:  bias[0] = -0.958585
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.100000
+Layer 1:  grad_weight[0] = -0.448191
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
+Training loss: 2.302585
 Training accuracy: 1.000000
 
 epoch: 114
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.105114
+After activation Layer 0:  output[0] = 0.105114
+After matmul Layer 1:  output[0] = 0.667057
+After activation Layer 1:  output[0] = 0.178441
+layer 1 output[0] after forward pass = 0.178441
+Layer 1:  weight[0] = 5.651226
+Layer 1:  bias[0] = -0.966756
+Layer 1:  input[0] = 0.105114
+Layer 1:  output[0] = 0.178441
+Layer 1:  grad_weight[0] = -0.451568
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.105114
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
+Training loss: 2.266392
 Training accuracy: 1.000000
 
 epoch: 115
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.003223
+After activation Layer 0:  output[0] = 0.003223
+After matmul Layer 1:  output[0] = 0.133069
+After activation Layer 1:  output[0] = 0.113474
+layer 1 output[0] after forward pass = 0.113474
+Layer 1:  weight[0] = 5.696383
+Layer 1:  bias[0] = -0.975282
+Layer 1:  input[0] = 0.003223
+Layer 1:  output[0] = 0.113474
+Layer 1:  grad_weight[0] = -0.455035
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.003223
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
+Training loss: 2.294685
 Training accuracy: 1.000000
 
 epoch: 116
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.097129
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.106105
+After activation Layer 1:  output[0] = 0.109063
+layer 1 output[0] after forward pass = 0.109063
+Layer 1:  weight[0] = 5.741887
+Layer 1:  bias[0] = -0.984162
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.109063
+Layer 1:  grad_weight[0] = -0.458593
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.003928
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.297163
+Training accuracy: 0.937500
 
 epoch: 117
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.088537
+After activation Layer 0:  output[0] = 0.088537
+After matmul Layer 1:  output[0] = -1.548066
+After activation Layer 1:  output[0] = 0.022862
+layer 1 output[0] after forward pass = 0.022862
+Layer 1:  weight[0] = 5.787746
+Layer 1:  bias[0] = -0.993395
+Layer 1:  input[0] = 0.088537
+Layer 1:  output[0] = 0.022862
+Layer 1:  grad_weight[0] = -0.462253
+Layer 0:  weight[0] = -855296076473696256.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.088537
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.394817
+Training accuracy: 0.937500
 
 epoch: 118
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.037825
+After activation Layer 0:  output[0] = 0.037825
+After matmul Layer 1:  output[0] = -1.033444
+After activation Layer 1:  output[0] = 0.040986
+layer 1 output[0] after forward pass = 0.040986
+Layer 1:  weight[0] = 5.833972
+Layer 1:  bias[0] = -1.002981
+Layer 1:  input[0] = 0.037825
+Layer 1:  output[0] = 0.040986
+Layer 1:  grad_weight[0] = -0.455738
+Layer 0:  weight[0] = -896765944221663232.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.037825
+Layer 0:  grad_weight[0] = 414698883638099968.000000
+Large gradient detected in layer 0: 414698883638099968.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.358332
+Training accuracy: 0.937500
 
 epoch: 119
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.009955
+After activation Layer 0:  output[0] = 0.009955
+After matmul Layer 1:  output[0] = -0.217900
+After activation Layer 1:  output[0] = 0.086753
+layer 1 output[0] after forward pass = 0.086753
+Layer 1:  weight[0] = 5.879545
+Layer 1:  bias[0] = -1.012732
+Layer 1:  input[0] = 0.009955
+Layer 1:  output[0] = 0.086753
+Layer 1:  grad_weight[0] = -0.453982
+Layer 0:  weight[0] = -938235811969630208.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.009955
+Layer 0:  grad_weight[0] = 101625815350902784.000000
+Large gradient detected in layer 0: 101625815350902784.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.311467
+Training accuracy: 0.937500
 
 epoch: 120
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -940959989466398720.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 2.126957
+After activation Layer 1:  output[0] = 0.314458
+layer 1 output[0] after forward pass = 0.314458
+Layer 1:  weight[0] = 5.924943
+Layer 1:  bias[0] = -1.022771
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.314458
+Layer 1:  grad_weight[0] = -0.456809
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.992157
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
+Training loss: 2.230980
 Training accuracy: 1.000000
 
 epoch: 121
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.090706
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.013754
+After activation Layer 1:  output[0] = 0.095778
+layer 1 output[0] after forward pass = 0.095778
+Layer 1:  weight[0] = 5.970624
+Layer 1:  bias[0] = -1.033238
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.095778
+Layer 1:  grad_weight[0] = -0.460938
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.062999
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.305281
+Training accuracy: 0.937500
 
 epoch: 122
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -821945277463134208.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 2.825049
+After activation Layer 1:  output[0] = 0.000000
+layer 1 output[0] after forward pass = 0.000000
+Layer 1:  weight[0] = 6.016718
+Layer 1:  bias[0] = -1.044171
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.000000
+Layer 1:  grad_weight[0] = -0.465198
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.866667
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.503483
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 3.109321
+Training accuracy: 0.937500
 
 epoch: 123
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.045559
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = -0.151904
+After activation Layer 1:  output[0] = 0.083218
+layer 1 output[0] after forward pass = 0.083218
+Layer 1:  weight[0] = 6.063238
+Layer 1:  bias[0] = -1.055564
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.083218
+Layer 1:  grad_weight[0] = -0.474927
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.016741
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.314067
+Training accuracy: 0.937500
 
 epoch: 124
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.070225
+After activation Layer 0:  output[0] = 0.070225
+After matmul Layer 1:  output[0] = -1.187434
+After activation Layer 1:  output[0] = 0.034230
+layer 1 output[0] after forward pass = 0.034230
+Layer 1:  weight[0] = 6.110731
+Layer 1:  bias[0] = -1.066879
+Layer 1:  input[0] = 0.070225
+Layer 1:  output[0] = 0.034230
+Layer 1:  grad_weight[0] = -0.478909
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.070225
+Layer 0:  grad_weight[0] = 0.113057
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.369590
+Training accuracy: 0.937500
 
 epoch: 125
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.015964
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = -0.005678
+After activation Layer 1:  output[0] = 0.098857
+layer 1 output[0] after forward pass = 0.098857
+Layer 1:  weight[0] = 6.158622
+Layer 1:  bias[0] = -1.078640
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.098857
+Layer 1:  grad_weight[0] = -0.476227
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.303304
+Training accuracy: 0.937500
 
 epoch: 126
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.157249
+After activation Layer 0:  output[0] = 0.157249
+After matmul Layer 1:  output[0] = -0.556336
+After activation Layer 1:  output[0] = 0.046791
+layer 1 output[0] after forward pass = 0.046791
+Layer 1:  weight[0] = 6.206244
+Layer 1:  bias[0] = -1.090729
+Layer 1:  input[0] = 0.157249
+Layer 1:  output[0] = 0.046791
+Layer 1:  grad_weight[0] = -0.480938
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.157249
+Layer 0:  grad_weight[0] = 0.012638
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.350053
+Training accuracy: 0.937500
 
 epoch: 127
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.008619
+After activation Layer 0:  output[0] = 0.008619
+After matmul Layer 1:  output[0] = -0.049632
+After activation Layer 1:  output[0] = 0.032610
+layer 1 output[0] after forward pass = 0.032610
+Layer 1:  weight[0] = 6.254338
+Layer 1:  bias[0] = -1.103314
+Layer 1:  input[0] = 0.008619
+Layer 1:  output[0] = 0.032610
+Layer 1:  grad_weight[0] = -0.477573
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.008619
+Layer 0:  grad_weight[0] = -0.086187
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.372620
+Training accuracy: 0.937500
 
 epoch: 128
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -937240753946492928.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 4.801618
+After activation Layer 1:  output[0] = 0.000000
+layer 1 output[0] after forward pass = 0.000000
+Layer 1:  weight[0] = 6.302095
+Layer 1:  bias[0] = -1.116285
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.000000
+Layer 1:  grad_weight[0] = -0.482550
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.988235
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.832178
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 3.672852
+Training accuracy: 0.937500
 
 epoch: 129
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.026582
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.089957
+After activation Layer 1:  output[0] = 0.105824
+layer 1 output[0] after forward pass = 0.105824
+Layer 1:  weight[0] = 6.350350
+Layer 1:  bias[0] = -1.129724
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.105824
+Layer 1:  grad_weight[0] = -0.495423
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.299048
+Training accuracy: 0.937500
 
 epoch: 130
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.034853
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.104219
+After activation Layer 1:  output[0] = 0.110136
+layer 1 output[0] after forward pass = 0.110136
+Layer 1:  weight[0] = 6.399893
+Layer 1:  bias[0] = -1.142904
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.110136
+Layer 1:  grad_weight[0] = -0.500774
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
+Training loss: 2.296551
 Training accuracy: 1.000000
 
 epoch: 131
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.017639
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = -0.438093
+After activation Layer 1:  output[0] = 0.071735
+layer 1 output[0] after forward pass = 0.071735
+Layer 1:  weight[0] = 6.449970
+Layer 1:  bias[0] = -1.156582
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.071735
+Layer 1:  grad_weight[0] = -0.505946
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000482
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.323348
+Training accuracy: 0.937500
 
 epoch: 132
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.032521
+After activation Layer 0:  output[0] = 0.032521
+After matmul Layer 1:  output[0] = 0.025148
+After activation Layer 1:  output[0] = 0.095856
+layer 1 output[0] after forward pass = 0.095856
+Layer 1:  weight[0] = 6.500565
+Layer 1:  bias[0] = -1.170781
+Layer 1:  input[0] = 0.032521
+Layer 1:  output[0] = 0.095856
+Layer 1:  grad_weight[0] = -0.510158
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.032521
+Layer 0:  grad_weight[0] = 0.100996
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.305231
+Training accuracy: 0.937500
 
 epoch: 133
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.149821
+After activation Layer 0:  output[0] = 0.149821
+After matmul Layer 1:  output[0] = 0.590487
+After activation Layer 1:  output[0] = 0.132342
+layer 1 output[0] after forward pass = 0.132342
+Layer 1:  weight[0] = 6.551581
+Layer 1:  bias[0] = -1.185470
+Layer 1:  input[0] = 0.149821
+Layer 1:  output[0] = 0.132342
+Layer 1:  grad_weight[0] = -0.514892
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.149821
+Layer 0:  grad_weight[0] = 0.000953
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.285072
+Training accuracy: 0.937500
 
 epoch: 134
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -892610271305007104.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 7.205503
+After activation Layer 1:  output[0] = 0.000000
+layer 1 output[0] after forward pass = 0.000000
+Layer 1:  weight[0] = 6.603070
+Layer 1:  bias[0] = -1.200663
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.000000
+Layer 1:  grad_weight[0] = -0.518542
+Layer 0:  weight[0] = -948398391786733568.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.941176
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 75399800148721664.000000
+Large gradient detected in layer 0: 75399800148721664.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 3.707998
+Training accuracy: 0.937500
 
 epoch: 135
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -944692006808977408.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 9.643452
+After activation Layer 1:  output[0] = 0.996772
+layer 1 output[0] after forward pass = 0.996772
+Layer 1:  weight[0] = 6.654924
+Layer 1:  bias[0] = -1.216349
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.996772
+Layer 1:  grad_weight[0] = -0.532014
+Layer 0:  weight[0] = -955938361493684224.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.988235
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.152942
 
 
-Training loss: -nan
+Training loss: 2.158876
 Training accuracy: 1.000000
 
 epoch: 136
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.011122
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = -0.006172
+After activation Layer 1:  output[0] = 0.096599
+layer 1 output[0] after forward pass = 0.096599
+Layer 1:  weight[0] = 6.708126
+Layer 1:  bias[0] = -1.231765
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.096599
+Layer 1:  grad_weight[0] = -0.537669
+Layer 0:  weight[0] = -955938361493684224.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.304748
+Training accuracy: 0.937500
 
 epoch: 137
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -824731165050011648.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 9.769873
+After activation Layer 1:  output[0] = 0.000133
+layer 1 output[0] after forward pass = 0.000133
+Layer 1:  weight[0] = 6.761892
+Layer 1:  bias[0] = -1.247692
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.000133
+Layer 1:  grad_weight[0] = -0.543599
+Layer 0:  weight[0] = -955938361493684224.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.862745
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 278651430850527232.000000
+Large gradient detected in layer 0: 278651430850527232.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.716340
+Training accuracy: 0.937500
 
 epoch: 138
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.074201
+After activation Layer 0:  output[0] = 0.074201
+After matmul Layer 1:  output[0] = 0.561951
+After activation Layer 1:  output[0] = 0.155260
+layer 1 output[0] after forward pass = 0.155260
+Layer 1:  weight[0] = 6.816252
+Layer 1:  bias[0] = -1.264107
+Layer 1:  input[0] = 0.074201
+Layer 1:  output[0] = 0.155260
+Layer 1:  grad_weight[0] = -0.553693
+Layer 0:  weight[0] = -983803490834841600.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.074201
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.275090
+Training accuracy: 0.937500
 
 epoch: 139
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.234093
+After activation Layer 0:  output[0] = 0.234093
+After matmul Layer 1:  output[0] = -0.879784
+After activation Layer 1:  output[0] = 0.014992
+layer 1 output[0] after forward pass = 0.014992
+Layer 1:  weight[0] = 6.871622
+Layer 1:  bias[0] = -1.280593
+Layer 1:  input[0] = 0.234093
+Layer 1:  output[0] = 0.014992
+Layer 1:  grad_weight[0] = -0.559611
+Layer 0:  weight[0] = -983803490834841600.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.234093
+Layer 0:  grad_weight[0] = 293403578360397824.000000
+Large gradient detected in layer 0: 293403578360397824.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.421187
+Training accuracy: 0.937500
 
 epoch: 140
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.062766
+After activation Layer 0:  output[0] = 0.062766
+After matmul Layer 1:  output[0] = -0.410524
+After activation Layer 1:  output[0] = 0.070814
+layer 1 output[0] after forward pass = 0.070814
+Layer 1:  weight[0] = 6.927583
+Layer 1:  bias[0] = -1.297568
+Layer 1:  input[0] = 0.062766
+Layer 1:  output[0] = 0.070814
+Layer 1:  grad_weight[0] = -0.557256
+Layer 0:  weight[0] = -1013143821183090688.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.062766
+Layer 0:  grad_weight[0] = 0.002601
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.324155
+Training accuracy: 0.937500
 
 epoch: 141
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.305800
+After activation Layer 0:  output[0] = 0.305800
+After matmul Layer 1:  output[0] = -1.200256
+After activation Layer 1:  output[0] = 0.004610
+layer 1 output[0] after forward pass = 0.004610
+Layer 1:  weight[0] = 6.983308
+Layer 1:  bias[0] = -1.314926
+Layer 1:  input[0] = 0.305800
+Layer 1:  output[0] = 0.004610
+Layer 1:  grad_weight[0] = -0.560656
+Layer 0:  weight[0] = -1013143821183090688.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.305800
+Layer 0:  grad_weight[0] = 0.003426
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.494888
+Training accuracy: 0.937500
 
 epoch: 142
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.149224
+After activation Layer 0:  output[0] = 0.149224
+After matmul Layer 1:  output[0] = -0.737892
+After activation Layer 1:  output[0] = 0.030652
+layer 1 output[0] after forward pass = 0.030652
+Layer 1:  weight[0] = 7.039374
+Layer 1:  bias[0] = -1.332735
+Layer 1:  input[0] = 0.149224
+Layer 1:  output[0] = 0.030652
+Layer 1:  grad_weight[0] = -0.558693
+Layer 0:  weight[0] = -1013143821183090688.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.149224
+Layer 0:  grad_weight[0] = 0.006526
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.376491
+Training accuracy: 0.937500
 
 epoch: 143
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -99327827458916352.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 1.736185
+After activation Layer 1:  output[0] = 0.002650
+layer 1 output[0] after forward pass = 0.002650
+Layer 1:  weight[0] = 7.095243
+Layer 1:  bias[0] = -1.350949
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.002650
+Layer 1:  grad_weight[0] = -0.558773
+Layer 0:  weight[0] = -1013143821183090688.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.098039
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -0.064528
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.529505
+Training accuracy: 0.937500
 
 epoch: 144
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -1005197581929676800.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 19.233593
+After activation Layer 1:  output[0] = 0.000000
+layer 1 output[0] after forward pass = 0.000000
+Layer 1:  weight[0] = 7.151120
+Layer 1:  bias[0] = -1.369595
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.000000
+Layer 1:  grad_weight[0] = -0.566800
+Layer 0:  weight[0] = -1013143821183090688.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.992157
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 245868924732702720.000000
+Large gradient detected in layer 0: 245868924732702720.000000
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 4.254275
+Training accuracy: 0.937500
 
 epoch: 145
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.369670
+After activation Layer 0:  output[0] = 0.369670
+After matmul Layer 1:  output[0] = -1.233253
+After activation Layer 1:  output[0] = 0.001527
+layer 1 output[0] after forward pass = 0.001527
+Layer 1:  weight[0] = 7.207800
+Layer 1:  bias[0] = -1.388602
+Layer 1:  input[0] = 0.369670
+Layer 1:  output[0] = 0.001527
+Layer 1:  grad_weight[0] = -0.584250
+Layer 0:  weight[0] = -1037730687886557184.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.369670
+Layer 0:  grad_weight[0] = 0.001169
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.563966
+Training accuracy: 0.937500
 
 epoch: 146
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -1029591621781422080.000000
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 35.206619
+After activation Layer 1:  output[0] = 0.000000
+layer 1 output[0] after forward pass = 0.000000
+Layer 1:  weight[0] = 7.266225
+Layer 1:  bias[0] = -1.407022
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.000000
+Layer 1:  grad_weight[0] = -0.584997
+Layer 0:  weight[0] = -1037730687886557184.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.992157
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = -2.582933
+Large gradient detected in layer 0: -2.582933
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 5.614953
+Training accuracy: 0.937500
 
 epoch: 147
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.097386
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.004772
+After activation Layer 1:  output[0] = 0.100431
+layer 1 output[0] after forward pass = 0.100431
+Layer 1:  weight[0] = 7.324725
+Layer 1:  bias[0] = -1.425866
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.100431
+Layer 1:  grad_weight[0] = -0.609412
+Layer 0:  weight[0] = -1037730687886557184.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.149497
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.302316
+Training accuracy: 0.937500
 
 epoch: 148
-After matmul Layer 0:  output[0] = -nan
+After matmul Layer 0:  output[0] = -0.030960
 After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
+After matmul Layer 1:  output[0] = 0.157766
+After activation Layer 1:  output[0] = 0.115660
+layer 1 output[0] after forward pass = 0.115660
+Layer 1:  weight[0] = 7.385666
+Layer 1:  bias[0] = -1.443434
 Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+Layer 1:  output[0] = 0.115660
+Layer 1:  grad_weight[0] = -0.616243
+Layer 0:  weight[0] = -1037730687886557184.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
 Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  grad_weight[0] = 0.000000
 
 
-Training loss: -nan
+Training loss: 2.293493
 Training accuracy: 1.000000
 
 epoch: 149
-After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-layer 1 output[0] after forward pass = -nan
-Layer 1:  weight[0] = -nan
-Layer 1:  bias[0] = -nan
-Layer 1:  input[0] = 0.000000
-Layer 1:  output[0] = -nan
-Layer 1:  grad_weight[0] = -nan
-Layer 0:  weight[0] = -nan
+After matmul Layer 0:  output[0] = 0.420998
+After activation Layer 0:  output[0] = 0.420998
+After matmul Layer 1:  output[0] = -1.351544
+After activation Layer 1:  output[0] = 0.000427
+layer 1 output[0] after forward pass = 0.000427
+Layer 1:  weight[0] = 7.447290
+Layer 1:  bias[0] = -1.461475
+Layer 1:  input[0] = 0.420998
+Layer 1:  output[0] = 0.000427
+Layer 1:  grad_weight[0] = -0.623165
+Layer 0:  weight[0] = -1037730687886557184.000000
 Layer 0:  bias[0] = 0.000000
 Layer 0:  input[0] = 0.000000
-Layer 0:  output[0] = 0.000000
-Layer 0:  grad_weight[0] = -nan
+Layer 0:  output[0] = 0.420998
+Layer 0:  grad_weight[0] = 0.000384
 
 
-Training loss: -nan
-Training accuracy: 1.000000
+Training loss: 2.643643
+Training accuracy: 0.937500
 
-saving in file: /home/rickojn/coding/cf-mlp/models/model_20260318_084618_h8.mdl
-Error opening file /home/rickojn/coding/cf-mlp/models/After matmul Layer 0:  output[0] = -nan
-After activation Layer 0:  output[0] = 0.000000
-After matmul Layer 1:  output[0] = -nan
-After activation Layer 1:  output[0] = -nan
-Test loss after training: -nan
-Difference in loss: -nan
+saving in file: /home/rickojn/coding/cf-mlp/models/model_20260318_084842_h8.mdl
+Error opening file /home/rickojn/coding/cf-mlp/models/After matmul Layer 0:  output[0] = 0.393656
+After activation Layer 0:  output[0] = 0.393656
+After matmul Layer 1:  output[0] = 3.168530
+After activation Layer 1:  output[0] = 0.005744
+Test loss after training: 6.721113
+Difference in loss: -4.533475
