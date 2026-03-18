@@ -18,7 +18,7 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 1
+#define NUMBER_EPOCHS 150
 #define PRINT_EVERY 1
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
@@ -630,7 +630,8 @@ int main() {
     calculate_size(&activations, &model, &data_test);
     initialise_activations(&activations, &model, &data_test);
     model_forward(&model, &activations, &data_test);
-    printf("Test loss before training: %f\n", get_loss(&model, &activations, &data_test));
+    float initial_loss = get_loss(&model, &activations, &data_test);
+    printf("Test loss before training: %f\n", initial_loss);
     printf("Test accuracy before training: %f\n", get_accuracy(&model, &activations, &data_test));
 
 
@@ -676,8 +677,10 @@ int main() {
     // test loss after training
     initialise_activations(&activations, &model, &data_test);
     model_forward(&model, &activations, &data_test);
-    printf("Test loss after training: %f\n", get_loss(&model, &activations, &data_test));
-    printf("Test accuracy after training: %f\n", get_accuracy(&model, &activations, &data_test));
+    float final_loss = get_loss(&model, &activations, &data_test);
+    printf("Test loss after training: %f\n", final_loss);
+    // printf("Test accuracy after training: %f\n", get_accuracy(&model, &activations, &data_test));
+    printf("Difference in loss: %f\n", initial_loss - final_loss);
  
     
     return 0;
