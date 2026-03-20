@@ -45,3 +45,4 @@ build/
 models/
 local.sh
 build-debug/
+old-models/

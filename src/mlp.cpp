@@ -18,8 +18,8 @@
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
 #define SIZE_HIDDEN 8
-#define NUMBER_EPOCHS 150
-#define PRINT_EVERY 1
+#define NUMBER_EPOCHS 50000
+#define PRINT_EVERY 1000
 #define LEARNING_RATE 0.1f
 #define SIZE_TILE 256
 
@@ -81,9 +81,7 @@ void model_forward(Model *model, Activations *activations, InputData *data)
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
         simd_matmul(layer->activations_input, layer->weights, layer->activations_output, data->nImages, layer->size_neurons, layer->size_inputs);
-        printf("After matmul Layer %zu:  output[0] = %f\n", idx_layer, layer->activations_output[0]);
         layer->activation_forward( layer->activations_output, layer->size_neurons, data->nImages);
-        printf("After activation Layer %zu:  output[0] = %f\n", idx_layer, layer->activations_output[0]);
     }
 }
 
@@ -127,19 +125,8 @@ void model_backward(Model *model, Activations *activations, InputData *input_dat
     for (int idx_layer = model->size_layers - 1; idx_layer >= 0; idx_layer--) {
         Layer *layer = &model->layers[idx_layer];
         layer->activation_backward(layer->activations_output, layer->gradients_output, input_data->labels.data(), layer->size_neurons, input_data->nImages);
-        // matmul_backward(layer, input_data->nImages);
-        // matmul_backward_separate(layer, data->nImages);
-        // simd_matmul_backward(layer, data->nImages);
         simd_matmul_backwards(layer->gradients_output, layer->weights, layer->activations_input, layer->gradients_weights, layer->gradients_input, 
             input_data->nImages, layer->size_neurons, layer->size_inputs);
-        printf("Layer %d:  weight[0] = %f\n", idx_layer, layer->weights[0]);
-        printf("Layer %d:  bias[0] = %f\n", idx_layer, layer->biases[0]);
-        printf("Layer %d:  input[0] = %f\n", idx_layer, layer->activations_input[0]);
-        printf("Layer %d:  output[0] = %f\n", idx_layer, layer->activations_output[0]);
-        printf("Layer %d:  grad_weight[0] = %f\n", idx_layer, layer->gradients_weights[0]);
-        if (layer->gradients_weights[0] > 2.0f || layer->gradients_weights[0] < -2.0f) {
-            printf("Large gradient detected in layer %d: %f\n", idx_layer, layer->gradients_weights[0]);
-        }
         update_layer(layer, LEARNING_RATE);
     }
 }
@@ -647,25 +634,20 @@ int main() {
     data_mini_batch.cols = data_training.cols;
     allocate_mini_batch_memory(&data_mini_batch);
     initialise_gradients(&gradients, &model, &data_mini_batch);
-    // srand(time(NULL)); db
-    // srand(42);
-    // training loop
     printf("\n");
     printf("\n");
     printf("training loop:\n");
     for (size_t epoch = 0; epoch < NUMBER_EPOCHS; epoch++) {
-        printf("\nepoch: %zu\n", epoch);
         initialise_mini_batch(&data_training, &data_mini_batch);
         calculate_size(&activations, &model, &data_mini_batch);
         initialise_activations(&activations, &model, &data_mini_batch);
         model_forward(&model, &activations, &data_mini_batch);
-        printf("layer 1 output[0] after forward pass = %f\n", model.layers[1].activations_output[0]);
-        // print_probs(&model, &activations, &data_mini_batch);
         model_backward(&model, &activations, &data_mini_batch);
-        printf("\n\n");
         if (epoch % PRINT_EVERY == 0) {
+            printf("\nepoch: %zu\n", epoch);
             printf("Training loss: %f\n", get_loss(&model, &activations, &data_mini_batch));
             printf("Training accuracy: %f\n", get_accuracy(&model, &activations, &data_mini_batch));
+            printf("\n\n");
         }
         memset(gradients.grads.data(), 0, gradients.size_grads * sizeof(float));
     }
@@ -679,7 +661,7 @@ int main() {
     initialise_activations(&activations, &model, &data_test);
     model_forward(&model, &activations, &data_test);
     float final_loss = get_loss(&model, &activations, &data_test);
-    printf("Test loss after training: %f\n", final_loss);
+    printf("\nTest loss after training: %f\n", final_loss);
     // printf("Test accuracy after training: %f\n", get_accuracy(&model, &activations, &data_test));
     printf("Difference in loss: %f\n", initial_loss - final_loss);
  
