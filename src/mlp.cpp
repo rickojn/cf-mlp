@@ -373,14 +373,14 @@ void add_layer(Model *model, size_t size_inputs, size_t size_neurons,
                void(*activation_backward)(const float *inputs, float *gradients,  const long *labels, size_t num_features, size_t size_batch),
             float (*generate_number)(size_t, size_t))
 {
-    Layer *layer = (Layer *)calloc(1, sizeof(Layer));
-    layer->size_inputs = size_inputs;
-    layer->size_neurons = size_neurons;
-    layer->activation_forward = activation_forward;
-    layer->activation_backward = activation_backward;
-    layer->generate_number = generate_number;
+    Layer layer = {};
+    layer.size_inputs = size_inputs;
+    layer.size_neurons = size_neurons;
+    layer.activation_forward = activation_forward;
+    layer.activation_backward = activation_backward;
+    layer.generate_number = generate_number;
     
-    model->layers.push_back(*layer);
+    model->layers.push_back(layer);
     model->size_layers++;
     model->size_parameters += size_inputs * size_neurons + size_neurons;
 }
@@ -533,6 +533,7 @@ void initialise_activations(Activations *activations, Model *model, InputData *i
 
 void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
 {
+    gradients->size_grads = 0;
     for (size_t i = 0; i < model->size_layers; i++) {
         // size of gradients for parameters
         gradients->size_grads += model->layers[i].size_inputs * model->layers[i].size_neurons;
