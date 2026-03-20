@@ -14,3 +14,9 @@ add_executable(mlp ./src/mlp.cpp)
 target_compile_options(mlp PRIVATE -fopenmp -Wall -O2 -mavx -mavx2 -mfma -march=native)
 
 target_link_libraries(mlp m custard-flow)
+
+add_executable(inference ./src/inference.cpp)
+
+target_compile_options(inference PRIVATE -fopenmp -Wall -O2 -mavx -mavx2 -mfma -march=native)
+
+target_link_libraries(inference m custard-flow)
