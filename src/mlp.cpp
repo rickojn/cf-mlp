@@ -505,7 +505,7 @@ void initialise_activations(Activations *activations, Model *model, InputData *i
     }
 
     float *inputs = activations->activations.data();
-    float *outputs = activations->activations.data() + input_data->rows * input_data->cols;
+    float *outputs = activations->activations.data() + input_data->rows * input_data->cols * input_data->nImages;
 
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
