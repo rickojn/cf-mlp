@@ -679,14 +679,14 @@ int main() {
  
 
     // save model
-    // save_model(&model, models_path.c_str());
+    save_model(&model, models_path.c_str());
 
     // test loss after training
     initialise_activations(&activations, &model, &data_test);
     model_forward(&model, &activations, &data_test);
     float final_loss = get_loss(&model, &activations, &data_test);
     printf("\nTest loss after training: %f\n", final_loss);
-    // printf("Test accuracy after training: %f\n", get_accuracy(&model, &activations, &data_test));
+    printf("Test accuracy after training: %f%%\n", get_accuracy(&model, &activations, &data_test) * 100);
     printf("Difference in loss: %f\n", initial_loss - final_loss);
  
     

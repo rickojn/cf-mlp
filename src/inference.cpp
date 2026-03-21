@@ -14,7 +14,7 @@
 
 #define SIZE_CLASSES 10
 #define SIZE_OUTPUT 10
-#define SIZE_HIDDEN 8
+#define SIZE_HIDDEN 128
 
 struct InputData {
     std::vector<unsigned char> images;
@@ -82,26 +82,24 @@ void read_mnist_images(const char *filename, InputData *input_data) {
 }
 
 void read_mnist_labels(const char *filename, std::vector<long> *labels, int *nLabels) {
-    printf("Reading MNIST labels from %s...\n", filename);
     FILE *file = fopen(filename, "rb");
     if (!file) exit(1);
 
-    int mnist_magic_number;
-    file_read(&mnist_magic_number, sizeof(int), 1, file);
-    if (__builtin_bswap32(mnist_magic_number) != 2049) {
-        printf("Invalid MNIST label file magic number: %d\n", __builtin_bswap32(mnist_magic_number));
-        fclose(file);
-        exit(1);
-    }
+    int magic;
+    file_read(&magic, sizeof(int), 1, file);
+    if (__builtin_bswap32(magic) != 2049) exit(1);
+
     file_read(nLabels, sizeof(int), 1, file);
     *nLabels = __builtin_bswap32(*nLabels);
 
-    std::vector<unsigned char> temp_labels(*nLabels);
     labels->resize(*nLabels);
-    file_read(temp_labels.data(), sizeof(unsigned char), *nLabels, file);
-    for (unsigned char label : temp_labels) {
-        labels->push_back((long)label);
+
+    for (int i = 0; i < *nLabels; i++) {
+        unsigned char c;
+        file_read(&c, 1, 1, file);
+        (*labels)[i] = c;
     }
+
     fclose(file);
 }
 
@@ -151,12 +149,23 @@ int load_model(Model *model, const char *dirname) {
     }
 }
 
-void model_forward(Model *model, Activations *activations, InputData *data) {
+void add_bias(float *output, const float *bias, size_t batch, size_t neurons) {
+    for (size_t i = 0; i < batch; i++) {
+        for (size_t j = 0; j < neurons; j++) {
+            output[i * neurons + j] += bias[j];
+        }
+    }
+}
+
+
+
+void model_forward(Model *model, Activations *activations, InputData *data)
+{
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
-        simd_matmul(layer->activations_input, layer->weights, layer->activations_output,
-                    data->nImages, layer->size_neurons, layer->size_inputs);
-        layer->activation_forward(layer->activations_output, layer->size_neurons, data->nImages);
+        simd_matmul(layer->activations_input, layer->weights, layer->activations_output, data->nImages, layer->size_neurons, layer->size_inputs);
+        add_bias(layer->activations_output, layer->biases, data->nImages, layer->size_neurons);
+        layer->activation_forward( layer->activations_output, layer->size_neurons, data->nImages);
     }
 }
 
@@ -177,7 +186,8 @@ void initialise_activations(Activations *activations, Model *model, InputData *i
     }
 
     float *inputs = activations->activations.data();
-    float *outputs = activations->activations.data() + input_data->rows * input_data->cols;
+    float *outputs = activations->activations.data() + input_data->rows * input_data->cols 
+        * input_data->nImages;
 
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
@@ -199,6 +209,7 @@ int arg_max(float *probs, size_t size) {
 }
 
 void predict(Model *model, Activations *activations, InputData *data) {
+    unsigned int correct = 0;
     float *output_probs = model->layers[model->size_layers - 1].activations_output;
 
     for (size_t idx_image = 0; idx_image < (size_t)data->nImages; idx_image++) {
@@ -213,12 +224,14 @@ void predict(Model *model, Activations *activations, InputData *data) {
             printf(", True label = %d", true_label);
             if (predicted_digit == true_label) {
                 printf(" (Correct)");
+                correct++;
             } else {
                 printf(" (Incorrect)");
             }
         }
         printf("\n");
     }
+    printf("Accuracy: %.2f%%\n", (correct / (float)data->nImages) * 100);
 }
 
 void add_layer(Model *model, size_t size_inputs, size_t size_neurons,
