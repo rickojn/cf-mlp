@@ -15,12 +15,12 @@
 
 
 #define SIZE_CLASSES 10
-#define SIZE_MINI_BATCH 16
+#define SIZE_MINI_BATCH 64
 #define SIZE_OUTPUT 10
-#define SIZE_HIDDEN 32
-#define NUMBER_EPOCHS 50000
-#define PRINT_EVERY 1000
-#define LEARNING_RATE 0.1f
+#define SIZE_HIDDEN 128
+#define NUMBER_STEPS 1000
+#define PRINT_EVERY 100
+#define LEARNING_RATE 0.01f
 #define SIZE_TILE 256
 
 
@@ -552,14 +552,18 @@ void allocate_mini_batch_memory(InputData * mini_batch_data)
 }
 
 
-void initialise_mini_batch(InputData * training_data, InputData * mini_batch_data){
-    for (size_t idx_mini_batch_image = 0; idx_mini_batch_image < mini_batch_data->nImages; idx_mini_batch_image++) {
-        size_t idx_training_image = rand() % training_data->nImages;
-        mini_batch_data->images[idx_mini_batch_image] = training_data->images[idx_training_image];
-        mini_batch_data->labels[idx_mini_batch_image] = training_data->labels[idx_training_image];
+void initialise_mini_batch(InputData *training_data, InputData *mini_batch_data) {
+    size_t image_size = training_data->rows * training_data->cols;
+    for (size_t idx_batch_sample = 0; idx_batch_sample < mini_batch_data->nImages; idx_batch_sample++) {
+        size_t idx_training_sample = rand() % training_data->nImages;
+
+        memcpy(&mini_batch_data->images[idx_batch_sample * image_size],
+               &training_data->images[idx_training_sample * image_size],
+               image_size * sizeof(unsigned char));
+
+        mini_batch_data->labels[idx_batch_sample] = training_data->labels[idx_training_sample];
     }
 }
-
 
 
 int main() {
@@ -635,14 +639,14 @@ int main() {
     printf("\n");
     printf("\n");
     printf("training loop:\n");
-    for (size_t epoch = 0; epoch < NUMBER_EPOCHS; epoch++) {
+    for (size_t step = 0; step < NUMBER_STEPS; step++) {
         initialise_mini_batch(&data_training, &data_mini_batch);
         calculate_size(&activations, &model, &data_mini_batch);
         initialise_activations(&activations, &model, &data_mini_batch);
         model_forward(&model, &activations, &data_mini_batch);
         model_backward(&model, &activations, &data_mini_batch);
-        if (epoch % PRINT_EVERY == 0) {
-            printf("\nepoch: %zu\n", epoch);
+        if (step % PRINT_EVERY == 0) {
+            printf("\nstep: %zu\n", step);
             printf("Training loss: %f\n", get_loss(&model, &activations, &data_mini_batch));
             printf("Training accuracy: %f\n", get_accuracy(&model, &activations, &data_mini_batch));
             printf("\n\n");
