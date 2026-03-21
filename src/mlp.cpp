@@ -73,6 +73,13 @@ struct Gradients {
 
 
 
+void add_bias(float *output, const float *bias, size_t batch, size_t neurons) {
+    for (size_t i = 0; i < batch; i++) {
+        for (size_t j = 0; j < neurons; j++) {
+            output[i * neurons + j] += bias[j];
+        }
+    }
+}
 
 
 
@@ -81,6 +88,7 @@ void model_forward(Model *model, Activations *activations, InputData *data)
     for (size_t idx_layer = 0; idx_layer < model->size_layers; idx_layer++) {
         Layer *layer = &model->layers[idx_layer];
         simd_matmul(layer->activations_input, layer->weights, layer->activations_output, data->nImages, layer->size_neurons, layer->size_inputs);
+        add_bias(layer->activations_output, layer->biases, data->nImages, layer->size_neurons);
         layer->activation_forward( layer->activations_output, layer->size_neurons, data->nImages);
     }
 }
@@ -120,6 +128,18 @@ void update_layer(Layer *layer, float learning_rate)
 }
 
 
+void bias_backward(const float *gradients_output, float *gradients_biases, size_t num_neurons, size_t size_batch)
+{
+    for (size_t idx_neuron = 0; idx_neuron < num_neurons; idx_neuron++) {
+        float grad_bias = 0.0f;
+        for (size_t idx_image = 0; idx_image < size_batch; idx_image++) {
+            grad_bias += gradients_output[idx_image * num_neurons + idx_neuron];
+        }
+        gradients_biases[idx_neuron] = grad_bias;
+    }
+}
+
+
 void model_backward(Model *model, Activations *activations, InputData *input_data)
 {
     for (int idx_layer = model->size_layers - 1; idx_layer >= 0; idx_layer--) {
@@ -127,6 +147,7 @@ void model_backward(Model *model, Activations *activations, InputData *input_dat
         layer->activation_backward(layer->activations_output, layer->gradients_output, input_data->labels.data(), layer->size_neurons, input_data->nImages);
         simd_matmul_backwards(layer->gradients_output, layer->weights, layer->activations_input, layer->gradients_weights, layer->gradients_input, 
             input_data->nImages, layer->size_neurons, layer->size_inputs);
+        bias_backward(layer->gradients_output, layer->gradients_biases, layer->size_neurons, input_data->nImages);
         update_layer(layer, LEARNING_RATE);
     }
 }
@@ -469,6 +490,7 @@ int arg_max(float *probs, size_t size)
     }
     return max_idx;
 }
+
 
 float get_accuracy(Model *model, Activations *activations, InputData *data)
 {
