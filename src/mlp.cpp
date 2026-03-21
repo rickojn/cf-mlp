@@ -17,7 +17,7 @@
 #define SIZE_CLASSES 10
 #define SIZE_MINI_BATCH 16
 #define SIZE_OUTPUT 10
-#define SIZE_HIDDEN 8
+#define SIZE_HIDDEN 32
 #define NUMBER_EPOCHS 50000
 #define PRINT_EVERY 1000
 #define LEARNING_RATE 0.1f
@@ -174,23 +174,21 @@ void read_mnist_labels(const char *filename, std::vector<long> *labels, int *nLa
     FILE *file = fopen(filename, "rb");
     if (!file) exit(1);
 
-    int mnist_magic_number;
+    int magic;
+    file_read(&magic, sizeof(int), 1, file);
+    if (__builtin_bswap32(magic) != 2049) exit(1);
 
-    file_read(&mnist_magic_number, sizeof(int), 1, file);
-    if (__builtin_bswap32(mnist_magic_number) != 2049) {
-        printf("Invalid MNIST label file magic number: %d\n", __builtin_bswap32(mnist_magic_number));
-        fclose(file);
-        exit(1);
-    }
     file_read(nLabels, sizeof(int), 1, file);
     *nLabels = __builtin_bswap32(*nLabels);
 
-    std::vector<unsigned char> temp_labels(*nLabels);
     labels->resize(*nLabels);
-    file_read(temp_labels.data(), sizeof(unsigned char), *nLabels, file);
-    for (unsigned char label : temp_labels) {
-        labels->push_back((long)label);
+
+    for (int i = 0; i < *nLabels; i++) {
+        unsigned char c;
+        file_read(&c, 1, 1, file);
+        (*labels)[i] = c;
     }
+
     fclose(file);
 }
 
@@ -655,7 +653,7 @@ int main() {
  
 
     // save model
-    save_model(&model, models_path.c_str());
+    // save_model(&model, models_path.c_str());
 
     // test loss after training
     initialise_activations(&activations, &model, &data_test);

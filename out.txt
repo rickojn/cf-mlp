@@ -4,321 +4,319 @@ rows: 28, cols: 28
 Number of test images: 10000
 model layers = 0
 Model created with 2 layers
-Layer 0: 784 inputs, 8 neurons
-Layer 1: 8 inputs, 10 neurons
-Number of parameters: 6370
+Layer 0: 784 inputs, 16 neurons
+Layer 1: 16 inputs, 10 neurons
+Number of parameters: 12730
 Batch size: 16
 
 No model files found in directory /home/rickojn/coding/cf-mlp/models/
 
 No model found, training from scratch
-Test loss before training: 2.187638
-Test accuracy before training: 0.041000
+Test loss before training: 2.350292
+Test accuracy before training: 0.114600
 
 
 training loop:
 
 epoch: 0
-Training loss: 2.306111
-Training accuracy: 0.937500
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 1000
-Training loss: 2.158861
-Training accuracy: 1.000000
+Training loss: 2.311091
+Training accuracy: 0.062500
 
 
 
 epoch: 2000
-Training loss: 2.164112
-Training accuracy: 1.000000
+Training loss: 2.302660
+Training accuracy: 0.187500
 
 
 
 epoch: 3000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302653
+Training accuracy: 0.000000
 
 
 
 epoch: 4000
-Training loss: 2.158675
-Training accuracy: 1.000000
+Training loss: 2.281812
+Training accuracy: 0.062500
 
 
 
 epoch: 5000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 6000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302397
+Training accuracy: 0.125000
 
 
 
 epoch: 7000
-Training loss: 2.302585
-Training accuracy: 1.000000
+Training loss: 2.303434
+Training accuracy: 0.125000
 
 
 
 epoch: 8000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 9000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.187500
 
 
 
 epoch: 10000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.000000
 
 
 
 epoch: 11000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.250000
 
 
 
 epoch: 12000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 13000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.299967
+Training accuracy: 0.187500
 
 
 
 epoch: 14000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.295797
+Training accuracy: 0.125000
 
 
 
 epoch: 15000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302155
+Training accuracy: 0.062500
 
 
 
 epoch: 16000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 17000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.312500
 
 
 
 epoch: 18000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.000000
 
 
 
 epoch: 19000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 20000
-Training loss: 2.302585
-Training accuracy: 1.000000
+Training loss: 2.302586
+Training accuracy: 0.062500
 
 
 
 epoch: 21000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.000000
 
 
 
 epoch: 22000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 23000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 24000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 25000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 26000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 27000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 28000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 29000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.187500
 
 
 
 epoch: 30000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 31000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.187500
 
 
 
 epoch: 32000
 Training loss: 2.302585
-Training accuracy: 1.000000
+Training accuracy: 0.000000
 
 
 
 epoch: 33000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 34000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.000000
 
 
 
 epoch: 35000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 36000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.312500
 
 
 
 epoch: 37000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.000000
 
 
 
 epoch: 38000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 39000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 40000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 41000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.000000
 
 
 
 epoch: 42000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
 epoch: 43000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 44000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.000000
 
 
 
 epoch: 45000
 Training loss: 2.302585
-Training accuracy: 1.000000
+Training accuracy: 0.125000
 
 
 
 epoch: 46000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 47000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.125000
 
 
 
 epoch: 48000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.250000
 
 
 
 epoch: 49000
-Training loss: 2.158674
-Training accuracy: 1.000000
+Training loss: 2.302585
+Training accuracy: 0.062500
 
 
 
-saving in file: /home/rickojn/coding/cf-mlp/models/model_20260320_023147_h8.mdl
-
-Test loss after training: 0.421198
-Difference in loss: 1.766440
+Test loss after training: 2.348055
+Difference in loss: 0.002237

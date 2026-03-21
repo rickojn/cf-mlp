@@ -1,0 +1,322 @@
+rows: 28, cols: 28
+Number of training images: 60000
+rows: 28, cols: 28
+Number of test images: 10000
+model layers = 0
+Model created with 2 layers
+Layer 0: 784 inputs, 32 neurons
+Layer 1: 32 inputs, 10 neurons
+Number of parameters: 25450
+Batch size: 16
+
+No model files found in directory /home/rickojn/coding/cf-mlp/models/
+
+No model found, training from scratch
+Test loss before training: 2.334795
+Test accuracy before training: 0.140900
+
+
+training loop:
+
+epoch: 0
+Training loss: 2.302356
+Training accuracy: 0.125000
+
+
+
+epoch: 1000
+Training loss: 2.306815
+Training accuracy: 0.000000
+
+
+
+epoch: 2000
+Training loss: 2.301084
+Training accuracy: 0.062500
+
+
+
+epoch: 3000
+Training loss: 2.304270
+Training accuracy: 0.187500
+
+
+
+epoch: 4000
+Training loss: 2.300067
+Training accuracy: 0.062500
+
+
+
+epoch: 5000
+Training loss: 2.301354
+Training accuracy: 0.000000
+
+
+
+epoch: 6000
+Training loss: 2.303047
+Training accuracy: 0.062500
+
+
+
+epoch: 7000
+Training loss: 2.302259
+Training accuracy: 0.125000
+
+
+
+epoch: 8000
+Training loss: 2.296360
+Training accuracy: 0.062500
+
+
+
+epoch: 9000
+Training loss: 2.306935
+Training accuracy: 0.125000
+
+
+
+epoch: 10000
+Training loss: 2.299598
+Training accuracy: 0.062500
+
+
+
+epoch: 11000
+Training loss: 2.300644
+Training accuracy: 0.000000
+
+
+
+epoch: 12000
+Training loss: 2.302585
+Training accuracy: 0.000000
+
+
+
+epoch: 13000
+Training loss: 2.301127
+Training accuracy: 0.062500
+
+
+
+epoch: 14000
+Training loss: 2.307957
+Training accuracy: 0.062500
+
+
+
+epoch: 15000
+Training loss: 2.298258
+Training accuracy: 0.062500
+
+
+
+epoch: 16000
+Training loss: 2.302905
+Training accuracy: 0.000000
+
+
+
+epoch: 17000
+Training loss: 2.312387
+Training accuracy: 0.000000
+
+
+
+epoch: 18000
+Training loss: 2.304598
+Training accuracy: 0.250000
+
+
+
+epoch: 19000
+Training loss: 2.302167
+Training accuracy: 0.000000
+
+
+
+epoch: 20000
+Training loss: 2.297683
+Training accuracy: 0.250000
+
+
+
+epoch: 21000
+Training loss: 2.306082
+Training accuracy: 0.062500
+
+
+
+epoch: 22000
+Training loss: 2.303136
+Training accuracy: 0.000000
+
+
+
+epoch: 23000
+Training loss: 2.302585
+Training accuracy: 0.062500
+
+
+
+epoch: 24000
+Training loss: 2.302585
+Training accuracy: 0.187500
+
+
+
+epoch: 25000
+Training loss: 2.302585
+Training accuracy: 0.062500
+
+
+
+epoch: 26000
+Training loss: 2.302967
+Training accuracy: 0.125000
+
+
+
+epoch: 27000
+Training loss: 2.302706
+Training accuracy: 0.187500
+
+
+
+epoch: 28000
+Training loss: 2.302585
+Training accuracy: 0.250000
+
+
+
+epoch: 29000
+Training loss: 2.302585
+Training accuracy: 0.062500
+
+
+
+epoch: 30000
+Training loss: 2.300795
+Training accuracy: 0.187500
+
+
+
+epoch: 31000
+Training loss: 2.302645
+Training accuracy: 0.062500
+
+
+
+epoch: 32000
+Training loss: 2.302585
+Training accuracy: 0.000000
+
+
+
+epoch: 33000
+Training loss: 2.302600
+Training accuracy: 0.062500
+
+
+
+epoch: 34000
+Training loss: 2.302585
+Training accuracy: 0.125000
+
+
+
+epoch: 35000
+Training loss: 2.301481
+Training accuracy: 0.125000
+
+
+
+epoch: 36000
+Training loss: 2.302585
+Training accuracy: 0.062500
+
+
+
+epoch: 37000
+Training loss: 2.302585
+Training accuracy: 0.000000
+
+
+
+epoch: 38000
+Training loss: 2.302585
+Training accuracy: 0.000000
+
+
+
+epoch: 39000
+Training loss: 2.298174
+Training accuracy: 0.000000
+
+
+
+epoch: 40000
+Training loss: 2.302585
+Training accuracy: 0.125000
+
+
+
+epoch: 41000
+Training loss: 2.296153
+Training accuracy: 0.187500
+
+
+
+epoch: 42000
+Training loss: 2.302585
+Training accuracy: 0.125000
+
+
+
+epoch: 43000
+Training loss: 2.302585
+Training accuracy: 0.000000
+
+
+
+epoch: 44000
+Training loss: 2.302585
+Training accuracy: 0.187500
+
+
+
+epoch: 45000
+Training loss: 2.302585
+Training accuracy: 0.187500
+
+
+
+epoch: 46000
+Training loss: 2.302585
+Training accuracy: 0.000000
+
+
+
+epoch: 47000
+Training loss: 2.302585
+Training accuracy: 0.062500
+
+
+
+epoch: 48000
+Training loss: 2.302585
+Training accuracy: 0.062500
+
+
+
+epoch: 49000
+Training loss: 2.302585
+Training accuracy: 0.125000
+
+
+
+Test loss after training: 2.368279
+Difference in loss: -0.033484
