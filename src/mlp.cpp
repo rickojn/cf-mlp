@@ -31,7 +31,7 @@
 struct InputData {
     std::vector<unsigned char> images;
     std::vector<long> labels;
-    int nImages, rows, cols;
+    size_t nImages, rows, cols;
 };
 
 
@@ -181,7 +181,7 @@ void read_mnist_images(const char *filename, InputData *input_data) {
     file_read(&input_data->cols, sizeof(int), 1, file);
     input_data->rows = __builtin_bswap32(input_data->rows);
     input_data->cols = __builtin_bswap32(input_data->cols);
-    printf("rows: %d, cols: %d\n", input_data->rows, input_data->cols);
+    printf("rows: %ld, cols: %ld\n", input_data->rows, input_data->cols);
 
     input_data->images.resize(input_data->nImages * input_data->rows * input_data->cols);
 
@@ -191,7 +191,7 @@ void read_mnist_images(const char *filename, InputData *input_data) {
 }
 
 
-void read_mnist_labels(const char *filename, std::vector<long> *labels, int *nLabels) {
+void read_mnist_labels(const char *filename, std::vector<long> *labels, size_t *nLabels) {
     FILE *file = fopen(filename, "rb");
     if (!file) exit(1);
 
@@ -204,10 +204,10 @@ void read_mnist_labels(const char *filename, std::vector<long> *labels, int *nLa
 
     labels->resize(*nLabels);
 
-    for (int i = 0; i < *nLabels; i++) {
+    for (size_t idx_label = 0; idx_label < *nLabels; idx_label++) {
         unsigned char c;
         file_read(&c, 1, 1, file);
-        (*labels)[i] = c;
+        (*labels)[idx_label] = c;
     }
 
     fclose(file);
@@ -549,7 +549,6 @@ void initialise_gradients(Gradients * gradients, Model *model, InputData *data)
         gradients->size_grads += model->layers[i].size_neurons * data->nImages;
     }
     gradients->grads.resize(gradients->size_grads);
-    float *grads = gradients->grads.data();
     
     // connect gradients to layers
 
@@ -599,13 +598,13 @@ int main() {
     std::string training_labels_path = data_path_str + "train-labels.idx1-ubyte";
     read_mnist_images(training_images_path.c_str(), &data_training);
     read_mnist_labels(training_labels_path.c_str(), &data_training.labels, &data_training.nImages);
-    printf("Number of training images: %d\n", data_training.nImages);
+    printf("Number of training images: %ld\n", data_training.nImages);
 
     std::string test_images_path = data_path_str + "t10k-images.idx3-ubyte";
     std::string test_labels_path = data_path_str + "t10k-labels.idx1-ubyte";
     read_mnist_images(test_images_path.c_str(), &data_test);
     read_mnist_labels(test_labels_path.c_str(), &data_test.labels, &data_test.nImages);
-    printf("Number of test images: %d\n", data_test.nImages);
+    printf("Number of test images: %ld\n", data_test.nImages);
 
     srand(42); // Set a fixed seed for reproducibility
 
@@ -625,7 +624,7 @@ int main() {
         printf("Layer %zu: %zu inputs, %zu neurons\n", i, layer->size_inputs, layer->size_neurons);
     }
     printf("Number of parameters: %zu\n", model.size_parameters);
-    printf("Batch size: %zu\n", SIZE_MINI_BATCH);
+    printf("Batch size: %d\n", SIZE_MINI_BATCH);
 
     allocate_parameters_memory(&model);
     // load any persisted model parameters from models directory
