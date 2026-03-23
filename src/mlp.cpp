@@ -17,7 +17,7 @@
 #define SIZE_CLASSES 10
 #define SIZE_MINI_BATCH 64
 #define SIZE_OUTPUT 10
-#define SIZE_HIDDEN 128
+#define SIZE_HIDDEN 4
 #define NUMBER_STEPS 1000
 #define PRINT_EVERY 100
 #define LEARNING_RATE 0.01f
@@ -243,6 +243,31 @@ void save_model(Model * model, const char *dir_path){
     // Save all parameters of the model to the file
     fwrite(model->layers[0].weights, sizeof(float), model->size_parameters, file);
 
+    fclose(file);
+    // save hidden layer weights as mnist format for visualization
+    char filename_hidden[128];
+    sprintf(filename_hidden, "%smodel_%s_h%d_hidden_weights.idx3-ubyte", dir_path, timestamp, SIZE_HIDDEN);
+    printf("\nsaving hidden layer weights in file: %s\n", filename_hidden);
+    file = fopen(filename_hidden, "wb");
+    if (file == NULL) {
+        printf("Error opening file %s", dir_path);
+        return;
+    }
+    int magic_number = __builtin_bswap32(2051);
+    fwrite(&magic_number, sizeof(int), 1, file);
+    int n_images = __builtin_bswap32(SIZE_HIDDEN);
+    fwrite(&n_images, sizeof(int), 1, file);  
+    int rows = __builtin_bswap32(28);
+    int cols = __builtin_bswap32(28);
+    fwrite(&rows, sizeof(int), 1, file);
+    fwrite(&cols, sizeof(int), 1, file);
+    for (size_t idx_neuron = 0; idx_neuron < SIZE_HIDDEN; idx_neuron++) {
+        for (size_t idx_input = 0; idx_input < 784; idx_input++) {
+            float weight = model->layers[0].weights[idx_neuron * 784 + idx_input];
+            unsigned char pixel_value = (unsigned char)(fminf(fmaxf((weight + 1.0f) / 2.0f * 255.0f, 0.0f), 255.0f));
+            fwrite(&pixel_value, sizeof(unsigned char), 1, file);
+        }
+    }
     fclose(file);
 }
 
