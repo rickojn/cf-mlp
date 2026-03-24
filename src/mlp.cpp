@@ -262,9 +262,18 @@ void save_model(Model * model, const char *dir_path){
     fwrite(&rows, sizeof(int), 1, file);
     fwrite(&cols, sizeof(int), 1, file);
     for (size_t idx_neuron = 0; idx_neuron < SIZE_HIDDEN; idx_neuron++) {
+        float max_absolute_weight = 0.0f;
         for (size_t idx_input = 0; idx_input < 784; idx_input++) {
             float weight = model->layers[0].weights[idx_neuron * 784 + idx_input];
-            unsigned char pixel_value = (unsigned char)(fminf(fmaxf((weight) * 255.0f, 0.0f), 255.0f));
+            if (fabsf(weight) > max_absolute_weight) {
+                max_absolute_weight = fabsf(weight);
+            }
+        }
+        for (size_t idx_input = 0; idx_input < 784; idx_input++) {
+            float weight = model->layers[0].weights[idx_neuron * 784 + idx_input];
+            float normalized_weight = weight / max_absolute_weight;
+            float scaled_weight = (normalized_weight + 1.0f) / 2.0f; // Scale to [0, 1]
+            unsigned char pixel_value = (unsigned char)(scaled_weight * 255.0f);
             fwrite(&pixel_value, sizeof(unsigned char), 1, file);
         }
     }
