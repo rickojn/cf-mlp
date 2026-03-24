@@ -14,7 +14,7 @@
 
 #define SIZE_CLASSES 10
 #define SIZE_OUTPUT 10
-#define SIZE_HIDDEN 4
+#define SIZE_HIDDEN 128
 
 struct InputData {
     std::vector<unsigned char> images;

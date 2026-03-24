@@ -17,7 +17,7 @@
 #define SIZE_CLASSES 10
 #define SIZE_MINI_BATCH 64
 #define SIZE_OUTPUT 10
-#define SIZE_HIDDEN 4
+#define SIZE_HIDDEN 128
 #define NUMBER_STEPS 1000
 #define PRINT_EVERY 100
 #define LEARNING_RATE 0.01f
@@ -264,7 +264,7 @@ void save_model(Model * model, const char *dir_path){
     for (size_t idx_neuron = 0; idx_neuron < SIZE_HIDDEN; idx_neuron++) {
         for (size_t idx_input = 0; idx_input < 784; idx_input++) {
             float weight = model->layers[0].weights[idx_neuron * 784 + idx_input];
-            unsigned char pixel_value = (unsigned char)(fminf(fmaxf((weight + 1.0f) / 2.0f * 255.0f, 0.0f), 255.0f));
+            unsigned char pixel_value = (unsigned char)(fminf(fmaxf((weight) * 255.0f, 0.0f), 255.0f));
             fwrite(&pixel_value, sizeof(unsigned char), 1, file);
         }
     }
